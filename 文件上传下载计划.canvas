@@ -1,0 +1,42 @@
+{
+	"nodes":[
+		{"id":"8c0f53716743afe2","type":"text","text":"文件上传下载","x":-900,"y":40,"width":250,"height":60},
+		{"id":"16be432a647bf565","type":"text","text":"大文件上传","x":-434,"y":-107,"width":250,"height":60},
+		{"id":"f0133ea1e1c0a11d","type":"text","text":"加密？","x":-80,"y":-240,"width":250,"height":60},
+		{"id":"9e17d0eedd84de75","type":"text","text":"文件下载","x":-434,"y":180,"width":250,"height":60},
+		{"id":"b7f4bc8010888cd7","type":"text","text":"LRU无锁缓存","x":-80,"y":180,"width":250,"height":60},
+		{"id":"97a15b3a420e7c3d","type":"text","text":"下载时需要解密","x":320,"y":180,"width":250,"height":60},
+		{"id":"fcd54677a4daded6","type":"text","text":"虚拟文件系统","x":-434,"y":40,"width":250,"height":60},
+		{"id":"d34277aa645f8e64","type":"text","text":"sha加密","x":-900,"y":260,"width":250,"height":60},
+		{"id":"3c869c1fbfdd0869","type":"text","text":"多用户文件管理？管理员，mysql","x":-900,"y":440,"width":250,"height":60},
+		{"id":"7000c86406d22153","type":"text","text":"文件内容搜索如何完成？","x":-900,"y":600,"width":250,"height":60},
+		{"id":"a7232cf361dffc8b","type":"text","text":"上传时能下载，下载时能上传、搜索等多操作——线程池。\n能否根据核数，固定进程？用于下载上传搜索？","x":-434,"y":-460,"width":250,"height":140},
+		{"id":"3d6b9d6aafba358f","type":"text","text":"线程池、线程队列、锁","x":-81,"y":-420,"width":250,"height":60},
+		{"id":"4939d9411604359e","type":"text","text":"redis能干嘛呢？","x":-600,"y":440,"width":250,"height":60},
+		{"id":"905f92f0e103e908","type":"text","text":"TCP协议","x":-80,"y":40,"width":250,"height":60},
+		{"id":"55aa6144e7682b8c","type":"text","text":"为网页做扩展，HTTP协议发送消息","x":320,"y":40,"width":250,"height":60},
+		{"id":"e50b558e8f6def04","type":"text","text":"云端文件热备份","x":-1241,"y":181,"width":250,"height":60},
+		{"id":"d04fd835f6e8c2f6","type":"text","text":"技术总结：\n1. epoll\n2. 线程池\n3. 线程队列\n4. 锁\n5. HTTP协议\n6. TCP协议\n7. LRU缓存\n8. 大文件传输0缓存技术\n9. 虚拟文件系统\n10. redis\n11. mysql\n12. sha\n13. 热备份\n14. nginx代理？\n\n后期客户端界面优化：\n1. vue or qt\n","x":640,"y":-107,"width":250,"height":575},
+		{"id":"3a5a407e1f4272c7","x":60,"y":320,"width":321,"height":87,"color":"1","type":"text","text":"# 先复习整理笔记"},
+		{"id":"fc5eb75853b9b731","x":163,"y":468,"width":115,"height":60,"color":"3","type":"text","text":"10天"}
+	],
+	"edges":[
+		{"id":"54903ce2857a613e","fromNode":"8c0f53716743afe2","fromSide":"right","toNode":"16be432a647bf565","toSide":"left"},
+		{"id":"bc32242e4caabd85","fromNode":"16be432a647bf565","fromSide":"right","toNode":"f0133ea1e1c0a11d","toSide":"left"},
+		{"id":"8033f4b45e396612","fromNode":"8c0f53716743afe2","fromSide":"right","toNode":"9e17d0eedd84de75","toSide":"left"},
+		{"id":"b5118345a71eda85","fromNode":"9e17d0eedd84de75","fromSide":"right","toNode":"b7f4bc8010888cd7","toSide":"left"},
+		{"id":"bcaa73c05d113bf8","fromNode":"b7f4bc8010888cd7","fromSide":"right","toNode":"97a15b3a420e7c3d","toSide":"left"},
+		{"id":"224931b0b0c4e744","fromNode":"16be432a647bf565","fromSide":"bottom","toNode":"fcd54677a4daded6","toSide":"top"},
+		{"id":"8252236adf7496fd","fromNode":"9e17d0eedd84de75","fromSide":"top","toNode":"fcd54677a4daded6","toSide":"bottom"},
+		{"id":"fd8dadb36373f82f","fromNode":"d34277aa645f8e64","fromSide":"right","toNode":"fcd54677a4daded6","toSide":"left"},
+		{"id":"27beb43b1ceb8879","fromNode":"8c0f53716743afe2","fromSide":"top","toNode":"a7232cf361dffc8b","toSide":"left"},
+		{"id":"b2ad7e206079cc1e","fromNode":"a7232cf361dffc8b","fromSide":"right","toNode":"3d6b9d6aafba358f","toSide":"left"},
+		{"id":"939ebbe7c69263d7","fromNode":"7000c86406d22153","fromSide":"right","toNode":"b7f4bc8010888cd7","toSide":"bottom"},
+		{"id":"ad0c627f1c183193","fromNode":"3c869c1fbfdd0869","fromSide":"right","toNode":"4939d9411604359e","toSide":"left"},
+		{"id":"0c0b845b4d9578a1","fromNode":"905f92f0e103e908","fromSide":"left","toNode":"16be432a647bf565","toSide":"right"},
+		{"id":"a91fbb3eedc9edd9","fromNode":"905f92f0e103e908","fromSide":"left","toNode":"9e17d0eedd84de75","toSide":"right"},
+		{"id":"b427362867c57793","fromNode":"55aa6144e7682b8c","fromSide":"left","toNode":"905f92f0e103e908","toSide":"right"},
+		{"id":"e9e65e207ef0da84","fromNode":"8c0f53716743afe2","fromSide":"bottom","toNode":"e50b558e8f6def04","toSide":"right"},
+		{"id":"e28d000cf3ce556f","fromNode":"fc5eb75853b9b731","fromSide":"top","toNode":"3a5a407e1f4272c7","toSide":"bottom"}
+	]
+}
