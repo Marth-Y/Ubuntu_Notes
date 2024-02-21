@@ -24,6 +24,14 @@
 		- [[CPP/STL]]
 		- [[CPP/newdelete]]
 		- [[CPP/STL/parser]]
+		- C/C++语言知识点
+			- [[define]]
+			- [[const]]
+			- [[enum]]
+		- 阅读
+			- [[EffectiveC++]]
+	- [[vim]]
+	- [[Git]]
 - 智慧：
 - 备忘：
 -

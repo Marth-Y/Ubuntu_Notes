@@ -1,0 +1,7 @@
+- git push #Git
+	- `git remote add origin <仓库地址>`
+	- 这样就可以推送到远程仓库
+- git pull #Git
+	- `git branch --set-upstream-to=origin/main`
+	- 将pull关联到远程仓库的main分支
+-
