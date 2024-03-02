@@ -25,6 +25,7 @@
 		- [[CPP/newdelete]]
 		- [[CPP/初始化列表]]
 		- [[CPP/catch]]
+		- [[文件操作]]
 		- STL
 			- [[CPP/STL/parser]]
 		- C/C++语言知识点
@@ -32,8 +33,16 @@
 			- [[const]]
 			- [[enum]]
 			- [[inline]]
+			- [[main]]
+			- [[argc]]
+			- [[argv]]
+			- [[exec]]
+			- [[exit]]
+			- [[atexit]]
+			- [[进程]]
 		- 阅读
 			- [[EffectiveC++]]
+		- [[C]]
 	- [[vim]]
 	- [[Git]]
 - 智慧：

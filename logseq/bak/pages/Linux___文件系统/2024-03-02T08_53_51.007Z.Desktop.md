@@ -1,0 +1,17 @@
+- Linux文件子系统 #Linux/文件系统 #文件操作
+  collapsed:: true
+	- **虚拟文件系统**：
+	- Linux的文件不是按程序分的，而是按功能，比如日志文件，全放一个文档
+	- `bin`：binay：可执行程序
+	- `etc`：配置文件
+		- 如：/etc/passwd、/etc/sudoers
+	- `lib`：（library）：库函数
+	- `proc`：process：进程文件。
+	- `var`：variable：容易发生变化的文件，所以是日志文件
+	- `dev`：device：设备文件
+	- `home`：普通用户家目录的父目录
+		- home/ubuntu、home/luyimin
+	- `root`：根用户的家目录
+	- `sbin`：system binary：和系统相关的可执行程序
+	-
+-
