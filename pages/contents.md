@@ -1,4 +1,5 @@
 - 项目：
+  collapsed:: true
 	- Python
 		- [[python/循环]]
 	- 阅读
@@ -12,6 +13,7 @@
 	- Raft
 - 领域知识：
 	- Linux
+	  collapsed:: true
 		- [[Linux/搜索]]
 		- [[Linux/目录]]
 		- [[Linux/系统]]
@@ -39,7 +41,9 @@
 			- [[exec]]
 			- [[exit]]
 			- [[atexit]]
+			- [[environ]]
 			- [[进程]]
+			- [[动态库]]
 		- 阅读
 			- [[EffectiveC++]]
 		- [[C]]
