@@ -1,5 +1,4 @@
 - 项目：
-  collapsed:: true
 	- Python
 		- [[python/循环]]
 	- 阅读
@@ -11,6 +10,8 @@
 	- 协程库
 		- [[项目/协程]]
 	- Raft
+	- [[健身]]
+		- [[拉伸]]
 - 领域知识：
 	- Linux
 	  collapsed:: true
@@ -44,6 +45,7 @@
 			- [[environ]]
 			- [[进程]]
 			- [[动态库]]
+			- [[mutable]]
 		- 阅读
 			- [[EffectiveC++]]
 		- [[C]]
