@@ -227,12 +227,150 @@
 			- 构造函数运行方式：从顶层基类开始向下依次调用构造函数构造。 #构造
 		- > 1. 带多态性质的基类应该声明一个虚析构函数。如果类带有任何虚函数，它就应该拥有一个虚析构函数。 #多态 #析构 #虚函数
 		  2. 类的设计目的如果不是为了作为基类或者实现多态，则不应该声明虚析构函数。
-	- 条款08：别让异常逃离析构 #析构 #异常
+	- 条款08：别让异常逃离析构 #析构 #异常 #TODO
+	  collapsed:: true
 		- 我对异常不熟悉，此后再回看
-	- 条款09：绝不在构造和析构过程中调用virtual函数
+	- 条款09：绝不在构造和析构过程中调用virtual函数 #构造 #析构 #虚函数
+	  collapsed:: true
 		- ==你不该在构造函数和析构函数期间调用虚函数，因为这样的调用不会带来你预想的结果，就算有，你也不会高兴，这是与java不同的一个地方==
-		-
--
+		- 看如下示例：
+			- ```cpp
+			  #include <iostream>
+			  using namespace std;
+			  
+			  class Transaction {
+			  public:
+			      Transaction() {
+			          logTransaction();
+			      }
+			      virtual void logTransaction() const = 0;
+			  };
+			  
+			  class BuyTransaction:public Transaction {
+			  public:
+			      virtual void logTransaction() const;
+			  };
+			  
+			  class SellTransaction:public Transaction {
+			  public:
+			      virtual void logTransaction() const;
+			  };
+			  
+			  
+			  int main() {
+			      BuyTransaction b;
+			  }
+			  ```
+			- 当创建b时，会优先调用基类构造函数初始化基类成员部分，此时派生类部分还不存在。因此调用的虚函数是基类部分的版本，而不是派生类的。
+				- 如果在构造基类时，允许调用派生类函数，那么可以明确的，派生类函数几乎肯定会使用派生类成员变量，而此时派生类成员变量还没有初始化，因此C++不允许这种操作。
+				- 析构同理，当派生类析构后，派生类成员变量被视为不存在，基类中调用派生类函数不合法
+			- 如果基类的虚函数有实现，那么构造和析构中的虚函数调用就会走基类版本，因此导致一些bug。==唯一能够避免这种问题的做法是：确定构造函数和析构函数(在对象被创建和销毁期间)都没有调用虚函数，而他们调用的所有函数也都服从这一约束。==
+			- 那么如何保证每次一有Transaction继承体系上的对象被创建，就会有适当版本的函数被调用呢？一种做法是在Transaction中将logTransaction函数改为non-virtual的，然后要求派生类构造函数传递必要的信息给基类构造函数，基类便可以安全的调用non-virtual的 logTransaction。
+				- ```cpp
+				  class Transaction {
+				  public:
+				      explicit Transaction(const string& logInfo) {
+				          logTransaction(logInfo);
+				      }
+				      void logTransaction(const string& logInfo) const;
+				  };
+				  
+				  class BuyTransaction:public Transaction {
+				  public:
+				      BuyTransaction(const string& parameters)
+				      :Transaction(createLogString(parameters)) {}
+				  private:
+				      static string createLogString(const string& parameters);
+				  };
+				  
+				  ```
+				- 即：==无法使用virtual函数从基类向下调用，而在构造期间，你可以令派生类将必要的构造信息向上传递至基类构造函数==
+				- 使用静态成员函数createLogString创建参数向基类传递：利用辅助函数创建一个值传给基类比较方便、可读。令其为static的，就不会意外指向“早期对象尚未构建完成时未初始化的成员变量” #static
+	- 条款10：令`operator=返回一个reference to *this` #赋值运算符函数
+	  collapsed:: true
+		- 为了实现连等，需要返回一个reference.
+		- `T& operator=(const T& rhs);`
+	- 条款11：在`operator=`中处理“自我赋值” #赋值运算符函数
+	  collapsed:: true
+		- “自我赋值”发生在对象被赋值给自己时。
+			- 有明显的自我赋值：`vec = vec;`，也有潜在的难以识别的自我赋值：`a[i] = a[j];`、`*px = *py;`、`*pointer = reference;`
+			- ```cpp
+			  T& operator=(const T& rhs) {
+			    delete p;
+			    p = new Bitmap(*rhs.p);	//使用p的复件，即：新new一个空间
+			    return *this;
+			  }
+			  ```
+				- 如果是自我赋值，则`delete p`就已经销毁对象了。
+		- 传统做法是藉由`operator=`最前面的一个“证同测试”达到“自我赋值”的检验目的：
+			- ```cpp
+			  T& operator=(const T& rhs) {
+			    if (this == &rhs) return *this;
+			    delete p;
+			    p = new Bitmap(*rhs.p);
+			    return *this;
+			  }
+			  ```
+			- 这种做法具备“自我赋值安全性”，但是不具备“异常安全性”，如果后面的new发生异常(内存不足、拷贝异常等)，最终p会指向一块未知区域(delete掉了)，后续无法安全的删除它们，甚至无法安全的读取它们。
+		- 更好的做法：这样兼顾了异常安全性。（往往operator=具备了一场安全性，就会自动获得自我赋值安全性）
+			- ```cpp
+			  T& operator=(const T& rhs) {
+			    Bitmap* pOrig = p;			//记住原来的p
+			    p = new Bitmap(*rhs.p);		//令p指向*p的一个副本,即：重新new一个空间
+			    delete pOrig;					//删除原来的pOrig
+			    return *this;
+			  }
+			  ```
+			- 现在即使new异常，p也会指向原来的位置。保持原状。这段代码也能处理自我赋值，因为创建了一个副本。但是他不高效。
+			- 如果“自我赋值”发生频率高，可以将证同测试加回来
+		- 另一个确保异常安全和自我赋值安全的方法是：copy and swap技术：
+			- ```cpp
+			  class Widget {
+			    void swap(Widget& rhs); // 交换rhs和*this的数据
+			    Widget& operator=(const Widget& rhs) {
+			      Widget temp(rhs);	  // 为rhs制作一份副本
+			      swap(tmp);			  // 将*this数据和上述复件的数据交换
+			      return *this;
+			    }
+			  };
+			  
+			  上面利用了一个临时变量，可以用by value的方式更加精简：
+			  
+			    Widget& operator=(Widget rhs) { // pass by value
+			      swap(rhs);
+			      return *this;
+			    }
+			  ```
+		- > 确保对象自我赋值时，operator=有良好行为，其中技术包括证同测试、精心周到的语句顺序、copy and swap
+		  确定任何函数如果操作一个以上对象，而其中多个对象是同一个对象时，其行为仍然正确。
+	- 条款12：赋值对象时勿忘其每一个成分 #赋值运算符函数
+	  collapsed:: true
+		- 拷贝函数包括拷贝构造函数、赋值运算符函数
+		- 复制所有local(本类中)成员变量
+		  logseq.order-list-type:: number
+		- 调用所有基类内的适当的拷贝函数
+		  logseq.order-list-type:: number
+			- ```cpp
+			  class Base {
+			  public:
+			    Base(const Base& rhs);
+			    Base& operator=(const Base& rhs);
+			  };
+			  class Dre1:public Base {
+			  public:
+			    Dre1(const Dre1& rhs)
+			    :Base(rhs) {}					// 指定调用基类的拷贝构造函数，不然会调用默认构造
+			    Dre1& operator=(const Dre1& rhs) {
+			      Base::operator=(rhs);		// 对基类成分进行拷贝
+			    }
+			  };
+			  ```
+		- 注意不要为了代码精简，而让拷贝函数互相调用。
+			- 如果为了消除代码重复，可以在private中定义一个`init`函数，将公共部分放入其中。
+		- > 拷贝函数应该确保赋值对象内的所有成员变量以及所有基类部分
+		  不要尝试以某个拷贝函数实现另一个拷贝函数，应该将功能机能放进第三个函数中，并由两个拷贝函数共同调用
+- 资源管理
+	-
 -
 -
 -
