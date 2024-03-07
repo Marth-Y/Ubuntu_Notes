@@ -370,7 +370,68 @@
 		- > 拷贝函数应该确保赋值对象内的所有成员变量以及所有基类部分
 		  不要尝试以某个拷贝函数实现另一个拷贝函数，应该将功能机能放进第三个函数中，并由两个拷贝函数共同调用
 - 资源管理
-	-
+	- 资源就是一旦用了它，就必须还给系统。常见资源有：动态分配内存、文件描述符、互斥锁、图形界面中的字型和笔刷、数据库连接、网络sockets。
+	- 条款13：以对象管理资源 #CPP/智能指针
+	  collapsed:: true
+		- RAII思想 #CPP/智能指针
+		- ==获得资源后立刻放进管理对象==，==管理对象运用析构函数确保资源被释放==
+			- `std::auto_ptr<T> pt(createT());`
+	- 条款14：在资源管理类中小心拷贝行为 #CPP/智能指针
+	  collapsed:: true
+		- 条款13中提及的RAII思想，设计的智能指针不能应用与所有场景，因为智能指针只会执行`delete`。因此我们需要设计我们自己的资源管理类
+		- 对RAII类的复制行为一般有以下操作：
+			- 禁止复制
+			  logseq.order-list-type:: number
+				- c98：将复制控制语义声明为private
+				  logseq.order-list-type:: number
+				- c++11：delete掉
+				  logseq.order-list-type:: number
+			- 对底层资源使用“引用计数法”
+			  logseq.order-list-type:: number
+				- RAII类中封装`shared_ptr`，将所获得的资源用`shared_ptr`管理。
+				  logseq.order-list-type:: number
+					- `shared_ptr`引用计数为0时默认调用delete，可以传入删除器(函数/函数对象)，指定调用删除器的操作。
+					  logseq.order-list-type:: number
+			- 深拷贝
+			  logseq.order-list-type:: number
+			- 转递底部资源的所有权：类似`auto_ptr`
+			  logseq.order-list-type:: number
+		- ==复制控制语义函数会被编译器默认创建出来，因此，除非编译器生成版本做了你想做的事，否则你必须自己编写他们。==
+		- > 1. 复制RAII对象必须一并复制它所管理的资源，所以资源的拷贝行为决定RAII对象的复制控制语义
+		  2. 常见的RAII拷贝行为是：禁止复制、引用计数。
+	- 条款15：在资源管理类中提供对原始资源的访问
+		- 资源管理类很好的解决了资源泄露的问题，但是有很多API参数是资源本身，因此需要资源管理类提供对原始资源的访问。
+		- 获取资源管理类中原始资源的方法有两种：显式转换和隐式转换
+			- 显式转换
+				- 定义一个成员函数`get`，用以返回原始指针
+				- 可以重载`operator->`、`operator*`。他们允许隐式转换至底部原始指针
+				- 缺点就是：每次都需要调用`get`函数，用起来可能不自然。
+			- 隐式转换 #类型转换操作符
+				- 提供一个隐式转换函数：
+					- ```cpp
+					  class Font {
+					  public:
+					    operator FontHandle() const  // 隐式转换函数
+					    { return f; }
+					  private:
+					    FontHandle f;
+					  };
+					  
+					  
+					  Font f(getFont());
+					  int newFontSize;
+					  changeFontSize(f, newFontSize); // 将Font隐式转换为FontHandle
+					  ```
+				- 隐式转换用起来自然，和原生指针一样，但是隐式转换有一个问题：
+					- ```cpp
+					  Font f1(getFont());
+					  FontHandle f2 = f1;  // 这里愿意是拷贝一个Font对象，但是却将f1隐式转换为其底部FontHandle，然后才复制它。
+					  ```
+					- 此时可以通过f2访问底部资源，也可以用f1访问，如果f1被释放，那么再访问f2就会产生未定义的行为。
+		- 因此，采用显式还是隐式，取决于RAII类被设计执行的特定工作以及他被使用的情况。
+		- > 1. API往往要求访问原始资源，所以每一个RAII类应该提供一个“取得其所管理的资源”的方法
+		  2. 对原始资源的访问可能经由显式转换或者隐式转换，一般而言显式转换比较安全，但隐式转换对客户比较方便。
+-
 -
 -
 -
