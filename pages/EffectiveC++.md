@@ -1,5 +1,9 @@
 - 让自己习惯C++
 	- 条款01：视C++为一个语言联邦 #cpp
+		- C
+		- CPP
+		- STL
+		- template
 	- 条款02：尽量以const、enum、inline替换# define #define #const #enum #EffectiveC++ #inline
 	  collapsed:: true
 		- 1、define不易于编译报错时查看报错信息
@@ -400,6 +404,7 @@
 		- > 1. 复制RAII对象必须一并复制它所管理的资源，所以资源的拷贝行为决定RAII对象的复制控制语义
 		  2. 常见的RAII拷贝行为是：禁止复制、引用计数。
 	- 条款15：在资源管理类中提供对原始资源的访问
+	  collapsed:: true
 		- 资源管理类很好的解决了资源泄露的问题，但是有很多API参数是资源本身，因此需要资源管理类提供对原始资源的访问。
 		- 获取资源管理类中原始资源的方法有两种：显式转换和隐式转换
 			- 显式转换
@@ -431,7 +436,48 @@
 		- 因此，采用显式还是隐式，取决于RAII类被设计执行的特定工作以及他被使用的情况。
 		- > 1. API往往要求访问原始资源，所以每一个RAII类应该提供一个“取得其所管理的资源”的方法
 		  2. 对原始资源的访问可能经由显式转换或者隐式转换，一般而言显式转换比较安全，但隐式转换对客户比较方便。
--
--
+	- 条款16：成对使用new和delete时要采取相同形式 #CPP/newdelete
+	  collapsed:: true
+		- 对new的数组要用对应的`delete[]`
+		- new的底层操作：
+			- 调用`operator new`操作符
+			  logseq.order-list-type:: number
+			- 调用构造函数
+			  logseq.order-list-type:: number
+		- delete的底层操作
+			- 调用析构函数
+			  logseq.order-list-type:: number
+			- 调用`operator delete`操作符
+			  logseq.order-list-type:: number
+		- 因此new一个数组的时候会记录数组大小，这样才知道调用多少次构造和析构。
+		- 要注意`typedefs`动作，如果对一个数组typedef，那么new之后需要`delete[]`
+	- 条款17：以独立语句将newd对象置入智能指针 #CPP/智能指针
+	  collapsed:: true
+		- ```cpp
+		  class Widget{
+		  public:
+		    explicit Widget(){}
+		  };
+		  int priority();
+		  void processWidget(std::shared_ptr<Widget> pw, int priority);
+		  
+		  现在按如下调用：
+		  processWidget(new Widget, priority());
+		  上述代码可能不能通过编译，因为Widget构造函数是explicit的，无法进行隐式转换。但是如果像这样：
+		  processWidget(std::shared_ptr<Widget>(new Widget), priority());
+		  则可以调用了。这行语句完成了：
+		  1. 调用priority()
+		  2. 执行"new Widget"
+		  3. 调用shared_ptr构造函数
+		  但是C++编译器以何种次序完成这三个调用，是完全未知的，如果以以下次序完成：
+		  1. 执行"new Widget"
+		  2. 调用priority()
+		  3. 调用shared_ptr构造函数
+		  如果在priority函数中发生了异常，那么"new Widget"返回的指针就丢失了，没有放入智能指针托管，造成了内存泄漏。
+		  ```
+		- > 以独立语句将newd对象存储入智能指针内，如果不这样做，一旦异常被抛出，有可能导致难以察觉的资源泄露。
+- 设计与声明
+	- 条款18：让接口容易被正确使用，不易被误用
+		-
 -
 -
