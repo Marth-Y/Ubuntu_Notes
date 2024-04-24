@@ -8,6 +8,7 @@ public:: true
 		- STL
 		- template
 	- 条款02：尽量以const、enum、inline替换# define #define #const #enum #EffectiveC++ #inline
+	  collapsed:: true
 		- 1、define不易于编译报错时查看报错信息
 			- `#define ASPECT 1.63`
 			- 对于编译器而言，会替换掉`ASPECT`，只有 1.63 。导致报错时只会显示1.63，无法定位具体出错的位置。
@@ -479,7 +480,69 @@ public:: true
 		  ```
 		- > 以独立语句将newd对象存储入智能指针内，如果不这样做，一旦异常被抛出，有可能导致难以察觉的资源泄露。
 - 设计与声明
-	- 条款18：让接口容易被正确使用，不易被误用
+	- 条款18：让接口容易被正确使用，不易被误用 #CPP/智能指针
+	  collapsed:: true
+		- 预开发一个“容易被正确使用，不容易被误用”的接口，首先必须考虑客户可能做出什么样的错误。
+		- ==应该尽量令你的types的行为与内置types一致==
+		- “阻止误用”的办法包括简历新类型、限制类型上的操作，束缚对象值，一级消除的客户的资源管理责任
+		- `shared_ptr`支持定制删除器，可以防范DLL问题（cross-DLL problem 对象在动态链接库DLL中被new创建，却在另一个DLL中被delete销毁，在许多平台上，这可能导致运行期错误，shared_ptr 可以自动追踪记录初始化的删除器），可以用来自动释放资源。
+	- 条款19：设计class犹如设计type #cpp
+	  collapsed:: true
+		- 当你定义一个新class时，也就定义了一个新type。因此，你应该带着和“语言设计者当初设计语言内置类型时”一样的谨慎来研讨calss的设计。
+		- 设计一个class时，请思考以下问题：
+			- 新type的对象应该如何被创建和释放？
+			  logseq.order-list-type:: number
+				- 构造函数、析构函数、内存分配和释放函数的设计(operator new、operator new[]、operator delete、operator deltep[])
+				  logseq.order-list-type:: number
+			- 对象的初始化和对象的赋值该有什么样的差别？
+			  logseq.order-list-type:: number
+				- 这个答案决定构造函数和赋值运算符函数的行为和差异，不要混淆了初始化和赋值
+				  logseq.order-list-type:: number
+			- 新type的对象如果被passed by value，意味着什么？
+			  logseq.order-list-type:: number
+				- 拷贝构造函数
+				  logseq.order-list-type:: number
+			- 什么是新type的合法值？
+			  logseq.order-list-type:: number
+				- 对类的成员变量而言，通常只有某些数值集是有效的，那些数值集决定了你的类必须维护的约束条件，也就决定了你的成员函数（特别是构造函数、赋值运算符函数和所谓的“setter”函数）必须进行的错误检查操作。它也影响函数抛出的异常、以及（极少被使用的）函数异常明细列。
+				  logseq.order-list-type:: number
+			- 你的新type需要配合某个继承图系吗？
+			  logseq.order-list-type:: number
+				- 如果你继承自某个类，那么你会受到这些类的设计的束缚，尤其是virtual和non-virtual的影响，如果你允许其他类继承该类，那么会影响你声名的函数——尤其是析构函数——是否为virtual
+				  logseq.order-list-type:: number
+			- 你的新type需要什么样的转换？
+			  logseq.order-list-type:: number
+				- 你的type会和其他类型发生转换吗？如果你的类型T1允许和类型T2进行转换，就必须在T1内写一个类型转换函数（operator T2）或者在T2中写一个non-explicit-one-argument（可被单一实参调用）的构造函数。如果只允许explicit构造函数存在，就得写出专门负责转换的函数，且不得为类型转换操作符或non-explicit-one-argument构造函数。
+				  logseq.order-list-type:: number
+			- 什么样的操作符和函数对此新type而言是合理的？
+			  logseq.order-list-type:: number
+				- 你要为你的类声明那些函数？其中某些函数该是member函数，某些则不是
+				  logseq.order-list-type:: number
+			- 什么样的标准函数应该驳回？
+			  logseq.order-list-type:: number
+				- 什么函数必须声明为private
+				  logseq.order-list-type:: number
+			- 该谁取用新type的成员？
+			  logseq.order-list-type:: number
+				- 这个提问可以帮助你决定那个成员为public、protected、private，它也帮助你决定哪一个classes 和/或 functions 应该是friend，以及将他们嵌套于类一个之内是否合理
+				  logseq.order-list-type:: number
+			- 什么是新type的“未声明接口”？
+			  logseq.order-list-type:: number
+				- 它对效率、异常安全性以及资源运用（例如多任务锁定和动态内存）提供何种保证？你在这些方面提供的保证将为你的class实现代码加上相应的约束条件
+				  logseq.order-list-type:: number
+				- 不太懂。
+				  logseq.order-list-type:: number
+			- 你的新type有多么一般化？
+			  logseq.order-list-type:: number
+				- 或许你并非定义一个新type，而是定义一整个types家族，果真如此你就不应该定义一个新class，而是应该定义一个新的class template
+				  logseq.order-list-type:: number
+			- 你真的需要一个新type吗？
+			  logseq.order-list-type:: number
+				- 如果只是定义新的派生类以便为既有的类添加机能，那么说不定单纯定义一或多个non-member函数或templates，更能够达到目标
+				  logseq.order-list-type:: number
+		- > 小结：只要设计出至少像C++内置类型一样好的用户自定义类，一切汗水便都值得
+		  class的设计就是type的设计，在定义一个新type之前，请确定你已经考虑过本条款覆盖的所有讨论主题
+	- 条款20：宁以pass-by-reference-to-const替换pass-by-value #cpp
 		-
 -
 -
