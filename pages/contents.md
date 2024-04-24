@@ -15,9 +15,7 @@
 	- [[健身]]
 		- [[拉伸]]
 - 领域知识：
-  collapsed:: true
 	- Linux
-	  collapsed:: true
 		- [[Linux/搜索]]
 		- [[Linux/目录]]
 		- [[Linux/系统]]

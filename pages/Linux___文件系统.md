@@ -1,4 +1,5 @@
 - Linux文件子系统 #Linux/文件系统 #文件操作
+  collapsed:: true
 	- **虚拟文件系统**：
 	- Linux的文件不是按程序分的，而是按功能，比如日志文件，全放一个文档
 	- `bin`：binay：可执行程序
@@ -13,4 +14,12 @@
 	- `root`：根用户的家目录
 	- `sbin`：system binary：和系统相关的可执行程序
 	-
+- 文件描述符 #Linux/文件系统
+  collapsed:: true
+	- 对于内核而言，所有打开文件都由文件描述符引用。文件描述符是一个非负整数。当打开一个现存文件或创建一个新文件时，内核向进程返回一个文件描述符。当读、写一个文件时，用open或create返回的文件描述符标识该文件，将其作为参数传送给read或write。
+	- 按照惯例，UNIX shell使文件描述符0与进程的标准输入相结合，文件描述符1与标准输出相结合，文件描述符2与标准出错输出相结合。这是UNIX shell以及很多应用程序使用的惯例，而与内核无关。
+	- 幻数0、1、2应被代换成符号常数STDIN_FILENO、STDOUT_FILENO和STDERR_FILENO。这些常数都定义在头文件`<unistd.h>`中。
+	- 使用`cat /proc/sys/fs/file-max`可以查看文件描述符上限
+	-
+- 术语：不带缓冲IO unbuffered I/O指的是每个`read`和`write`都调用内核中的一个系统调用。 #Linux/文件系统
 -
