@@ -1,4 +1,6 @@
+- [[账单]]
 - 项目：
+  collapsed:: true
 	- Python
 		- [[python/循环]]
 	- 阅读
@@ -13,6 +15,7 @@
 	- [[健身]]
 		- [[拉伸]]
 - 领域知识：
+  collapsed:: true
 	- Linux
 	  collapsed:: true
 		- [[Linux/搜索]]

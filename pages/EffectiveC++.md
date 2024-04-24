@@ -1,11 +1,13 @@
+public:: true
+
 - 让自己习惯C++
 	- 条款01：视C++为一个语言联邦 #cpp
+	  collapsed:: true
 		- C
 		- CPP
 		- STL
 		- template
 	- 条款02：尽量以const、enum、inline替换# define #define #const #enum #EffectiveC++ #inline
-	  collapsed:: true
 		- 1、define不易于编译报错时查看报错信息
 			- `#define ASPECT 1.63`
 			- 对于编译器而言，会替换掉`ASPECT`，只有 1.63 。导致报错时只会显示1.63，无法定位具体出错的位置。
