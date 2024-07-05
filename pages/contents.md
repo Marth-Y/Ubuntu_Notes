@@ -31,8 +31,10 @@
 		- [[CPP/catch]]
 		- [[文件操作]]
 		- STL
+		  collapsed:: true
 			- [[CPP/STL/parser]]
 		- C/C++语言知识点
+		  collapsed:: true
 			- [[define]]
 			- [[const]]
 			- [[enum]]
@@ -48,6 +50,7 @@
 			- [[动态库]]
 			- [[mutable]]
 		- 阅读
+		  collapsed:: true
 			- [[EffectiveC++]]
 		- [[C]]
 		- [[构造]]
@@ -55,6 +58,7 @@
 		- [[赋值运算符函数]]
 		- [[虚函数]]
 		- [[多态]]
+		- [[CPP/cmake]]
 	- [[vim]]
 	- [[Git]]
 - 智慧：
