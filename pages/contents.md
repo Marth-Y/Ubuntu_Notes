@@ -1,20 +1,26 @@
 - [[账单]]
 - 项目：
-  collapsed:: true
 	- Python
+	  collapsed:: true
 		- [[python/循环]]
 	- 阅读
+	  collapsed:: true
 		- [[Reading/第二大脑]]
 	- 第二大脑实践
+	  collapsed:: true
 		- [[分类]]
 	- Linux
+	  collapsed:: true
 		- [[项目/Linux]]
 	- 协程库
+	  collapsed:: true
 		- [[项目/协程]]
 	- Raft
 	- [[健身]]
+	  collapsed:: true
 		- [[拉伸]]
 - 领域知识：
+  collapsed:: true
 	- Linux
 		- [[Linux/搜索]]
 		- [[Linux/目录]]
