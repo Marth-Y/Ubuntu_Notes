@@ -1,6 +1,7 @@
 - ==只对命令的简单形式进行介绍==
 - 参照《CMake构建实战——项目开发卷》
 - find_file #CPP/cmake
+  collapsed:: true
 	- ```cmake
 	  find_file(<结果缓存变量> <文件名> [<候选路径...>])
 	  
@@ -29,6 +30,7 @@
 	- `find_file`会从一系列默认搜索路径中查找，`HINTS`或`PATHS`参数可以用于补充搜索的候选路径，该参数同时支持通过ENV指定<候选路径环境变量>，候选路径会从指定的环境变量中读取
 	-
 - find_package #CPP/cmake
+  collapsed:: true
 	- 最重要的就是在`.cmake`文件中指定`INCLUDE_DIRS`和`LIBRARY_DIRS`的路径
 	- ```cmake
 	  # Findonnxruntime.cmake
@@ -95,5 +97,8 @@
 	  target_link_libraries(main onnxruntime::onnxruntime)
 	  target_compile_definitions(main PRIVATE ORT_NO_EXCEPTIONS)
 	  ```
--
+- set(CMAKE_VERBOSE_MAKEFILE ON)
+	- 可以查看每个文件的编译命令，由此可以排查许多问题
+		- 1. 可以查看是否定义宏、链接的库等等一切编译选项
+		- 2. 可以查看链接的库地址是否正确等等
 -
