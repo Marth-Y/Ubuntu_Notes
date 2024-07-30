@@ -237,7 +237,6 @@
   collapsed:: true
 	- `ubuntu@VM-16-2-ubuntu:~$ history > h.txt`可以保存执行过的命令信息
 - 链接
-  collapsed:: true
 	- ln - make links between files #Linux/常用命令
 	  collapsed:: true
 		- inode怎么和磁盘关联起来的？存一个磁盘块地址很容易就找到了。
@@ -264,7 +263,6 @@
 					- ![image.png](../assets/image_1708526341914_0.png)
 					-
 - 创建文件
-  collapsed:: true
 	- touch #Linux/常用命令
 	  collapsed:: true
 		- `touch - change file timestamps`
@@ -277,14 +275,15 @@
 				- `>`：重定向，echo是从stdin读取输入的数据，显示到stdout，但是使用重定向，可以把数据输入到文件，若没有文件就创建那个文件，然后输入。
 	- vim #Linux/常用命令
 - 查找文件 #Linux/常用命令 #Linux/搜索
-  collapsed:: true
 	- ## 1.which
+	  collapsed:: true
 		- `which - locate a command`
 			- 查找可执行程序，通过PATH环境变量查找命令的具体位置
 				- 当你执行一个可执行程序，然后不知道是哪个版本时，可以which
 			- `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/l`
 				- env打开环境变量，运行一个命令时，OS就从环境变量的PATH一个一个路径的找命令，没找到就报错了，找到就执行。
 	- ## 2.find
+	  collapsed:: true
 		- `find - search for files in a directory hierarchy`
 			- 在某个目录的层次结构中去查找文件（子目录都要查）
 				- 相当于在win的文件管理器里面，在某个具体文件路径下搜索。
@@ -405,13 +404,16 @@
 - 查看文件内容 #Linux/常用命令
   collapsed:: true
 	- ## 1.cat #Linux/常用命令
+	  collapsed:: true
 		- `cat - concatenate files and print on the standard output`
 			- 将文件流拼接到stdout末尾。会显示全部
 	- ## 2.more 和 less #Linux/常用命令
+	  collapsed:: true
 		- 分页浏览。
 		- q：quit。
 		- `more/less 文件`
 	- ## 3.head #Linux/常用命令
+	  collapsed:: true
 		- `head - output the first part of files`
 			- 显示文件开头，默认显示10行
 		- `$ head xx.txt -n 20`
@@ -477,4 +479,45 @@
 		- cmd1 |xargs cmd2
 			- 会把cmd1的结果的每一行作为cmd2的参数去使用
 	- **小结：**查看文件内容、搜索文件内容时会使用正则，其他时候一般是通配符
+- objdump #Linux/常用命令
+  collapsed:: true
+	- `objdump -x xxx`可以查看所有信息
+	- `objdump -x xxx | grep NEEDED`可以查看依赖那些库
+	- ```
+	  release git:(am62a_sdk_9.2) objdump -x liblane_perception.so | grep NEEDED
+	  NEEDED               liblane_fusion.so
+	  NEEDED               libperception_common.so
+	  NEEDED               libopencv_highgui.so.3.4
+	  NEEDED               libopencv_imgcodecs.so.3.4
+	  NEEDED               libopencv_imgproc.so.3.4
+	  NEEDED               libopencv_core.so.3.4
+	  NEEDED               libstdc++.so.6
+	  NEEDED               libm.so.6
+	  NEEDED               libgcc_s.so.1
+	  NEEDED               libc.so.6
+	  ```
+- nm #Linux/常用命令
+  collapsed:: true
+	- `nm -D xx | c++filt | grep funcnamexxx`可以查看是否使用了funcnamexxx函数符号。
+	  可以不要c++flit
+- strings #Linux/常用命令
+  collapsed:: true
+	- `strings` 是一个在Unix和类Unix系统（如Linux）中常用的命令行工具，用于从二进制文件（如可执行文件、库文件、目标文件等）中提取可打印的字符串。这些字符串通常是程序中的文本字符串、变量名、函数名等。
+	- ```cpp
+	  release git:(am62a_sdk_9.2) strings liblane_perception.so|grep RunOnce   
+	  _ZN18nullmax_perception15GrdSignDetector7RunOnceEjRKSt6vectorINS_14FeatureMapInfoESaIS2_EERS1_INS_6SplineESaIS7_EE
+	  _ZN18nullmax_perception11LaneDecoder7RunOnceEjRKSt6vectorINS_14FeatureMapInfoESaIS2_EERNS_13DetectedLanesERNS_12ACTIVE_SCENEE
+	  _ZN18nullmax_perception13LaneDetection7RunOnceEj
+	  _ZN18nullmax_perception12LaneDetector7RunOnceEjRKSt6vectorINS_14FeatureMapInfoESaIS2_EERNS_13DetectedLanesERKNS_12ACTIVE_SCENEE
+	  _ZGVZN18nullmax_perception15GrdSignDetector7RunOnceEjRKSt6vectorINS_14FeatureMapInfoESaIS2_EERS1_INS_6SplineESaIS7_EEE24egoleftguidelane_history
+	  _ZZN18nullmax_perception15GrdSignDetector7RunOnceEjRKSt6vectorINS_14FeatureMapInfoESaIS2_EERS1_INS_6SplineESaIS7_EEE24egoleftguidelane_history
+	  _ZGVZN18nullmax_perception15GrdSignDetector7RunOnceEjRKSt6vectorINS_14FeatureMapInfoESaIS2_EERS1_INS_6SplineESaIS7_EEE25egorightguidelane_history
+	  _ZZN18nullmax_perception15GrdSignDetector7RunOnceEjRKSt6vectorINS_14FeatureMapInfoESaIS2_EERS1_INS_6SplineESaIS7_EEE25egorightguidelane_history
+	  _ZZN18nullmax_perception15GrdSignDetector7RunOnceEjRKSt6vectorINS_14FeatureMapInfoESaIS2_EERS1_INS_6SplineESaIS7_EEE10egoleftsum
+	  _ZZN18nullmax_perception15GrdSignDetector7RunOnceEjRKSt6vectorINS_14FeatureMapInfoESaIS2_EERS1_INS_6SplineESaIS7_EEE11egorightsum
+	  _ZN18nullmax_perception11LaneDecoder7RunOnceEjRKSt6vectorINS_14FeatureMapInfoESaIS2_EERNS_13DetectedLanesERNS_12ACTIVE_SCENEE
+	  _ZN18nullmax_perception12LaneDetector7RunOnceEjRKSt6vectorINS_14FeatureMapInfoESaIS2_EERNS_13DetectedLanesERKNS_12ACTIVE_SCENEE
+	  _ZN18nullmax_perception15GrdSignDetector7RunOnceEjRKSt6vectorINS_14FeatureMapInfoESaIS2_EERS1_INS_6SplineESaIS7_EE
+	  _ZN18nullmax_perception13LaneDetection7RunOnceEj
+	  ```
 -
