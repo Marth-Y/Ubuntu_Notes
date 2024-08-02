@@ -297,4 +297,7 @@
  ;;     ;parse `.` in file name as slash `/` in page title
  :file/name-format :triple-lowbar
  :ui/show-brackets? true
+ :feature/enable-whiteboards? true
+ :feature/enable-journals? true
+ :default-home {}
  }

@@ -1,5 +1,4 @@
 - VIM（编辑文件内容） #vim
-  collapsed:: true
 	- 编辑器
 		- 所见即所得：word、markdown、notepad...
 		- 命令编辑器：vim，emacs
