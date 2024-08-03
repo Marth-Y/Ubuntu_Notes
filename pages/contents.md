@@ -4,6 +4,8 @@
 		- [[python/循环]]
 		- [[pandas]]
 		- [[numpy]]
+		- [[scipy]]
+		- [[plot]]
 	- 阅读
 	  collapsed:: true
 		- [[Reading/第二大脑]]
@@ -73,6 +75,7 @@
 		- [[CPP/cmake]]
 	- [[vim]]
 		- [[astronvim]]
+		  collapsed:: true
 	- [[Git]]
 	  collapsed:: true
 		- [[00.Git入门]]
