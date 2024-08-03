@@ -1,8 +1,9 @@
 - [[账单]]
 - 项目：
 	- Python
-	  collapsed:: true
 		- [[python/循环]]
+		- [[pandas]]
+		- [[numpy]]
 	- 阅读
 	  collapsed:: true
 		- [[Reading/第二大脑]]
@@ -72,8 +73,10 @@
 		- [[CPP/cmake]]
 	- [[vim]]
 	- [[Git]]
+	  collapsed:: true
 		- [[00.Git入门]]
 		- [[01.Git进阶]]
+	- [[深度学习]]
 - 智慧：
 - 备忘：深度学习 10月前
 - [[TODO]]
