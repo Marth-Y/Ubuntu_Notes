@@ -1,7 +1,7 @@
 - 取随机值 #numpy
-  collapsed:: true
 	- 我的理解：不同的随机数种子对应了一组固定的伪随机数，这样是为了可重复实验。使得数据是随机的，但是是可复现的。
 	- 可以设置随机数种子，以取不同的随机数序列。
+	- `randn`只能生成整型数值
 	- ```python
 	  N = 1000000
 	  for r in np.random.rand(N):
@@ -75,7 +75,6 @@
 	  numpy.linspace(start, stop, num=50, endpoint=True, retstep=False, dtype=None, axis=0)
 	  ```
 - 等差数列 #numpy
-  collapsed:: true
 	- ```python
 	  numpy.arange([start, ]stop, [step, ]dtype=None) # 用于生成一个等差数列
 	  ```
@@ -83,5 +82,4 @@
 	- `stop`：序列的结束值（不包含在序列中）。
 	- `step`（可选）：序列的步长（即相邻两个值之间的差）。默认为 1。
 	- `dtype`（可选）：输出的数据类型。如果没有指定，则从输入参数推断数据类型。
--
 -

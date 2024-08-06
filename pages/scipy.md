@@ -22,9 +22,20 @@
 		  cdf_value = dist.cdf(x)
 		  print(f"CDF at x={x}: {cdf_value}")
 		  ```
-	- 生成随机变量
+	- 生成n个随机变量
 		- ```python
 		  random_samples = dist.rvs(size=10)
 		  print(f"Random samples: {random_samples}")
 		  ```
+- 描述一个概率分布的形状 #scipy
+	- `scipy.stats.describe(zs)`
+	- ```python
+	  DescribeResult(nobs=5000, minmax=(-0.19143741858944452, 20.804030812682086), mean=9.996901102331591, variance=2.7388116003856884, skewness=0.015276194207011526, kurtosis=1.622567142788295)
+	  ```
+	- `nobs`：数据集中的观测数（样本大小）。
+	- `minmax`：数据集的最小值和最大值。
+	- `mean`：数据集的算术平均值。
+	- `variance`：数据集的方差，衡量数据的离散程度。
+	- `skewness`：数据集的偏度，衡量数据分布的不对称性。
+	- `kurtosis`：数据集的峰度，衡量数据分布的尖锐程度。
 -

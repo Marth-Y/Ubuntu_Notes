@@ -1,6 +1,7 @@
 - [[账单]]
 - 项目：
 	- Python
+	  collapsed:: true
 		- [[python/循环]]
 		- [[pandas]]
 		- [[numpy]]
@@ -87,7 +88,6 @@
   collapsed:: true
 	- 深度学习
 - Work
-  collapsed:: true
 	- [目前各项目分支情况](https://yhikd4my59.feishu.cn/base/X8wgbjEDfauGC9sDaADc601vnmc?table=tblTCF9yaZhiN2fO&view=vewXZ397yV)
 	- [[c1200]]
 	- [[BTL]]
