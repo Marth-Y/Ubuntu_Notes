@@ -1,5 +1,6 @@
 - [[账单]]
 - 项目：
+  collapsed:: true
 	- Python
 	  collapsed:: true
 		- [[python/循环]]
@@ -87,12 +88,16 @@
 - [[TODO]]
   collapsed:: true
 	- 深度学习
-- Work
+	- 1.卡尔曼滤波
+	- 2.深度学习
+	- 2.回顾所有代码
+- [[Work]]
 	- [目前各项目分支情况](https://yhikd4my59.feishu.cn/base/X8wgbjEDfauGC9sDaADc601vnmc?table=tblTCF9yaZhiN2fO&view=vewXZ397yV)
 	- [[c1200]]
 	- [[BTL]]
 	- [[am62a]]
 	- [[旋转矩阵]]
-	-
+	- [[杂项记录]]
+		- traits部分
 -
 -
