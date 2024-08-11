@@ -1,4 +1,8 @@
-- 0730状态：车道线重新标定，[外参文件](https://yhikd4my59.feishu.cn/docx/RLBMdemF9olglxx7bc4ce2RLnVc)
-	- ~~车道线异常，障碍物不显示。~~路面模糊导致
+- BTL状态 #各项目状态
+	- 0730：车道线重新标定，[外参文件](https://yhikd4my59.feishu.cn/docx/RLBMdemF9olglxx7bc4ce2RLnVc)
+		- ~~车道线异常，障碍物不显示。~~路面模糊导致
 	- X86回放无法跑通，结果异常。
+	- 0811：车道线表现正常，但是BTL规控画龙。目前感觉是BTL规控问题。
+-
+-
 -
