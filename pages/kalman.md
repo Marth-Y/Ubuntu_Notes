@@ -1,0 +1,4 @@
+- > Where do the names `z`, `P`, `Q`, and `R` come from? You will see them used in the rest of this book. In the literature $R$ is nearly universally used for the measurement noise, $Q$ for the process noise and $P$ for the variance of the state. Using $z$ for the measurement is common, albeit not universal. Almost every book and paper you read will use these variable names. Get used to them.
+- `z`, `P`, `Q`, and `R`分别代表什么意思？$R$是测量值的噪声(方差)。$Q$是过程噪声，$P$是状态方差，$z$是测量值。
+-
+-
