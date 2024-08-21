@@ -26,5 +26,12 @@
 - todo
   collapsed:: true
 	- DONE cutin时删除cutin范围外的点，避免模型脑补不好对pitch、后处理造成影响。
+	- 当前版本odom有重复问题 0813 讨论下来可能是发送频率问题。目前已修复在测试中
+	- 0811 长城车623相机完成标定。
+	- 0812：怀疑是平台pililinenum导致的。改为2测试
+	- 0815 TCL车回上海可用
+- todo
+  collapsed:: true
+	- DONE cutin时删除cutin范围外的点，避免模型脑补不好对pitch、后处理造成影响。已出包
 	  id:: 66b851a5-207e-4112-aaf6-154083484bff
 -

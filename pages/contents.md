@@ -1,7 +1,6 @@
 - 项目：
   collapsed:: true
 	- Python
-	  collapsed:: true
 		- [[python/循环]]
 		- [[pandas]]
 		- [[numpy]]
@@ -84,7 +83,6 @@
 - 备忘：深度学习 10月前
 - [[TODO]]
   collapsed:: true
-	- 深度学习
 	- 1.卡尔曼滤波
 	- 2.深度学习
 	- 2.回顾所有代码
@@ -105,3 +103,6 @@
 	  CLOCK: [2024-08-20 Tue 15:24:40]--[2024-08-21 Wed 10:48:00] =>  19:23:20
 	  :END:
 		- TODO 添加cutin距离本地测试代码直接从bag获取
+-
+		- [[kalman]]
+-
