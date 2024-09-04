@@ -1,0 +1,25 @@
+{:blocks (
+{:block/content "/media/ubuntu/c7739f82-0b29-44f6-b9b7-86df5af1c8ce/user/01.My_Dir/My_Note_CPP/My_Work/Excalidraw/code.excalidraw.md"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "66d6da0d-dd64-4f43-8e86-98e486726c76"}
+:block/parent 
+{:block/uuid #uuid "66d6da0d-dd64-4f43-8e86-98e486726c76"}
+:block/uuid #uuid "66d6dac9-d7b8-4007-830c-7e7c19d3d793"})
+:pages (
+{:block/uuid #uuid "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:block/properties 
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:name "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:bindings 
+{}
+:nonce 1
+:assets []
+:shapes-index ()}}
+:block/updated-at 1725356748249
+:block/created-at 1725356557115
+:block/type "whiteboard"
+:block/name "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:block/original-name "66d6da0d-dd64-4f43-8e86-98e486726c76"})}

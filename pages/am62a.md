@@ -7,7 +7,7 @@
 	- perception x86回放情况:
 		- 后处理已经更新到最新，并且更新了perception_version文件
 		- 模型用的：
-			- ![image.png](../assets/image_1724738342989_0.png)
+			- `0813_upsample_bilinear_32.onnx`。文彧0827给我的
 	- 0809版本 + V18 ISP
 	  collapsed:: true
 		- 速度高于85kph直道轻微画龙，入弯、弯道中、出弯画龙。
@@ -30,7 +30,10 @@
 	- 0823：
 		- 文智加了峰值耗时优化，针对很长的线做限制，有空我可以看看是否真的是直道导致的800m长的线
 		- 关闭了valid筛选线，让far的线用起来。但是我用的一个临时的commit,注释掉那三行代码。
+	- 0902：大家一心扑在吉利演示上
+	- 0904：最新状态：车在宁波跑吉利演示路段，只有一个左侧缺失车道线的S弯道可能降级过不去。0903文彧已经出了一版优化，待测试。
 - am62a实验根据前车删除点的分支:am62a_dev_9.2_delete_far、am62a_cutin_delete_far
+	- 实验下来效果不好
 - todo
   collapsed:: true
 	- DONE cutin时删除cutin范围外的点，避免模型脑补不好对pitch、后处理造成影响。
