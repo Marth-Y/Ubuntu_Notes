@@ -24,7 +24,6 @@
 	  collapsed:: true
 		- [[拉伸]]
 - 领域知识：
-  collapsed:: true
 	- Linux
 		- [[Linux/搜索]]
 		- [[Linux/目录]]
@@ -42,14 +41,12 @@
 		- [[CPP/catch]]
 		- [[文件操作]]
 		- STL
-		  collapsed:: true
 			- [[CPP/STL/parser]]
 			- [[CPP/STL/fstream]]
-			  collapsed:: true
 			- [[CPP/STL/vector]]
 			- [[CPP/STL/仿函数]]
+			- [[CPP/STL/iterator]]
 		- C/C++语言知识点
-		  collapsed:: true
 			- [[define]]
 			- [[const]]
 			- [[enum]]
@@ -64,8 +61,8 @@
 			- [[进程]]
 			- [[动态库]]
 			- [[mutable]]
+			- [[restrict]]
 		- 阅读
-		  collapsed:: true
 			- [[EffectiveC++]]
 		- [[C]]
 		- [[构造]]
@@ -96,15 +93,11 @@
 	- [[c1200]]
 	- [[高通]]
 	- [[valeo戴高乐]]
+	- [[a1000]]
 	- [[各项目状态]]
 	- 知识
 		- [[旋转矩阵]]
 		- [[杂项记录]] --traits
 		- [[kalman]]
 		- [[验证odom是否精确]]
-	- DONE pb回放中有-1值，会在后面把线删掉，需要修复。已修复
-	- DONE cutin代码
-	  :LOGBOOK:
-	  CLOCK: [2024-08-20 Tue 15:24:40]--[2024-08-21 Wed 10:48:00] =>  19:23:20
-	  :END:
-		- TODO 添加cutin距离本地测试代码直接从bag获取
+-

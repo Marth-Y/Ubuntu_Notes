@@ -5,7 +5,58 @@
 {:block/uuid #uuid "66d6da0d-dd64-4f43-8e86-98e486726c76"}
 :block/parent 
 {:block/uuid #uuid "66d6da0d-dd64-4f43-8e86-98e486726c76"}
-:block/uuid #uuid "66d6dac9-d7b8-4007-830c-7e7c19d3d793"})
+:block/uuid #uuid "66d6dac9-d7b8-4007-830c-7e7c19d3d793"} 
+{:block/created-at 1725607492004
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:borderRadius 2
+:index 0
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "box"
+:size [56 40]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:label "x"
+:id "0835f850-6c21-11ef-b99a-db9930dc18a2"
+:fontWeight 400
+:noFill false
+:point [328 16]
+:fontSize 20
+:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:nonce 1725607460007
+:italic false}}
+:block/updated-at 1725607492004} 
+{:block/created-at 1725607500454
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:borderRadius 2
+:index 1
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "box"
+:size [56 40]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:label "vec"
+:id "0b4d4a70-6c21-11ef-b99a-db9930dc18a2"
+:fontWeight 400
+:noFill false
+:isLocked false
+:point [384 16]
+:fontSize 20
+:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:nonce 1725607460075
+:italic false}}
+:block/updated-at 1725607500454})
 :pages (
 {:block/uuid #uuid "66d6da0d-dd64-4f43-8e86-98e486726c76"
 :block/properties 
@@ -17,8 +68,8 @@
 {}
 :nonce 1
 :assets []
-:shapes-index ()}}
-:block/updated-at 1725356748249
+:shapes-index ("0835f850-6c21-11ef-b99a-db9930dc18a2" "0b4d4a70-6c21-11ef-b99a-db9930dc18a2")}}
+:block/updated-at 1725607500454
 :block/created-at 1725356557115
 :block/type "whiteboard"
 :block/name "66d6da0d-dd64-4f43-8e86-98e486726c76"
