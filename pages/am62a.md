@@ -42,7 +42,7 @@
 		  background-color:: blue
 	- 车道线目前为0828版本：关闭了pitch滤波、关闭了valid
 	  background-color:: red
-	- 0911版本：添加了文智的pitch优化、修改了单线pitch，cutin获取的距离为25m.
+	- 0911版本：添加了文智的pitch优化、修改了单线pitch，cutin获取的距离为25m.后续回退到0904状态了，没有文智的优化。
 - am62a实验根据前车删除点的分支:am62a_dev_9.2_delete_far、am62a_cutin_delete_far
 	- 实验下来效果不好
 - todo
