@@ -8,7 +8,6 @@
 		- [[scipy]]
 		- [[plot]]
 	- 阅读
-	  collapsed:: true
 		- [[Reading/第二大脑]]
 	- 第二大脑实践
 	  collapsed:: true
