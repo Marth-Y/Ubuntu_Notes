@@ -8,6 +8,7 @@
 		- [[scipy]]
 		- [[plot]]
 	- 阅读
+	  collapsed:: true
 		- [[Reading/第二大脑]]
 	- 第二大脑实践
 	  collapsed:: true
@@ -93,6 +94,7 @@
 	- [[高通]]
 	- [[valeo戴高乐]]
 	- [[a1000]]
+	- [[Hirain]]
 	- [[各项目状态]]
 	- 知识
 		- [[旋转矩阵]]
