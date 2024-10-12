@@ -8,10 +8,9 @@
 		- [[scipy]]
 		- [[plot]]
 	- 阅读
-	  collapsed:: true
 		- [[Reading/第二大脑]]
+		- [[Reading/深度学习详解]]
 	- 第二大脑实践
-	  collapsed:: true
 		- [[分类]]
 	- Linux
 	  collapsed:: true
