@@ -1,0 +1,5 @@
+- 设置编译器类型：
+	- `ctrl+p`后输入`>C/C++配置`
+		- ![image.png](../assets/image_1726146732870_0.png)
+		- ![image.png](../assets/image_1726146885362_0.png)
+	- 这样就可以选择想要的编译器
