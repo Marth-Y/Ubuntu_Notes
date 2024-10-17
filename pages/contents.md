@@ -23,6 +23,7 @@
 	  collapsed:: true
 		- [[拉伸]]
 - 领域知识：
+  collapsed:: true
 	- Linux
 		- [[Linux/搜索]]
 		- [[Linux/目录]]
@@ -78,7 +79,9 @@
 		- [[01.Git进阶]]
 	- [[深度学习]]
 - 智慧：
-- 备忘：深度学习 10月前
+- 备忘：
+	- 深度学习 10月前
+	- wukong上面发送后视车道线时参数没有取反
 - [[TODO]]
   collapsed:: true
 	- 1.卡尔曼滤波
