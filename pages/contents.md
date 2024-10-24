@@ -1,9 +1,9 @@
 - 项目：
-  collapsed:: true
 	- Python
 	  collapsed:: true
 		- [[python/循环]]
 		- [[pandas]]
+		  collapsed:: true
 		- [[numpy]]
 		- [[scipy]]
 		- [[plot]]
@@ -11,6 +11,7 @@
 	  collapsed:: true
 		- [[Reading/第二大脑]]
 		- [[Reading/深度学习详解]]
+		  collapsed:: true
 	- 第二大脑实践
 		- [[分类]]
 	- Linux
@@ -26,6 +27,7 @@
 - 领域知识：
   collapsed:: true
 	- Linux
+	  collapsed:: true
 		- [[Linux/搜索]]
 		- [[Linux/目录]]
 		- [[Linux/系统]]
@@ -35,6 +37,7 @@
 			- [[Linux/文件系统/目录操作]]
 		- [[Linux/用户系统]]
 	- CPP
+	  collapsed:: true
 		- [[CPP/智能指针]]
 		- [[CPP/STL]]
 		- [[CPP/newdelete]]
@@ -42,8 +45,10 @@
 		- [[CPP/catch]]
 		- [[文件操作]]
 		- STL
+		  collapsed:: true
 			- [[CPP/STL/parser]]
 			- [[CPP/STL/fstream]]
+			  collapsed:: true
 			- [[CPP/STL/vector]]
 			- [[CPP/STL/仿函数]]
 			- [[CPP/STL/iterator]]
@@ -63,6 +68,7 @@
 			- [[动态库]]
 			- [[mutable]]
 			- [[restrict]]
+			  collapsed:: true
 		- 阅读
 			- [[EffectiveC++]]
 		- [[C]]
@@ -80,6 +86,7 @@
 		- [[01.Git进阶]]
 	- [[深度学习]]
 	- [[VSCode]]
+	- [[Eigen]]
 - 智慧：
 - 备忘：
 	- 深度学习 10月前
