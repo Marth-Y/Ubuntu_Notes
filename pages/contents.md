@@ -89,13 +89,14 @@
 	- [[Eigen]]
 - 智慧：
 - 备忘：
-	- 深度学习 10月前
+  collapsed:: true
 	- wukong上面发送后视车道线时参数没有取反
 - [[TODO]]
-  collapsed:: true
-	- 1.卡尔曼滤波
-	- 2.深度学习
-	- 2.回顾所有代码
+	- 1. 卡尔曼滤波
+	- 2. 深度学习 DONE
+	- 3. 回顾所有代码
+	- 4. STL--vector、list、迭代器设计、construct、uninitialize等，能编译通过
+	- 5. 研究下M55 perf，平台上怎么用的
 - [[Work]]
 	- [目前各项目分支情况](https://yhikd4my59.feishu.cn/base/X8wgbjEDfauGC9sDaADc601vnmc?table=tblTCF9yaZhiN2fO&view=vewXZ397yV)
 	- [当前各项目S级问题](https://yhikd4my59.feishu.cn/wiki/VKcKwbEosiCDYDk0l64cVMhHnrd)
