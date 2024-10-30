@@ -46,16 +46,15 @@
 - am62a实验根据前车删除点的分支:am62a_dev_9.2_delete_far、am62a_cutin_delete_far
 	- 实验下来效果不好
 - todo
-  collapsed:: true
 	- DONE cutin时删除cutin范围外的点，避免模型脑补不好对pitch、后处理造成影响。
 	- 当前版本odom有重复问题 0813 讨论下来可能是发送频率问题。目前已修复在测试中
 	- 0811 长城车623相机完成标定。
 	- 0812：怀疑是平台pililinenum导致的。改为2测试
 	- 0815 TCL车回上海可用
-	- TODO 需要将`am62a_0618`分支的修改合到`am62a_sdk_9.2`
+	- DONE 需要将`am62a_0618`分支的修改合到`am62a_sdk_9.2`
 	  background-color:: red
 - todo
 	- DONE cutin时删除cutin范围外的点，避免模型脑补不好对pitch、后处理造成影响。已出包
 	  id:: 66b851a5-207e-4112-aaf6-154083484bff
-	- TODO pitch估计代码
+	- DONE pitch估计代码
 -

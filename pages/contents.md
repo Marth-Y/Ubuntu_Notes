@@ -95,8 +95,10 @@
 	- 1. 卡尔曼滤波
 	- 2. 深度学习 DONE
 	- 3. 回顾所有代码
-	- 4. STL--vector、list、迭代器设计、construct、uninitialize等，能编译通过
-	- 5. 研究下M55 perf，平台上怎么用的
+	- TODO STL--vector、list、迭代器设计、construct、uninitialize等，能编译通过
+	- DONE 研究下M55 perf，平台上怎么用的
+	  collapsed:: true
+		- 看完了，他们是用一个宏控制平台内计时代码统计耗时，然后去分析的
 - [[Work]]
 	- [目前各项目分支情况](https://yhikd4my59.feishu.cn/base/X8wgbjEDfauGC9sDaADc601vnmc?table=tblTCF9yaZhiN2fO&view=vewXZ397yV)
 	- [当前各项目S级问题](https://yhikd4my59.feishu.cn/wiki/VKcKwbEosiCDYDk0l64cVMhHnrd)
