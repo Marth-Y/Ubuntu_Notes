@@ -78,6 +78,7 @@
 		- [[虚函数]]
 		- [[多态]]
 		- [[CPP/cmake]]
+		- [[内存池]]
 	- [[vim]]
 		- [[astronvim]]
 		  collapsed:: true
