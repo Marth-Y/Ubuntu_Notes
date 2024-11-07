@@ -1,5 +1,4 @@
 - 项目：
-  collapsed:: true
 	- Python
 	  collapsed:: true
 		- [[python/循环]]
@@ -15,6 +14,7 @@
 		  collapsed:: true
 		- [[Reading/STL源码剖析]]
 	- 第二大脑实践
+	  collapsed:: true
 		- [[分类]]
 	- Linux
 	  collapsed:: true
@@ -23,6 +23,7 @@
 	  collapsed:: true
 		- [[项目/协程]]
 	- Raft
+	- [[Tensorrt]]
 	- [[健身]]
 	  collapsed:: true
 		- [[拉伸]]
@@ -39,6 +40,7 @@
 			- [[Linux/文件系统/目录操作]]
 		- [[Linux/用户系统]]
 	- CPP
+	  collapsed:: true
 		- [[CPP/智能指针]]
 		- [[CPP/STL]]
 		- [[CPP/newdelete]]
