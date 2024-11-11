@@ -166,7 +166,12 @@ background-color:: yellow
 		  ```
 - # cuda ERROR Handle #cuda
 	-
--
+- # Nsight system and compute——cuda性能分析
+	- ## 安装
+		- 直接搜索`Nsight system download`和`Nsight compute download`即可
+			- [Nsight Systems - Get Started | NVIDIA Developer](https://developer.nvidia.com/nsight-systems/get-started)
+			- [Getting Started with Nsight Compute | NVIDIA Developer](https://developer.nvidia.com/tools-overview/nsight-compute/get-started)
+		-
 -
 -
 -
