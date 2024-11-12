@@ -16,22 +16,23 @@
                 "file": "pages/nodejs配置.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "nodejs配置"
             }
           },
           {
             "id": "98cba0db889d56e8",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "文件上传下载计划.canvas",
-                "viewState": {
-                  "x": -149.5,
-                  "y": 118.5,
-                  "zoom": 0
-                }
-              }
+                "file": "pages/a1000.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "a1000"
             }
           }
         ],
@@ -55,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
@@ -64,13 +67,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Git",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
@@ -78,7 +83,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -101,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "文件上传下载计划.canvas",
+                "file": "pages/a1000.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +116,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "a1000 的反向链接列表"
             }
           },
           {
@@ -118,10 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "文件上传下载计划.canvas",
+                "file": "pages/a1000.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "a1000 的出链列表"
             }
           },
           {
@@ -132,7 +143,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
@@ -141,8 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文件上传下载计划.canvas"
-              }
+                "file": "pages/a1000.md"
+              },
+              "icon": "lucide-list",
+              "title": "a1000 的大纲"
             }
           }
         ]
@@ -165,9 +180,18 @@
   },
   "active": "98cba0db889d56e8",
   "lastOpenFiles": [
+    "pages/项目___Linux.md",
+    "pages/项目___协程.md",
+    "pages/00.Git入门.md",
+    "assets/007944_1723019908441_0.png",
+    "assets/1730986745889_1730986753246_0.png",
+    "assets/image_1704207566308_0.png",
+    "assets/image_1708526286925_0.png",
+    "assets/image_1708526303571_0.png",
+    "assets/image_1708526330353_0.png",
+    "Excalidraw/Drawing 2024-01-06 13.45.07.excalidraw.md",
     "pages/设想的文件上传下载系统.md",
     "文件上传下载计划.canvas",
-    "Excalidraw/Drawing 2024-01-06 13.45.07.excalidraw.md",
     "Excalidraw",
     "pages/nodejs配置.md",
     "pages/00.Python---循环.md",
