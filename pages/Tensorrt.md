@@ -1,4 +1,5 @@
 # CPU与GPU对比
+collapsed:: true
 	- ## 关键字
 		- `ltency` #card
 		  card-last-score:: 3
@@ -113,7 +114,9 @@
 	- 创建`dockerfile`
 	  logseq.order-list-type:: number
 - # cuda basic #cuda
+  collapsed:: true
 	- ## grid block thrad逻辑结构（内存模型）
+	  collapsed:: true
 		- ![image.png](../assets/image_1731078953859_0.png){:height 655, :width 1188}
 		- 逻辑结构如左图所示(并不对应具体的硬件设计)，存储结构如右图所示
 		- 左图解释：
@@ -131,50 +134,8 @@
 				- 线程块共享内存(~5周期)
 				- Grid全局内存(~500周期)
 				- Grid常量内存(~5周期)
-		- ### cuda中的共享内存
-			- 概念：一种特殊类型的内存，其内容在源代码中被显式声明和使用
-				- 位于处理器中
-				- 以更高的速度访问(延迟&吞吐)
-				- 仍然被内存访问指令访问
-				- 在计算机体系结构中通常称为暂存存储器
-			- 共享内存特点
-				- 读取速度等同于缓存，在很多显卡上，缓存和共享内存使用的是同一块硬件，并且可以配置大小
-				- 共享内存属于线程块block，可以被一个block内的所有线程访问
-				- 共享内存的两种申请空间方式，静态申请和动态申请
-				- 共享内存的大小只有几十K，过度使用共享内存会降低程序的并行性
-					- 共享内存的大小有限，过度使用共享内存相当于过度频繁读写共享内存，过度频繁读写使得有些线程要排队，并行变串行，效率大幅降低
-			- 使用方法
-				- 申请
-					- `__share__`关键字
-					- 静态申请：申请时就指定大小
-						- ```cpp
-						  __share__ int s[64]; // 申请时指定大小
-						  ```
-					- 动态申请：申请时不指定大小，调用时才定义
-						- ```cpp
-						  extern __shared__ int s[];// 为了区别静态申请，需要加上exctern关键字。告诉编译器
-						  // 那么需要分配的共享内存的大小就需要在调用核函数的时候明确的指出了：
-						  dynamicReverse<<<1, n, n * sizeof(int)>>>; // n * sizeof(int) 的大小
-						  ```
-				- 使用
-					- 将每个线程从全局索引位置读取元素，将它存储到共享内存之中。
-					- 注意数据存在着交叉，应该将边界上的数据拷贝进来。
-					- 块内线程同步：`__syncthreads()`
-						- __syncthreads()将确保线程块中的每个线程都执行完`__syncthreads()` 前面的语句后，才会执行下一条语句。
-							- 所以在进行线程同步的时候不可以使用 if-else 等分支语句。
-								- ```cpp
-								  // 下面的代码可能会导致块中的线程无限期地等待对方， 
-								  // 因为块中的所有线程没有达到相同的障碍点
-								  if (threadID % 2 == 0) {
-								      __syncthreads();
-								  } else {
-								      __syncthreads();
-								  }
-								  ```
-						- `__syncthreads`用于协调同一块中线程间的通信。 当块中的某些线程访问共享内存或全 局内存中的同一地址时，会有潜在问题（写后读、 读后写、 写后写），这将导致在那些内存位置产生未定义的应用程序行为和未定义的状态。 可以通过利用冲突访问间的同步线程 来避免这种情况。
-						- 告诉其他线程我在这块进行了更改，不要出现时序上的错乱，如：读后写、写后写等
-						- 试想，一个block的所有线程都会操作同一个共享内存，达到数据共享的目的，那么其中一个对其有了操作，肯定要通知其他人进行同步，不要用旧的数据，不要用错了。类似git仓库的操作了，我push了一个代码，也得通知其他人pull到本地，不要用错了
 	- ## thread遍历，thread index计算
+	  collapsed:: true
 		- 整体思路都是按照z->y->x三个轴依次遍历。
 		- 三个轴的朝向如下所示
 		- ### block 中 thread 的遍历
@@ -212,27 +173,83 @@
 				- 图中红点的x坐标就是`blockIdx.x * blockDim.x + threadIdx.x`，y坐标就是`blockDim.y * blockIdx.y + threadIdx.y`
 				-
 	- ## 线程束(wrap)
+	  collapsed:: true
 		- SM采用的SIMT(Single-Instruction, Multiple-Thread，单指令多线程)架构，warp(线程束)是最基本的执行单元，一个warp包含32个并行thread，这些thread以不同数据资源执行相同的指令。warp本质上是线程在GPU上运行的最小单元。
 			- 单指令多线程，大白话就是一个线程束的线程执行的是同一条指令，只不过使用的数据不一样
 		- 当一个kernel被执行时，grid中的线程块被分配到SM上，一个线程块的thread只能在一个SM上调度，SM一般可以调度多个线程块，大量的thread可能被分到不同的SM上。每个thread拥有它自己的程序计数器和状态寄存器，并且用该线程自己的数据执行指令，这就是所谓的Single Instruction Multiple Thread(SIMT)。
 		- 由于warp的大小为32，所以block所含的thread的大小一般要设置为32的倍数。
 	- ## 硬件概念
+	  collapsed:: true
 		- ### SP
 			- cuda core也就是stream processor(SP)，是GPU最基本的处理单元。具体指令和任务都是在SP上处理的，GPU并行计算也就是很多SP同时处理，一个SP可以执行一个thread，但是实际上并不是所有的thread能够在同一时刻执行。这里我理解应该是以wrap为单位的并行。
 		- ### SM
 			- stream multiprocessor。SM包含SP和一起其他资源，一个SM可以包含多个SP。SM可以看作GPU的核心，GPU中每个SM都设计成支持数以百计的线程并行执行，并且每个GPU都包含了很多的SM，所以GPU支持成百上千的线程并行执行。大白话来理解就是SM相当于一个CPU包含了成百计的核，支持成百计的线程并行。
 			- ==一个SM在一个时刻只能处理一个block==
 	- ## CUDA中的内存模型分为以下几个层次：
+	  collapsed:: true
 		- 线程处理器（SP）对应线程（thread）
 		- 多核处理器（SM）对应线程块（thread block）
 		- 设备端（device）对应线程块组合体（grid）
 	- ## CPU与GPU同步的几种函数
+	  collapsed:: true
 		- ```cpp
 		      cudaDeviceSynchronize(); CPU与GPU端完成同步，CPU不执行之后的语句，直到这个语句以前的所有cuda操作结束
 		      cudaStreamSynchronize(); 与cudaDeviceSynchronize类似，但是这个是针对某一个stream的，只同步指定stream中的cpu/gpu，其他的不管
 		      cudaThreadSynchronize(); 现在已经不推荐使用的方法
 		      __syncthreads();         线程块内同步
 		  ```
+	- ## 共享内存
+	  collapsed:: true
+		- 我们一般在`cudaMalloc`时都是在global memory上进行访问的
+		- ![image.png](../assets/image_1731458259648_0.png)
+		- ![image.png](../assets/image_1731458276849_0.png)
+		- `on-chip`:芯片上。`off-chip`芯片外
+		- `texture memory`也有一个texture cache，在上右图底部Tex，是on-chip的，比global memory、texture memory快
+		-
+		- 概念：一种特殊类型的内存，其内容在源代码中被显式声明和使用
+			- 位于处理器中
+			- 以更高的速度访问(延迟&吞吐)
+			- 仍然被内存访问指令访问
+			- 在计算机体系结构中通常称为暂存存储器
+		- 共享内存特点
+			- 读取速度等同于缓存，在很多显卡上，缓存和共享内存使用的是同一块硬件，并且可以配置大小
+			- 共享内存属于线程块block，可以被一个block内的所有线程访问
+			- 共享内存的两种申请空间方式，静态申请和动态申请
+			- 共享内存的大小只有几十K，过度使用共享内存会降低程序的并行性
+				- 共享内存的大小有限，过度使用共享内存相当于过度频繁读写共享内存，过度频繁读写使得有些线程要排队，并行变串行，效率大幅降低
+		- 使用方法
+			- 申请
+				- `__shared__`关键字
+				- 静态申请：申请时就指定大小
+					- ```cpp
+					  __shared__ int s[64]; // 申请时指定大小
+					  ```
+				- 动态申请：申请时不指定大小，调用时才定义
+					- ```cpp
+					  extern __shared__ int s[];// 为了区别静态申请，需要加上exctern关键字。告诉编译器
+					  // 那么需要分配的共享内存的大小就需要在调用核函数的时候明确的指出了：
+					  dynamicReverse<<<1, n, n * sizeof(int)>>>; // n * sizeof(int) 的大小
+					  ```
+			- 使用
+				- 将每个线程从全局索引位置读取元素，将它存储到共享内存之中。
+				- 注意数据存在着交叉，应该将边界上的数据拷贝进来。
+				- 块内线程同步：`__syncthreads()`
+					- __syncthreads()将确保线程块中的每个线程都执行完`__syncthreads()` 前面的语句后，才会执行下一条语句。
+						- 所以在进行线程同步的时候不可以使用 if-else 等分支语句。
+							- ```cpp
+							  // 下面的代码可能会导致块中的线程无限期地等待对方， 
+							  // 因为块中的所有线程没有达到相同的障碍点
+							  if (threadID % 2 == 0) {
+							      __syncthreads();
+							  } else {
+							      __syncthreads();
+							  }
+							  ```
+					- `__syncthreads`用于协调同一块中线程间的通信。 当块中的某些线程访问共享内存或全 局内存中的同一地址时，会有潜在问题（写后读、 读后写、 写后写），这将导致在那些内存位置产生未定义的应用程序行为和未定义的状态。 可以通过利用冲突访问间的同步线程 来避免这种情况。
+					- 告诉其他线程我在这块进行了更改，不要出现时序上的错乱，如：读后写、写后写等
+					- 试想，一个block的所有线程都会操作同一个共享内存，达到数据共享的目的，那么其中一个对其有了操作，肯定要通知其他人进行同步，不要用旧的数据，不要用错了。类似git仓库的操作了，我push了一个代码，也得通知其他人pull到本地，不要用错了
+		- ==使用思路==
+			- 思路上就是block中的第一个线程从global memory读取数据到共享内存后，在`_syncthreads`等待同步，其余线程后续读取该数据就会直接从`shared memory`读取了，不会再访问global memory，这就是速度提升的原因。
 - # cuda ERROR Handle #cuda
   collapsed:: true
 	-
