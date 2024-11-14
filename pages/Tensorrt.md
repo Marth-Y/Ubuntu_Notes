@@ -249,7 +249,7 @@ collapsed:: true
 					- 告诉其他线程我在这块进行了更改，不要出现时序上的错乱，如：读后写、写后写等
 					- 试想，一个block的所有线程都会操作同一个共享内存，达到数据共享的目的，那么其中一个对其有了操作，肯定要通知其他人进行同步，不要用旧的数据，不要用错了。类似git仓库的操作了，我push了一个代码，也得通知其他人pull到本地，不要用错了
 		- ==使用思路==
-			- 思路上就是block中的第一个线程从global memory读取数据到共享内存后，在`_syncthreads`等待同步，其余线程后续读取该数据就会直接从`shared memory`读取了，不会再访问global memory，这就是速度提升的原因。
+			- 思路上就是block中的先让所有线程一对一从global memory读取一个数据到共享内存后，在`_syncthreads`等待同步，其余线程后续读取该数据就会直接从`shared memory`读取了，不会再访问global memory，这就是速度提升的原因。
 - # cuda ERROR Handle #cuda
   collapsed:: true
 	-
