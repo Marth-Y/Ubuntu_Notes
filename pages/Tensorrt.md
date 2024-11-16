@@ -139,7 +139,6 @@ collapsed:: true
 		- 整体思路都是按照z->y->x三个轴依次遍历。
 		- 三个轴的朝向如下所示
 		- ### block 中 thread 的遍历
-		  collapsed:: true
 			- ![image.png](../assets/image_1731079740779_0.png)
 			- ```cpp
 			  __global__ void print_threadidx_in_block() {
@@ -150,7 +149,6 @@ collapsed:: true
 			  }
 			  ```
 		- ### grid 中 thread 的遍历
-		  collapsed:: true
 			- 思路：先计算对应于哪一个block，再用上述方式计算block中的索引，最后加上前面block的偏移
 			- ![image.png](../assets/image_1731079897277_0.png)
 			- ```cpp
@@ -191,13 +189,28 @@ collapsed:: true
 		- 多核处理器（SM）对应线程块（thread block）
 		- 设备端（device）对应线程块组合体（grid）
 	- ## CPU与GPU同步的几种函数
+	  id:: 672e2f6e-602d-4a35-aac4-7edf896c0af8
 	  collapsed:: true
-		- ```cpp
-		      cudaDeviceSynchronize(); CPU与GPU端完成同步，CPU不执行之后的语句，直到这个语句以前的所有cuda操作结束
-		      cudaStreamSynchronize(); 与cudaDeviceSynchronize类似，但是这个是针对某一个stream的，只同步指定stream中的cpu/gpu，其他的不管
-		      cudaThreadSynchronize(); 现在已经不推荐使用的方法
-		      __syncthreads();         线程块内同步
-		  ```
+		- `cudaDeviceSynchronize();`
+			- CPU与GPU端完成同步，CPU不执行之后的语句，直到这个语句以前的所有cuda操作结束
+		- `cudaStreamSynchronize(streamid);`
+			- >"Blocks host until all CUDA calls in streamid are complete"
+			- 与cudaDeviceSynchronize类似，但是这个是针对某一个stream的，只同步指定stream中的cpu/gpu，其他的不管。影响单个流和CPU，其他流不受影响
+		- `cudaThreadSynchronize();`
+			- 现在已经不推荐使用的方法
+		- Synchronize using Events
+			- Create specific `Events`, within streams, to use for synchronization
+			- `cudaEventRecord(event, streamid)`
+			- `cudaEventSynchronize(event)`
+			- `cudaStreamWaitEvent(stream, event)`
+			- `cudaEventQuery(event)`
+			- ==使用`cudaStreamWaitEvent`同步流——这是一个非常高级的用法，可以做到极细粒度的同步，但是几乎用不到==
+				- ![image.png](../assets/image_1731749064523_0.png)
+				- 绿色流1中插入event1后，在紫色流2中等待流1的event执行完，才执行后续操作。
+		- `cudaStreamQuery()`
+			- 查询一个流任务是否完成
+		- `__syncthreads();`
+			- 线程块内同步
 	- ## 共享内存
 	  collapsed:: true
 		- 我们一般在`cudaMalloc`时都是在global memory上进行访问的
@@ -250,6 +263,206 @@ collapsed:: true
 					- 试想，一个block的所有线程都会操作同一个共享内存，达到数据共享的目的，那么其中一个对其有了操作，肯定要通知其他人进行同步，不要用旧的数据，不要用错了。类似git仓库的操作了，我push了一个代码，也得通知其他人pull到本地，不要用错了
 		- ==使用思路==
 			- 思路上就是block中的先让所有线程一对一从global memory读取一个数据到共享内存后，在`_syncthreads`等待同步，其余线程后续读取该数据就会直接从`shared memory`读取了，不会再访问global memory，这就是速度提升的原因。
+	- ## bank confilict
+	  collapsed:: true
+		- 概念：一个wrap中的线程访问同一个bank中不同地址的数据
+		- bank是什么
+			- block按32分为多个wrap，由SM调度wrap同时执行一条指令。GPU为了实现对共享内存的高效读取，将shared memory访问地址也按32进行划分。这个32可以是32个4B或8B，称为bank。其后的字节重新映射到0~31的bank。
+		- 为什么会有bank confilict？
+			- [共享内存之bank冲突 - CUDA C/C++编程学习 - SegmentFault 思否](https://segmentfault.com/a/1190000007533157)
+			- [CUDA编程！深入剖析静态/动态共享内存与Bank Conflict（附源码）-CSDN博客](https://blog.csdn.net/CV_Autobot/article/details/134086660)
+			- [[nsight compute使用指南] 查看存储体冲突-CSDN博客](https://blog.csdn.net/fumingxiaoshen/article/details/141257748#:~:text=%E5%9C%A8Summary%E7%95%8C%E9%9D%A2%EF%BC%8C%E5%8F%8C%E5%87%BB%E5%87%BD%E6%95%B0%E5%90%8D%EF%BC%8C%E8%BF%9B%E5%85%A5Details%E7%95%8C%E9%9D%A2%20%E6%89%BE%E5%88%B0Memory%20Workload%20Analysis%E6%A0%8F%EF%BC%8C%E7%82%B9%E5%87%BB%E5%B7%A6%E8%BE%B9%E7%9A%84%E4%B8%89%E8%A7%92%E5%BD%A2%20%E5%9C%A8Memory,Chart%E7%9A%84%E4%B8%8B%E6%8B%89%E6%A1%86%E4%B8%AD%EF%BC%8C%E9%80%89%E4%B8%ADMemory%20Tables%20%E5%9C%A8Shared%20Tables%E8%A1%A8%E4%B8%8B%E7%9A%84Bank%20conflicts%E6%A0%8F%E4%B8%AD%EF%BC%8C%E5%8D%B3%E5%8F%AF%E5%BE%97%E5%88%B0%E5%AD%98%E5%82%A8%E4%BD%93%E5%86%B2%E7%AA%81%E7%9A%84%E6%95%B0%E9%87%8F%E3%80%82)
+			- 数据类型导致bank confilict
+				- 上述中介绍bank以4B或8B划分，如果是char、short等类型的数据，就会导致连续的数据存在同一个bank中，产生bank confilict
+			- 步长导致bank confilict
+				- 如32的方阵按列优先存储，那么按行访问的时候，一行的元素会映射到同一列的bank，访问时导致bank confilict
+		- 如何解决bank confilict？
+			- 加上pad
+			- 选择合适的数据类型
+			- 对矩阵行优先访问
+		- 示例：
+			- ```cpp
+			  #define BDIMX 32
+			  #define BDIMY 32
+			  
+			  // 1. st不冲突, ld冲突
+			  __global__ void half_conflict_transfer(float *in, float *out) {
+			    __shared__ float tile[BDIMY][BDIMX];
+			    unsigned int idx = threadIdx.y * blockDim.x + threadIdx.x;
+			    tile[threadIdx.y][threadIdx.x] = in[idx];
+			    __syncthreads();
+			    out[idx] = tile[threadIdx.x][threadIdx.y]; // 冲突
+			  }
+			  // 2. ld/st 全冲突
+			  __global__ void conflict_column_transfer(float *in, float *out) {
+			    __shared__ float tile[BDIMX][BDIMY];
+			    unsigned int idx = threadIdx.y * blockDim.x + threadIdx.x;
+			    tile[threadIdx.x][threadIdx.y] = in[idx];
+			    __syncthreads();
+			    out[idx] = tile[threadIdx.x][threadIdx.y];
+			  }
+			  //3. 无冲突访存
+			  __global__ void simple_transfer(float *in, float *out) {
+			    __shared__ float tile[BDIMY][BDIMX];
+			    unsigned int idx = threadIdx.y * blockDim.x + threadIdx.x;
+			    tile[threadIdx.y][threadIdx.x] = in[idx];
+			    __syncthreads();
+			    out[idx] = tile[threadIdx.y][threadIdx.x];
+			  }
+			  //4. 全局访存
+			  __global__ void global_transfer(float *in, float *out) {
+			    unsigned int idx = threadIdx.y * blockDim.x + threadIdx.x;
+			    out[idx] = in[idx];
+			  }
+			  
+			  ```
+	- ## stream and event
+	  collapsed:: true
+		- [[1]NVIDIA: Stream and concurrency webinar](../assets/StreamsAndConcurrencyWebinar.pdf)
+		- ### 什么是stream
+		  collapsed:: true
+			- >"A sequence of operation that execute in issue-order in GPU"
+			- CUDA stream是GPU上task 的执行队列，所有CUDA操作（kernel，内存拷贝等）都是在stream上执行的。
+			- 同一个流的执行顺序和各个kernel以及memcpy operation的启动顺序是一致的。但是，只要==资源没有被占用==，不同流之间的执行是可以overlap的
+			- CPU和GPU的数据传输是经过PCIe总线的，PCIe是共享的，memcpy同一时间只能够执行一个
+				- 我理解：硬件层面同时只能往一个方向传输数据，但是编程层面可以和GPU使用异步传输方式。
+				- 带有双工PCIe总线的设备可以重叠两个数据传输，但它们必须在不同的流和不同的方向上。
+			- SM计算资源是有限的，所以如果计算资源满了，单流和多流是差不多的。
+			- ![image.png](../assets/image_1731737481834_0.png)
+			- cuda stream有两种
+				- 显示流
+					- 我们自己申请创建的流
+				- default stream
+					- 当我们不指定核函数以及memcpy的流时，cuda会使用默认流(default stream)
+					- 默认流与显式流交叉使用时注意事项：
+					  background-color:: red
+						- 单线程下默认流的表现：[GPU Pro 提示：CUDA 7 流简化并发 |NVIDIA 技术博客](https://developer.nvidia.com/blog/gpu-pro-tip-cuda-7-streams-simplify-concurrency/)
+							- ```cpp
+							  for (int i = 0; i < num_streams; i++) {
+							    // launch one worker kernel per stream
+							    kernel<<<1, 64, 0, streams[i]>>>(data[i], N);
+							    // launch a dummy kernel on the default stream
+							    kernel<<<1, 1>>>(0, 0);
+							  }
+							  ```
+							- 单线程内，默认流的执行是同步的，显式流的执行是并行的。即：只要交叉调用了默认流和显式流，那么默认流执行前会隐式对CPU、GPU所有操作进行同步，我理解相当于调用了一次`cudaDeviceSyncronize()`。这导致交叉调用的显式流也变为了串行。
+								- 解决：单线程内，编译加上`--default-stream per-thread`后，默认流的执行是异步并行的，显式流的执行是异步并行的。
+							- 多线程下，默认多线程共享一个默认流 多对1，流内就会串行执行了，编译加上`--default-stream per-thread`后，每个线程独有一个默认流，互相可以并行。
+							- 编译加上`--default-stream per-thread`后cuda将默认流去掉归类为显式流，从而实现并行执行。如果在代码中用到了流，务必加上这个编译参数。
+			- Pageable memory 可分页内存 和 Pinned memory or page-locked memory 页锁定内存
+				- 页锁定内存使用cudaMallocHost or cudaHostAlloc在CPU端申请
+				- 当使用多流并行的时候，就需要使用pinned memory。
+				- 大白话来解释pinned memory就是锁定在内存的页面，不会置换出磁盘。
+					- 因为是CPU和GPU异步，现在开并行，那么CPU就可以去干其他事情，自然需要避免CPU上目前申请的数据被置换出去，导致后面GPU传回使用的时候需要再置换一遍进来。我目前的粗浅理解。
+		- ### 多stream为什么有效？
+		  collapsed:: true
+			- 多流为什么会有效，流越多越好么？
+				- 一、PCIe总线传输速度慢，是瓶颈，会导致传输数据的时候GPU处于空闲等待状态。
+			- 多流可以实现数据传输与kernel计算的并行。
+				- 二、一个kernel往往用不了整个GPU的算力。多流可以让多个kernel同时计算，充分利用GPU算力。
+				- 三、不是流越多越好。GPU内可同时并行执行的流数量是有限的，因为运行的硬件资源SM有限。
+			- CUDA加速常用方法：kernel合并，将小任务合并成大任务，通常比多流更有效，多流使用场景很少。
+				- GPU kernel耗时最大在哪里？
+					- 计算密集型：耗时在计算，一次访存，数十次甚至上百次计算
+					- 访存密集型：耗时在访存，一次访存，几次计算
+				- 大部分kernel都是访存密集型，就像之前shared memory优化矩阵乘法，将小任务合并为一次计算多个任务并利用shared memory，从而加速。
+				- 如下例：kernel合并一般比多流更有效：
+					- ![image.png](../assets/image_1731745455994_0.png)
+					- 启动橙色的`A*C`起点不在直线上，是因为多流启动`A*D`的流需要一点时间，然后再往下执行启动`A*C`，所以起点不在直线上
+		- ### cuda编程中的显式隐式同步
+		  collapsed:: true
+			- > "GPU kernels are asynchronous with host by default"
+			- 显式同步
+				- ((672e2f6e-602d-4a35-aac4-7edf896c0af8))
+			- 隐式同步
+				- These operations implicitly synchronize all other CUDA operations
+					- Page-locked memory allocation
+						- cudaMallocHost
+						- cudaHostAlloc
+					- Device memory allocation
+						- cudaMalloc
+					- Non-Async version of memory operations
+						- cudaMemcpy*   (no Async suffix)
+						- cudaMemset*    (no Async suffix)
+					- Change to L1/shared memory configuration
+						- cudaDeviceSetCacheConfig
+		- ### 如何利用多流进行隐藏访存和核函数执行延迟的调度——代码示例
+		  collapsed:: true
+			- ```cpp
+			  // 1. 创建流
+			  cudaStream_t stream[count];
+			  for (int i = 0; i < count; ++ i) {
+			    CUDA_CHECK(cudaStreamCreate(&stream[i]));
+			  }
+			  // 2. 使用 异步传输数据,末尾指定流
+			  CUDA_CHECK(cudaMemcpyAsyncP(..., stream[i]));
+			  // 3. 可以使用cuda API同步
+			  cudaDeviceSyncronize();
+			  cudaSteamSyncronize(streamid);
+			  时间同步等
+			  
+			  // 4. 使用完后释放流
+			  for (int i = 0; i < count; ++ i) {
+			  	cudaStreamDestroy(stream[i]);
+			  }
+			  ```
+		- ### Stream Scheduling
+		  collapsed:: true
+			- Fermi hardware has 3 queues
+				- 1 Compute Engine queue
+				- 2 Copy Engine queues – one for H2D and one for D2H
+				- 费米硬件有三个队列：一个计算引擎队列、两个拷贝引擎队列
+			- CUDA operations are dispatched to HW(hard ware) in the sequence they were issued 流内按顺序执行
+				- Placed in the relevant queue 放置在相关队列中
+				- Stream dependencies between engine queues are maintained, but lost within an engine queue
+			- A CUDA operation is dispatched from the engine queue if:
+				- Preceding calls in the same stream have completed,
+				- Preceding calls in the same queue have been dispatched, and Resources are available
+			- CUDA kernels may be executed concurrently if they are in different streams
+				- Threadblocks for a given kernel are scheduled if all threadblocks for preceding kernels have been scheduled and there still are SM resources available
+			- Note a blocked operation blocks all other operations in the queue, even in other streams
+		- ### stream API
+		  collapsed:: true
+			- 定义
+				- cudaStream_t stream;
+			- 创建
+				- cudaStreamCreate(&stream);
+			- 数据传输
+				- cudaMemcpyAsync(dst, src, size, type, stream)
+			- kernel在流中执行
+				- kernel_name<<>>(argument list);
+			- 同步和查询
+				- cudaError_t cudaStreamSynchronize(cudaStream_t stream)
+				- cudaError_t cudaStreamQuery(cudaStream_t stream);
+			- 销毁
+				- cudaError_t cudaStreamDestroy(cudaStream_t stream);
+			- GPU 算力3.5 及以上，即Kepler架构及以上 API：可以给stream设置优先级，优先级高的优先调度执行
+				- `cudaError_t cudaStreamCreateWithPriority(cudaStream_t* pStream, unsigned int flags, int priority);`
+				- `cudaError_t cudaDeviceGetStreamPriorityRange(int *leastPriority, int *greatestPriority);`
+				- Tips：
+					- 优先级只对kernel有效，对内存拷贝无效
+					- 较低的整数值表示较高的流优先级。
+		- ### cuda event API
+			- CUDA Event，在stream中插入一个事件，类似于打一个标记位，用来记录stream是否执行到当前位置。Event有两个状态，已被执行和未被执行。
+			- 定义
+				- `cudaEvent_t event`
+			- 创建
+				- `cudaError_t cudaEventCreate(cudaEvent_t* event);`
+			- 插入流中
+				- `cudaError_t cudaEventRecord(cudaEvent_t event, cudaStream_t stream = 0);`
+				- 默认加入默认流中
+			- 销毁
+				- `cudaError_t cudaEventDestroy(cudaEvent_t event);`
+			- 同步和查询
+				- `cudaError_t cudaEventSynchronize(cudaEvent_t event);`
+					- 等待直到event执行
+				- `cudaError_t cudaEventQuery(cudaEvent_t event);`
+					- 查询event是否被执行
+			- 进阶同步函数
+				- `cudaError_t cudaStreamWaitEvent(cudaStream_t stream, cudaEvent_t event);`
+					- 该函数会指定stream等待特定的event，该event可以关联到相同或者不同的stream
+			- 常用来测耗时
+		-
 - # cuda ERROR Handle #cuda
   collapsed:: true
 	-
