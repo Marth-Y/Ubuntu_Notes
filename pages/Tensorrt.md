@@ -268,6 +268,7 @@ collapsed:: true
 		- 概念：一个wrap中的线程访问同一个bank中不同地址的数据
 		- bank是什么
 			- block按32分为多个wrap，由SM调度wrap同时执行一条指令。GPU为了实现对共享内存的高效读取，将shared memory访问地址也按32进行划分。这个32可以是32个4B或8B，称为bank。其后的字节重新映射到0~31的bank。
+			- 大白话：就是共享内存总线将连续内存分为32个位置，每个位置单独对应总线的部分带宽，从而享受不冲突的高速存取速度，这32个总线的划分就理解为bank，如果有多个线程同时需要访问一个bank下的不同地址，就需要串行多次访存才能取出
 		- 为什么会有bank confilict？
 			- [共享内存之bank冲突 - CUDA C/C++编程学习 - SegmentFault 思否](https://segmentfault.com/a/1190000007533157)
 			- [CUDA编程！深入剖析静态/动态共享内存与Bank Conflict（附源码）-CSDN博客](https://blog.csdn.net/CV_Autobot/article/details/134086660)
