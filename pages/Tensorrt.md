@@ -474,7 +474,66 @@ collapsed:: true
 			- [Nsight Systems - Get Started | NVIDIA Developer](https://developer.nvidia.com/nsight-systems/get-started)
 			- [Getting Started with Nsight Compute | NVIDIA Developer](https://developer.nvidia.com/tools-overview/nsight-compute/get-started)
 		-
--
--
--
--
+- # cudnn
+  collapsed:: true
+	- ## 调用流程
+		- 创建cuDNN句柄
+			- cudnnStatus_t cudnnCreate(cudnnHandle_t *handle)
+		- 以Host方式调用在Device上运行的函数
+			- 比如卷积运算：cudnnConvolutionForward等
+		- 释放cuDNN句柄
+			- cudnnStatus_t cudnnDestroy(cudnnHandle_t handle)
+		- 将CUDA流设置&返回成cudnn句柄
+			- cudnnStatus_t cudnnSetStream( cudnnHandle_t handle, cudaStream_t streamId)
+			- cudnnStatus_t cudnnGetStream( cudnnHandle_t handle, cudaStream_t *streamId)
+	- ## 常用函数接口
+		- 可以搜索文档：[cudnn](https://docs.nvidia.com/deeplearning/cudnn/)
+		- cudnnConvolutionForward
+			- ```cpp
+			  cudnnStatus_t cudnnConvolutionForward(
+			  	cudnnHandle_t					   handle,   句柄
+			  	const void                         *alpha,   卷积相乘的权重
+			      const cudnnTensorDescriptor_t  	   xDesc,	 张量的描述，维度、大小等
+			   	const void                         *x,       张量的数据地址
+			  	const cudnnFilterDescriptor_t 	   wDesc,    卷积核的描述
+			   	const void                         *w,       没明白
+			   	const cudnnConvolutionDescriptor_t convDesc, 卷积的描述
+			   	cudnnConvolutionFwdAlgo_t          algo,     卷积的算法
+			   	void                               *workSpace,显存地址
+			  	size_t 							   workSpaceSizeInBytes,显存大小
+			   	const void                         *beta,    原来的张量保留的权重，不保留则为0
+			  	const cudnnTensorDescriptor_t 	   Desc,     输出结果张量的描述和地址
+			   	void                           	   *y)
+			  ```
+		- cudnnSetFilter4dDescriptor
+			- ```cpp
+			  cudnnStatus_t cudnnSetFilter4dDescriptor(
+			      cudnnFilterDescriptor_t    filterDesc,
+			      cudnnDataType_t            dataType,
+			      cudnnTensorFormat_t        format,
+			      int                        k,
+			      int                        c,
+			      int                        h,
+			      int                        w)
+			  ```
+		- Scaling factors alpha and beta can be used to scale the input tensor and the output tensor respectively.
+- # tensorrt
+	- 不同架构生成的engine不能兼容
+		- 因为在一个硬件架构中生成的engine会根据硬件特性进行调优，切换到不一样的硬件架构自然就用不了了。
+	- ## 基本使用流程
+		- ![image.png](../assets/image_1732460618571_0.png)
+		- ### TRT转换优化引擎->生成engine
+			- 创建Builder
+			- 创建Network
+			- 使用API or Parser构建network
+			- 优化和转换网络
+			- 序列化和反序列化模型
+		- ### TRT执行引擎
+			- 传输计算数据(host -> device)
+			- 执行计算
+			- 传输计算结果(device -> host)
+		- ### 代码示例
+			- ![image.png](../assets/image_1732460829573_0.png)
+			- ILogger是用于输出log的。
+		- ### demo SampleMNIST
+		-

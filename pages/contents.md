@@ -27,7 +27,9 @@
 	- [[健身]]
 	  collapsed:: true
 		- [[拉伸]]
+	- [[English]]
 - 领域知识：
+  collapsed:: true
 	- Linux
 	  collapsed:: true
 		- [[Linux/搜索]]
@@ -39,6 +41,7 @@
 			- [[Linux/文件系统/目录操作]]
 		- [[Linux/用户系统]]
 	- CPP
+	  collapsed:: true
 		- [[CPP/智能指针]]
 		- [[CPP/STL]]
 		- [[CPP/newdelete]]
