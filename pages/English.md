@@ -28,4 +28,6 @@
 	- Julie and Mark, aged 17 and 19 respectively朱莉和马克，年龄分别为17岁和19岁
 - fine tune #card
 	- 微调
+- suppression #card
+	- [ U]the act of suppressing sth镇压；压制；抑制
 -

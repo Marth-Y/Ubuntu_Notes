@@ -29,7 +29,6 @@
 		- [[拉伸]]
 	- [[English]]
 - 领域知识：
-  collapsed:: true
 	- Linux
 	  collapsed:: true
 		- [[Linux/搜索]]
