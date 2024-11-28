@@ -1,4 +1,5 @@
 - 项目：
+  collapsed:: true
 	- Python
 	  collapsed:: true
 		- [[python/循环]]
@@ -7,28 +8,27 @@
 		- [[numpy]]
 		- [[scipy]]
 		- [[plot]]
-	- 阅读
-	  collapsed:: true
-		- [[Reading/第二大脑]]
-		- [[Reading/深度学习详解]]
-		  collapsed:: true
-		- [[Reading/STL源码剖析]]
+	- [[Reading]]
 	- 第二大脑实践
 	  collapsed:: true
 		- [[分类]]
 	- Linux
 	  collapsed:: true
 		- [[项目/Linux]]
-	- 协程库
+	- 协程库 大概知道原理，尚未实现
 	  collapsed:: true
 		- [[项目/协程]]
-	- Raft
+	- Raft 未实现
 	- [[Tensorrt]]
 	- [[健身]]
 	  collapsed:: true
 		- [[拉伸]]
 	- [[English]]
+	- [[kalman]]
+	- [[cppreference]]
+	- [[车道线项目代码回顾任务]]
 - 领域知识：
+  collapsed:: true
 	- Linux
 	  collapsed:: true
 		- [[Linux/搜索]]
@@ -85,9 +85,11 @@
 		- [[CPP/cmake]]
 		- [[内存池]]
 	- [[vim]]
+	  collapsed:: true
 		- [[astronvim]]
 		  collapsed:: true
 	- [[Git]]
+	  collapsed:: true
 		- [[00.Git入门]]
 		- [[01.Git进阶]]
 	- [[深度学习]]
@@ -97,17 +99,23 @@
 - 智慧：
 - 备忘：
   collapsed:: true
-	- wukong上面发送后视车道线时参数没有取反
+	- TODO wukong上面发送后视车道线时参数没有取反
+		- 这个重要吗？确认一下
 - [[TODO]]
   collapsed:: true
-	- 1. 卡尔曼滤波
-	- 2. 深度学习 DONE
-	- 3. 回顾所有代码
-	- TODO STL--vector、list、迭代器设计、construct、uninitialize等，能编译通过
-	- DONE 研究下M55 perf，平台上怎么用的
-	  collapsed:: true
-		- 看完了，他们是用一个宏控制平台内计时代码统计耗时，然后去分析的
+	- > 按紧急顺序排列，从而按顺序进行，当然，有的任务是可以并行的，会特地指出
+	- TODO [[Reading/深度学习详解]]看完transformer，并且了解实现原理，最好是找点python实现代码跟着实现以下试试 day5 1204完成
+	- TODO [[Tensorrt]] 学习计划，day12。这个应该比较紧急，因为续费时间要过了
+		- TODO 配套的项目：[[百度文心大模型部署优化]] 可以稍缓
+	- TODO [[kalman]]实现 day7
+	- TODO [[车道线项目代码回顾任务]]day30 后续在做详细进度分解以及记录
+	- 以下任务可以并行
+	- TODO [[CPPSTL]] STL--vector、list、迭代器设计、construct、uninitialize等，能编译通过
+	- TODO [[cppreference]] 先初步估计一年，初步计划是每天抽空看一篇就可以了
+		- ((6748afff-a7b4-409a-be26-b2d088f73671))
+	- TODO [[Reading]] 计划，手上目前现有的书籍，做一个阅读计划，列出什么时候读完，什么书不读，以及阅读顺序
 - [[Work]]
+  collapsed:: true
 	- [目前各项目分支情况](https://yhikd4my59.feishu.cn/base/X8wgbjEDfauGC9sDaADc601vnmc?table=tblTCF9yaZhiN2fO&view=vewXZ397yV)
 	- [当前各项目S级问题](https://yhikd4my59.feishu.cn/wiki/VKcKwbEosiCDYDk0l64cVMhHnrd)
 	- [[am62a]]
@@ -119,7 +127,7 @@
 	- [[Hirain]]
 	- [[TCL]]
 	- [[各项目状态]]
-	- 知识
+	- Work杂项
 		- [[旋转矩阵]]
 		- [[杂项记录]] --traits
 		- [[kalman]]

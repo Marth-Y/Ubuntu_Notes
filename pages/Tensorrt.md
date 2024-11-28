@@ -1,5 +1,9 @@
-# CPU与GPU对比
-collapsed:: true
+- >[CUDA C++ Best Practices Guide](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/index.html)
+  [Developer Guide :: NVIDIA Deep Learning TensorRT Documentation](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html)
+  [Microsoft Word - CUDA PG 1 1 chs.doc](https://www.nvidia.cn/docs/IO/51635/NVIDIA_CUDA_Programming_Guide_1.1_chs.pdf)
+  这个看起来比较基础 [CUDA C++ Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html)
+- # CPU与GPU对比
+  collapsed:: true
 	- ## 关键字
 		- `ltency` #card
 		  card-last-score:: 3
@@ -518,6 +522,7 @@ collapsed:: true
 			  ```
 		- Scaling factors alpha and beta can be used to scale the input tensor and the output tensor respectively.
 - # tensorrt
+  collapsed:: true
 	- 不同架构生成的engine不能兼容
 		- 因为在一个硬件架构中生成的engine会根据硬件特性进行调优，切换到不一样的硬件架构自然就用不了了。
 	- ## 基本使用流程
