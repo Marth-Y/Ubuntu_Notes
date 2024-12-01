@@ -1,5 +1,6 @@
 - 计划阅读书籍(按计划阅读顺序排列)
-	- [[Reading/深度学习详解]] day5，目前看完transformer就可以
+	- [[Reading/深度学习详解]]
+		- day5，目前看完transformer就可以。1201 transformer已看完，了解了基础的理论
 	- [[Reading/STL源码剖析]] 并实现STL，同时可以翻译参照 [[cppreference]]
 	- [[EffectiveC++]]
 	- [[Reading/深度探索C++对象模型]]

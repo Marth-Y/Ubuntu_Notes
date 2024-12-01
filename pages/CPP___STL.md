@@ -7,3 +7,4 @@
 		  OutputIt partial_sum( InputIt first, InputIt last,
 		                        OutputIt d_first, BinaryOp op );
 		  ```
+-

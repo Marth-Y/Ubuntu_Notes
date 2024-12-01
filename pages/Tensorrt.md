@@ -32,6 +32,12 @@
 			- 吞吐量，单位时间内可以执行的指令数
 			- GPU并行处理的优化的主要方向
 		- `Multi-threading` #card
+		  card-last-interval:: 4
+		  card-repeats:: 1
+		  card-ease-factor:: 2.6
+		  card-next-schedule:: 2024-12-04T08:27:57.734Z
+		  card-last-reviewed:: 2024-11-30T08:27:57.734Z
+		  card-last-score:: 5
 			- 多线程
 	- ## CPU与GPU在并行处理的优化方向
 		- CPU主要目标在于减少memory latency
