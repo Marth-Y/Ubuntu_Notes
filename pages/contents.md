@@ -9,6 +9,7 @@
 		- [[scipy]]
 		- [[plot]]
 	- [[Reading]]
+	  collapsed:: true
 	- 第二大脑实践
 	  collapsed:: true
 		- [[分类]]
@@ -24,6 +25,7 @@
 	  collapsed:: true
 		- [[拉伸]]
 	- [[English]]
+	  collapsed:: true
 	- [[kalman]]
 	- [[cppreference]]
 	- [[车道线项目代码回顾任务]]
