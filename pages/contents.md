@@ -106,19 +106,6 @@
 	- TODO wukong上面发送后视车道线时参数没有取反
 		- 这个重要吗？确认一下
 - [[TODO]]
-  collapsed:: true
-	- > 按紧急顺序排列，从而按顺序进行，当然，有的任务是可以并行的，会特地指出
-	- TODO [[Reading/深度学习详解]]看完transformer，并且了解实现原理，最好是找点python实现代码跟着实现以下试试 day5 1204完成
-		- DONE 1201 已看完理论部分
-		- TODO 代码复现
-	- TODO [[Tensorrt]] 学习计划，day12。这个应该比较紧急，因为续费时间要过了
-		- TODO 配套的项目：[[百度文心大模型部署优化]] 可以稍缓
-	- TODO [[kalman]]实现 day7
-	- TODO [[车道线项目代码回顾任务]]day30 后续在做详细进度分解以及记录
-	- 以下任务可以并行
-	- TODO [[CPPSTL]] STL--vector、list、迭代器设计、construct、uninitialize等，能编译通过
-	- TODO [[cppreference]] 先初步估计一年，初步计划是每天抽空看一篇就可以了
-	- TODO [[Reading]] 计划，手上目前现有的书籍，做一个阅读计划，列出什么时候读完，什么书不读，以及阅读顺序
 - [[Work]]
   collapsed:: true
 	- [目前各项目分支情况](https://yhikd4my59.feishu.cn/base/X8wgbjEDfauGC9sDaADc601vnmc?table=tblTCF9yaZhiN2fO&view=vewXZ397yV)
