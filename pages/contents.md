@@ -10,6 +10,10 @@
 		- [[plot]]
 	- [[Reading]]
 	  collapsed:: true
+		- [[Reading/第二大脑]]
+		- [[Reading/深度学习详解]]
+		  collapsed:: true
+		- [[Reading/深度探索C++对象模型]]
 	- 第二大脑实践
 	  collapsed:: true
 		- [[分类]]
@@ -30,7 +34,6 @@
 	- [[cppreference]]
 	- [[车道线项目代码回顾任务]]
 - 领域知识：
-  collapsed:: true
 	- Linux
 	  collapsed:: true
 		- [[Linux/搜索]]
@@ -42,7 +45,6 @@
 			- [[Linux/文件系统/目录操作]]
 		- [[Linux/用户系统]]
 	- CPP
-	  collapsed:: true
 		- [[CPP/智能指针]]
 		- [[CPP/STL]]
 		- [[CPP/newdelete]]
