@@ -5,12 +5,12 @@
 - 第一大脑好像与生俱来就拥有一个错觉：认为凡事只要我们拥有了印象——只要我们记得，就认为“我们懂了”，甚至是“我们理解了”“我们掌握了”。事实上，从“印象”到“认识、理解和掌握”的道路是非常遥远的，也是非常崎岖的，而许多人不过是这里走走、哪里看看的漫游者。因为懒散、软弱、没有毅力，永远停留在“印象”附近，无法抵达真正的“认识和掌握”。#认识和掌握 #Reading/第二大脑
 -
 - # 块的分类 #card
-  card-last-interval:: -1
-  card-repeats:: 1
-  card-ease-factor:: 2.5
-  card-next-schedule:: 2024-11-07T16:00:00.000Z
-  card-last-reviewed:: 2024-11-07T13:23:30.883Z
-  card-last-score:: 1
+  card-last-interval:: 4
+  card-repeats:: 2
+  card-ease-factor:: 2.6
+  card-next-schedule:: 2024-12-09T09:39:59.442Z
+  card-last-reviewed:: 2024-12-05T09:39:59.444Z
+  card-last-score:: 5
   collapsed:: true
 	- 在我的第二大脑中，有且只有两种类型的页面。第一种是以时间流水为线索的日志页面，第二种是以专门主题为线索的反射区页面。#分类 #Reading/第二大脑
 	-

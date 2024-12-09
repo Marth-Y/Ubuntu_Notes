@@ -6,37 +6,37 @@
   collapsed:: true
 	- ## 关键字
 		- `ltency` #card
-		  card-last-score:: 3
+		  card-last-score:: 1
 		  card-repeats:: 1
-		  card-next-schedule:: 2024-11-11T13:23:37.707Z
-		  card-last-interval:: 4
+		  card-next-schedule:: 2024-12-05T16:00:00.000Z
+		  card-last-interval:: -1
 		  card-ease-factor:: 2.36
-		  card-last-reviewed:: 2024-11-07T13:23:37.707Z
+		  card-last-reviewed:: 2024-12-05T09:40:06.410Z
 			- 完成一个指令所需要的时间
 		- `memory latency` #card
-		  card-last-interval:: 4
+		  card-last-interval:: -1
 		  card-repeats:: 1
 		  card-ease-factor:: 2.36
-		  card-next-schedule:: 2024-11-11T13:23:44.948Z
-		  card-last-reviewed:: 2024-11-07T13:23:44.948Z
-		  card-last-score:: 3
+		  card-next-schedule:: 2024-12-05T16:00:00.000Z
+		  card-last-reviewed:: 2024-12-05T09:40:19.727Z
+		  card-last-score:: 1
 			- CPU/GPU从memory获取数据所需要的等待时间。
 			- CPU并行处理的优化的主要方向
 		- `throughput` #card
 		  card-last-interval:: 4
-		  card-repeats:: 1
-		  card-ease-factor:: 2.36
-		  card-next-schedule:: 2024-11-11T13:23:46.804Z
-		  card-last-reviewed:: 2024-11-07T13:23:46.804Z
-		  card-last-score:: 3
+		  card-repeats:: 2
+		  card-ease-factor:: 2.46
+		  card-next-schedule:: 2024-12-09T09:40:23.834Z
+		  card-last-reviewed:: 2024-12-05T09:40:23.835Z
+		  card-last-score:: 5
 			- 吞吐量，单位时间内可以执行的指令数
 			- GPU并行处理的优化的主要方向
 		- `Multi-threading` #card
 		  card-last-interval:: 4
-		  card-repeats:: 1
-		  card-ease-factor:: 2.6
-		  card-next-schedule:: 2024-12-04T08:27:57.734Z
-		  card-last-reviewed:: 2024-11-30T08:27:57.734Z
+		  card-repeats:: 2
+		  card-ease-factor:: 2.7
+		  card-next-schedule:: 2024-12-09T09:41:21.683Z
+		  card-last-reviewed:: 2024-12-05T09:41:21.684Z
 		  card-last-score:: 5
 			- 多线程
 	- ## CPU与GPU在并行处理的优化方向
