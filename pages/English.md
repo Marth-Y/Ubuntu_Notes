@@ -90,7 +90,9 @@
   card-last-reviewed:: 2024-12-05T09:40:37.779Z
   card-last-score:: 5
 	- 材料；原料
--
+- increase #card
+	- *v.*增长，增强，增大
+	- 指数量、强度和大小等方面的扩大或增加。
 -
 -
 -
