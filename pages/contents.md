@@ -45,16 +45,16 @@
 			- [[Linux/文件系统/目录操作]]
 		- [[Linux/用户系统]]
 	- CPP
-	  collapsed:: true
 		- [[CPP/智能指针]]
-		- [[CPP/STL]]
 		- [[CPP/newdelete]]
 		- [[CPP/初始化列表]]
 		- [[CPP/catch]]
 		- [[CPP/引用]]
 		- [[CPP/多线程]]
+		- [[CPP/lambda]]
+		- [[CPP/重载]]
 		- [[文件操作]]
-		- STL
+		- [[CPP/STL]]
 		  collapsed:: true
 			- [[CPP/STL/parser]]
 			- [[CPP/STL/fstream]]
