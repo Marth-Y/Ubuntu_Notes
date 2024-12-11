@@ -1,0 +1,141 @@
+{:blocks (
+{:block/content "看是不是odom之类的信息有误，这一步可以和上一步同时加上"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "66d6da0d-dd64-4f43-8e86-98e486726c76"}
+:block/parent 
+{:block/uuid #uuid "66d6da0d-dd64-4f43-8e86-98e486726c76"}
+:block/properties 
+{}
+:block/uuid #uuid "67592f8f-55c5-497f-88ed-845c212a60e3"} 
+{:block/created-at 1733898188898
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 0
+:scale [1 1]
+:pageId "67592f8f-55c5-497f-88ed-845c212a60e3"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 65]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "3cb9a790-b788-11ef-aa03-014c154fcd01"
+:noFill false
+:point [296 376]
+:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:collapsedHeight 0
+:nonce 1733898123643}}
+:block/updated-at 1733898188898} 
+{:block/content "先加上所有配置项的打印，看是否有配置不正确"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "67592f8f-55c5-497f-88ed-845c212a60e3"}
+:block/parent 
+{:block/uuid #uuid "66d6da0d-dd64-4f43-8e86-98e486726c76"}
+:block/properties 
+{}
+:block/uuid #uuid "67592fd6-c512-4a9a-8c23-8c7667be316c"} 
+{:block/created-at 1733898218174
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 1
+:scale [1 1]
+:pageId "67592fd6-c512-4a9a-8c23-8c7667be316c"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 41]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "67f4b3a0-b788-11ef-aa03-014c154fcd01"
+:noFill false
+:point [296 208]
+:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:collapsedHeight 0
+:nonce 1733898196069}}
+:block/updated-at 1733898218174} 
+{:block/created-at 1733898218175
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:index 2
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "71209252-b788-11ef-aa03-014c154fcd01"
+:fontWeight 400
+:noFill true
+:point [480.53 250]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [2.7 0]
+:bindingId "73011221-b788-11ef-aa03-014c154fcd01"}
+:end 
+{:id "end"
+:canBind true
+:point [0 122]
+:bindingId "71209251-b788-11ef-aa03-014c154fcd01"}}
+:decorations 
+{:end "arrow"}
+:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:nonce 1733898211455
+:italic false}}
+:block/updated-at 1733898218175})
+:pages (
+{:block/uuid #uuid "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:block/properties 
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:name "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:bindings 
+{:71209251-b788-11ef-aa03-014c154fcd01 
+{:id "71209251-b788-11ef-aa03-014c154fcd01"
+:type "line"
+:fromId "71209252-b788-11ef-aa03-014c154fcd01"
+:toId "3cb9a790-b788-11ef-aa03-014c154fcd01"
+:handleId "end"
+:point [0.46 0.53]
+:distance 4}
+:73011221-b788-11ef-aa03-014c154fcd01 
+{:id "73011221-b788-11ef-aa03-014c154fcd01"
+:type "line"
+:fromId "71209252-b788-11ef-aa03-014c154fcd01"
+:toId "67f4b3a0-b788-11ef-aa03-014c154fcd01"
+:handleId "start"
+:point [0.47 0.45]
+:distance 4}}
+:nonce 1
+:assets []
+:shapes-index ("3cb9a790-b788-11ef-aa03-014c154fcd01" "67f4b3a0-b788-11ef-aa03-014c154fcd01" "71209252-b788-11ef-aa03-014c154fcd01")}}
+:block/updated-at 1733898218173
+:block/created-at 1725356557115
+:block/type "whiteboard"
+:block/name "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:block/original-name "66d6da0d-dd64-4f43-8e86-98e486726c76"})}
