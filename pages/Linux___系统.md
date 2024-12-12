@@ -23,4 +23,10 @@
 		  ```ad-note
 		  有三种方式使用内核功能。系统调用、shell、库函数
 		  ```
--
+- sigaltstack
+	- ```cpp
+	  - set and/or get signal stack context
+	  #include <signal.h>
+	  int sigaltstack(const stack_t *ss, stack_t *old_ss);
+	  ```
+	-
