@@ -16,6 +16,12 @@
 			- 由`#define`和`#undef`指令与`#`、`##`运算符控制
 		- 输出错误或警告信息(c++23)
 			- 由指令`#error`或`#warning`(c++23)控制
+			- ```cpp
+			  // from typesense
+			  #ifndef __cplusplus
+			  #error "It's not going to compile without a C++ compiler..."
+			  #endif
+			  ```
 	- 预处理器的以下几个方面可以被控制
 		- 头文件单次包含控制，多次头文件包含只预处理一次
 			- 由`#pragma`指令和`_Pragma`运算符(c++11)控制
