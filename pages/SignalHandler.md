@@ -1,0 +1,5 @@
+- 常见的错误信号处理是使用==栈回溯==的方法将接收到信号时的栈信息完全保存下来
+- Linux上 [[typesence server]] 使用系统调用__UnwindBacktrace方法实现的
+	- 类图 [Error_Handler | Visual Paradigm Online](https://online.visual-paradigm.com/w/zqhshvxu/diagrams/#diagram:workspace=zqhshvxu&proj=0&id=2&type=ClassDiagram)
+	-
+-

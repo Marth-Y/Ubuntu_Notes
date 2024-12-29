@@ -1,6 +1,6 @@
 file:: [modern-cpp-tutorial-en-us_1672719399918_0.pdf](../assets/modern-cpp-tutorial-en-us_1672719399918_0.pdf)
 file-path:: ../assets/modern-cpp-tutorial-en-us_1672719399918_0.pdf
-tag:: #cpp
+tag:: #CPP
 
 - # Preface
   ls-type:: annotation

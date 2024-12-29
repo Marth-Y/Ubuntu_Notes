@@ -548,3 +548,100 @@
 			- ILogger是用于输出log的。
 		- ### demo SampleMNIST
 		-
+- # onnx
+  collapsed:: true
+	- ## onnx导出
+		- 示例代码：
+		  collapsed:: true
+			- ```python
+			  import torch
+			  import torch.nn as nn
+			  import torch.onnx
+			  import onnxsim
+			  import onnx
+			  
+			  class Model(torch.nn.Module):
+			      def __init__(self):
+			          super().__init__()
+			          self.conv1   = nn.Conv2d(in_channels=3, out_channels=16, kernel_size=3, padding=1)
+			          self.bn1     = nn.BatchNorm2d(num_features=16)
+			          self.act1    = nn.ReLU()
+			          self.conv2   = nn.Conv2d(in_channels=16, out_channels=64, kernel_size=5, padding=2)
+			          self.bn2     = nn.BatchNorm2d(num_features=64)
+			          self.act2    = nn.ReLU()
+			          self.avgpool = nn.AdaptiveAvgPool1d(1)
+			          self.head    = nn.Linear(in_features=64, out_features=10)
+			      
+			      def forward(self, x):
+			          x = self.conv1(x)
+			          x = self.bn1(x)
+			          x = self.act1(x)
+			          x = self.conv2(x)
+			          x = self.bn2(x)
+			          x = self.act2(x) 
+			          x = torch.flatten(x, 2, 3)  # B, C, H, W -> B, C, L (这一个过程产生了shape->slice->concat->reshape这一系列计算节点, 思考为什么)
+			  
+			  
+			          # b, c, w, h = x.shape
+			          # x = x.reshape(b, c, w * h)
+			          # x = x.view(b, c, -1)
+			  
+			          x = self.avgpool(x)         # B, C, L    -> B, C, 1
+			          x = torch.flatten(x, 1)     # B, C, 1    -> B, C
+			          x = self.head(x)            # B, L       -> B, 10
+			          return x
+			  
+			  def export_norm_onnx():
+			      input   = torch.rand(1, 3, 64, 64)
+			      model   = Model()
+			      file    = "../models/sample-reshape.onnx"
+			      torch.onnx.export(
+			          model         = model, 
+			          args          = (input,),
+			          f             = file,
+			          input_names   = ["input0"],
+			          output_names  = ["output0"],
+			          opset_version = 15)
+			      print("Finished normal onnx export")
+			  
+			      model_onnx = onnx.load(file)
+			  
+			      # 检查导入的onnx model
+			      onnx.checker.check_model(model_onnx)
+			  
+			  
+			      # 使用onnx-simplifier来进行onnx的简化。
+			      # 可以试试把这个简化给注释掉，看看flatten操作在简化前后的区别
+			      # onnx中其实会有一些constant value，以及不需要计算图跟踪的节点
+			      # 大家可以一起从netron中看看这些节点都在干什么
+			  
+			      # print(f"Simplifying with onnx-simplifier {onnxsim.__version__}...")
+			      # model_onnx, check = onnxsim.simplify(model_onnx)
+			      # assert check, "assert check failed"
+			      onnx.save(model_onnx, file)
+			  
+			  if __name__ == "__main__":
+			      export_norm_onnx()
+			  
+			  ```
+	- ## onnx的protol结构
+		- ONNX是一种神经网络的格式，采用Protobuf(*)二进制形式进行序列化模型。Protobuf会根据用于定义的数据结构来进行序列化存储。同理，我们可以根据官方提供的数据结构信息，去修改或者创建onnx
+			- onnx protol结构：[onnx/onnx/onnx.in.proto at main · onnx/onnx](https://github.com/onnx/onnx/blob/main/onnx/onnx.in.proto)
+		- 理解onnx中的组织结构
+			- ```
+			  # 理解onnx中的组织结构
+			  #   - ModelProto (描述的是整个模型的信息)
+			  #   --- GraphProto (描述的是整个网络的信息)
+			  #   ------ NodeProto (描述的是各个计算节点，比如conv, linear)
+			  #   ------ TensorProto (描述的是tensor的信息，主要包括权重)
+			  #   ------ ValueInfoProto (描述的是input/output信息)
+			  #   ------ AttributeProto (描述的是node节点的各种属性信息)
+			  ```
+		- 一个模型就是一个ModelProto,定义了模型的全局信息，一个ModelProto包含了一个图网络GraphProto描述整个网络的信息。GraphProto包含余下的Proto
+			- 其实可以用一个类似类图的东西把整个结构描述出来
+		-
+	-
+	-
+	-
+	-
+-
