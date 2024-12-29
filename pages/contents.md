@@ -35,7 +35,9 @@
 	- [[cppreference]]
 	- [[车道线项目代码回顾任务]]
 - 领域知识：
+  collapsed:: true
 	- Linux
+	  collapsed:: true
 		- [[Linux/搜索]]
 		- [[Linux/目录]]
 		- [[Linux/系统]]
@@ -45,7 +47,6 @@
 			- [[Linux/文件系统/目录操作]]
 		- [[Linux/用户系统]]
 	- CPP
-	  collapsed:: true
 		- [[CPP/智能指针]]
 		- [[CPP/newdelete]]
 		- [[CPP/初始化列表]]

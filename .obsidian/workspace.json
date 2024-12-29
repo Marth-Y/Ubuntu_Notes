@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/a1000.md",
+                "file": "pages/cppreference___std%3A%3Aforward.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "a1000"
+              "title": "cppreference___std%3A%3Aforward"
             }
           }
         ],
@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Git",
+                "query": "static",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +88,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -180,6 +181,11 @@
   },
   "active": "98cba0db889d56e8",
   "lastOpenFiles": [
+    "pages/内存池.md",
+    "pages/动态库.md",
+    "logseq/bak/pages/内存池/2024-11-07T13_17_35.396Z.Desktop.md",
+    "logseq/bak/pages/EffectiveC++/2024-03-05T12_27_16.087Z.Desktop.md",
+    "pages/a1000.md",
     "pages/项目___Linux.md",
     "pages/项目___协程.md",
     "pages/00.Git入门.md",

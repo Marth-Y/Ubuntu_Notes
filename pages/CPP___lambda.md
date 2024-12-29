@@ -45,3 +45,5 @@
 	  ```
 	- 智能指针是将指针转化为对象，lambda是将函数指针转化为对象进行管理。
 	- lambda底层原理就是定义了一个类，在其中实现operator()的重载，然后定义一个匿名对象，从而实现。
+- 可以想象，在 [[cppreference/constexpr]]中，lambda会为operator()加上constexpr修饰
+-
