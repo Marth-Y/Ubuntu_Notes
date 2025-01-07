@@ -1,0 +1,150 @@
+{:blocks (
+{:block/content "看是不是odom之类的信息有误，这一步可以和上一步同时加上"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "66d6da0d-dd64-4f43-8e86-98e486726c76"}
+:block/parent 
+{:block/uuid #uuid "66d6da0d-dd64-4f43-8e86-98e486726c76"}
+:block/properties 
+{}
+:block/uuid #uuid "67592f8f-55c5-497f-88ed-845c212a60e3"} 
+{:block/content "先加上所有配置项的打印，看是否有配置不正确"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "67592f8f-55c5-497f-88ed-845c212a60e3"}
+:block/parent 
+{:block/uuid #uuid "66d6da0d-dd64-4f43-8e86-98e486726c76"}
+:block/properties 
+{}
+:block/uuid #uuid "67592fd6-c512-4a9a-8c23-8c7667be316c"} 
+{:block/content "公式：\n$$x' = xcos(θ) − ysin(θ)$$\n$$y′ = xsin(θ) + ycos(θ)$$"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "67592fd6-c512-4a9a-8c23-8c7667be316c"}
+:block/parent 
+{:block/uuid #uuid "66d6da0d-dd64-4f43-8e86-98e486726c76"}
+:block/properties 
+{}
+:block/uuid #uuid "677d3b91-bc59-4e83-b307-872c1691b07a"} 
+{:block/created-at 1736262280249
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 0
+:scale [1 1]
+:pageId "677d3b91-bc59-4e83-b307-872c1691b07a"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 137.4375]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "8fe70520-cd04-11ef-9ba7-75b24b7b6bff"
+:noFill false
+:point [72 -64]
+:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:collapsedHeight 0
+:nonce 1736260495886}}
+:block/updated-at 1736262280249} 
+{:block/created-at 1736262285184
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "P"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 1
+:scale [1 1]
+:pageId "旋转矩阵"
+:scaleLevel "xs"
+:fill ""
+:compact false
+:isAutoResizing false
+:type "logseq-portal"
+:size [200 1058.515625]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "96c6ad10-cd08-11ef-9ba7-75b24b7b6bff"
+:noFill false
+:point [784 -512]
+:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:collapsedHeight 1058.515625
+:nonce 1736262224881}}
+:block/updated-at 1736262285184} 
+{:block/created-at 1736262280250
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:stroke ""
+:index 2
+:scale [1 1]
+:scaleLevel "md"
+:fill ""
+:type "line"
+:strokeType "line"
+:strokeWidth 1
+:opacity 1
+:label ""
+:id "b460cd12-cd08-11ef-9ba7-75b24b7b6bff"
+:fontWeight 400
+:noFill true
+:point [476 8.9]
+:fontSize 20
+:handles 
+{:start 
+{:id "start"
+:canBind true
+:point [307 6.29]
+:bindingId "b460cd10-cd08-11ef-9ba7-75b24b7b6bff"}
+:end 
+{:id "end"
+:canBind true
+:point [0 0]
+:bindingId "b460cd11-cd08-11ef-9ba7-75b24b7b6bff"}}
+:decorations 
+{:end "arrow"}
+:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:nonce 1736262274421
+:italic false}}
+:block/updated-at 1736262280250})
+:pages (
+{:block/uuid #uuid "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:block/properties 
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:name "坐标系旋转推导"
+:bindings 
+{:b460cd10-cd08-11ef-9ba7-75b24b7b6bff 
+{:id "b460cd10-cd08-11ef-9ba7-75b24b7b6bff"
+:type "line"
+:fromId "b460cd12-cd08-11ef-9ba7-75b24b7b6bff"
+:toId "96c6ad10-cd08-11ef-9ba7-75b24b7b6bff"
+:handleId "start"
+:point [0.5 0.5]
+:distance 4}
+:b460cd11-cd08-11ef-9ba7-75b24b7b6bff 
+{:id "b460cd11-cd08-11ef-9ba7-75b24b7b6bff"
+:type "line"
+:fromId "b460cd12-cd08-11ef-9ba7-75b24b7b6bff"
+:toId "8fe70520-cd04-11ef-9ba7-75b24b7b6bff"
+:handleId "end"
+:point [0.5 0.5]
+:distance 4}}
+:nonce 1
+:assets []
+:shapes-index ("8fe70520-cd04-11ef-9ba7-75b24b7b6bff" "96c6ad10-cd08-11ef-9ba7-75b24b7b6bff" "b460cd12-cd08-11ef-9ba7-75b24b7b6bff")}}
+:block/updated-at 1736262285232
+:block/created-at 1725356557115
+:block/type "whiteboard"
+:block/name "坐标系旋转推导"
+:block/original-name "坐标系旋转推导"})}

@@ -6,7 +6,7 @@
 		- 不要急于求成
 		  background-color:: red
 	- 去锻炼，去阅读
-- TODO [[Reading/深度学习详解]]看完transformer，并且了解实现原理，最好是找点python实现代码跟着实现以下试试 day5 1204完成
+- TODO [[Reading/深度学习详解]]看完transformer，并且了解实现原理，最好是找点python实现代码跟着实现以下试试
 	- DONE 1201 已看完理论部分
 	- TODO 代码复现——前面走了弯路，第一次直接找的代码，发现看不懂，又找了B站视频，看到最后也不太懂，最后发现[[Reading/动手学深度学习]]中对transformer有实现，遂决定跟着实现一次，然后继续学习如何到处ONNX模型，也方便后续学习cuda。所以完成时间可能需要延长了。
 - TODO [[kalman]]实现 day7

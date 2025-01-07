@@ -2,6 +2,19 @@
   [Developer Guide :: NVIDIA Deep Learning TensorRT Documentation](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html)
   [Microsoft Word - CUDA PG 1 1 chs.doc](https://www.nvidia.cn/docs/IO/51635/NVIDIA_CUDA_Programming_Guide_1.1_chs.pdf)
   这个看起来比较基础 [CUDA C++ Programming Guide](https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html)
+- Tensorrt #超级学习项目
+  collapsed:: true
+	- Why？
+		- 想学习后用cuda部署一些模型，了解cuda，最终可以应用于工作中国
+	- What？
+		- cuda编程、tensorrt编程、pytorch、深度学习基础常用的模型部署(transformer、cnn等)
+		- 能自写算子、对模型部署进行相关的分析优化
+		- 能对模型进行量化部署、能做模型压缩优化等
+		- 能导出onnx，解析部署onnx
+	- How？
+		- 首先根据两个学习视频学习cuda、tensorrt、pytorch相关知识
+		- 另外通过其他渠道学习transformer，并最终用c++实现，然后对其进行部署
+		- 深度学习相关怎么办？我大概只想了解下基础，懂得一些基本概念即可。
 - # CPU与GPU对比
   collapsed:: true
 	- ## 关键字

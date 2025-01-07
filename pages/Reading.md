@@ -13,6 +13,7 @@
 	- [[Reading/Linux多线程服务器编程]]
 	- [[Reading/Linux高性能服务器编程]]
 	- [[Reading/动手学深度学习]] 可以看transformer实现
+	- [[Reading/超级学习者]] 看起来挺有意思的
 - Code
 	- [[typesence server]]
 		- [[SignalHandler]]
