@@ -4,5 +4,7 @@
   "foldIndent": true,
   "foldHeading": true,
   "showIndentGuide": true,
-  "rightToLeft": false
+  "rightToLeft": false,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "assets"
 }

@@ -1,6 +1,7 @@
 - > 《现代C++语言核心特性解析》
 - c++11
 - # 为什么要有constexpr？
+  collapsed:: true
 	- 在 `constexpr` 之前已经有了const关键字定义常量，但是没有一种方法能明确的告诉编译器在编译阶段就计算出结果。
 	- ## const和宏常量的不确定性 #define
 		- const和宏定义的常量无法确保在编译期就被计算出，换而言之就是const定义的常量有两种情况：编译期常量和运行期常量。
@@ -30,7 +31,8 @@
 				  std::numeric_limits<unsigned char>::max()
 				  ```
 			- cpp中的实现就是一个运行时常量了。后来有了constexpr，标准库做了优化，可以是编译期常量了。
-- # How to ues ?
+- # How to ues it?
+  collapsed:: true
 	- ## constexpr值
 		- constexpr值即常量表达式值，是一个用constexpr说明符声明的变量或者数据成员，它要求该值必须在编译期计算，因此，常量表达式的值必须被常量表达式初始化。
 			- 例：
@@ -190,10 +192,135 @@
 	- ## constexpr lambdas表达式
 		- **从C++17开始， [[CPP/lambda]] 表达式在条件允许的情况下都会隐式声明为constexpr**，在lambda表达式不满足申明为constexpr形式时，会退化为为运行时lambda表达式存在
 		- 也可以强制要求lambda表达式是一个常量表达式，用constexpr去声明它即可。可以检查lambda表达式是否有可能是一个常量表达式，如果不能则会编译报错。
--
--
--
+	- ## constexpr 的内联属性
+		- 如果用constexpr修饰静态成员变量，则其自动获得inline内联属性
+		- 在C++11中
+			- ```cpp
+			  class T {
+			    public:
+			    	constexpr static int num{5}; // 等同于 inline constexpr static int num{5};
+			  };
+			  ```
+		- 代码中，num是只有声明没有定义的，虽然我们可以通过std::cout << X::num << std::endl输出其结果，但这实际上是编译器的一个小把戏，它将X::num直接替换为了5。如果将输出语句修改为`std::cout << &X::num <<std::endl`，那么链接器会明确报告X::num缺少定义。
+		- 但是从C++17开始情况发生了变化，static constexpr int num{5}既是声明也是定义，所以在C++17标准中`std::cout << &X::num << std::endl`可以顺利编译链接，并且输出正确的结果。值得注意的是，对于编译器而言为X::num产生定义并不是必需的，如果代码只是引用了X::num的值，那么编译器完全可以使用直接替换为值的技巧。只有当代码中引用到变量指针的时候，编译器才会为其生成定义。
+	- ## if constexpr #CPP17
+		- `if constexpr`是C++17标准提出的.
+		- 生效条件：
+			- 1．if constexpr的条件必须是编译期能确定结果的常量表达式。
+			- 2．条件结果一旦确定，编译器将只编译符合条件的代码块。
+		- 示例：
+			- ```cpp
+			  void check1(int i)
+			  {
+			    if constexpr (i > 0) {                        // 编译失败，不是常量表达式
+			         std::cout << "i > 0" << std::endl;
+			    }
+			    else {
+			         std::cout << "i <= 0" << std::endl;
+			    }
+			  }
+			  
+			  void check2()
+			  {
+			    if constexpr (sizeof(int) > sizeof(char)) {
+			         std::cout << "sizeof(int) > sizeof(char)" << std::endl;
+			    }
+			    else {
+			         std::cout << "sizeof(int) <= sizeof(char)" << std::endl;
+			    }
+			  }
+			  
+			  check2 编译器会省略为====》
+			  void check2()
+			  {
+			    std::cout << "sizeof(int) > sizeof(char)" << std::endl;
+			  }
+			  ```
+		- `if constexpr`在模板中的应用
+			- > 简化模板代码
+			- 示例：
+				- 有以下模板代码：
+					- ```cpp
+					  #include <iostream>
+					  
+					  template<class T> bool is_same_value(T a, T b)
+					  {
+					    return a == b;
+					  }
+					  
+					  template<> bool is_same_value<double>(double a, double b)
+					  {
+					    if (std::abs(a - b) < 0.0001) {
+					         return true;
+					    }
+					    else {
+					         return false;
+					    }
+					  }
+					  
+					  int main()
+					  {
+					    double x = 0.1 + 0.1 + 0.1 - 0.3;
+					    std::cout << std::boolalpha;
+					    std::cout << "is_same_value(5, 5)  : " << is_same_value(5, 5) << std::endl;
+					    std::cout << "x == 0.0               : " << (x == 0.) << std::endl;
+					    std::cout << "is_same_value(x, 0.) : " << is_same_value(x, 0.) << std::endl;
+					  }
+					  ```
+					- 在比较浮点型时，需要对其进行特化，在一定范围内就是相同的。但是可以利用`if constexpr`简化代码：
+					- ```cpp
+					  #include <type_traits>
+					  template<class T> bool is_same_value(T a, T b)
+					  {
+					    if constexpr (std::is_same<T, double>::value) {
+					         if (std::abs(a - b) < 0.0001) {
+					              return true;
+					         }
+					         else {
+					              return false;
+					         }
+					    }
+					    else {
+					         return a == b;
+					    }
+					  }
+					  ```
+			- `if constexpr`的使用与 if 的区别：
+				- 对`else`的省略需要注意：
+					- 如果以上的代码，我省略掉了最后的else
+					- ```cpp
+					  #include <type_traits>
+					  template<class T> bool is_same_value(T a, T b)
+					  {
+					    if constexpr (std::is_same<T, double>::value) {
+					         if (std::abs(a - b) < 0.0001) {
+					              return true;
+					         }
+					         else {
+					              return false;
+					         }
+					    }
+					    return a == b;
+					  }
+					  ```
+					- 从 if 的逻辑上来说是没错的。但是可能会导致编译不通过，因为`if constexpr`满足时可能会有多个`return`语句存在。
+				- `if constexpr`不支持短路原则
+					- ```cpp
+					  if constexpr (A && B) {}
+					  ```
+					- 在A不满足时，依旧会判断B，如果B满足则会编译这个分支。
+					- 当有这种情况时可以通过嵌套解决,也是变相实现了短路原则了。
+						- ```cpp
+						  if constexpr (A) {
+						    if constexpr (B){
+						    }
+						  }
+						  ```
+	- ## constexpr虚函数 #CPP20
+		- C++20才支持[现代C++语言核心特性解析 - 27.10 允许constexpr虚函数 - 谢丙堃 - 微信读书](https://weread.qq.com/web/reader/22d32dd0726fa07122d86dbk96d32f702b196da2f59070f)
+	-
 - # constexpr与const对比
+  collapsed:: true
 	- ## 都可以定义编译期常量
 		- ```cpp
 		  constexpr int x = 4;
@@ -205,7 +332,8 @@
 		  constexpr int x = getSize(); // ×
 		  ```
 	- constexpr是一个加强版的const，它不仅要求常量表达式是常量，并且要求是一个编译阶段就能够确定其值的常量。
-- # C++14下的constexpr
+- # C++14下的constexpr #CPP14
+  collapsed:: true
 	- C++14标准对常量表达式函数的改进如下。
 		- 1．函数体允许声明变量，除了没有初始化、 [[static]] 和thread_local变量。
 			- 局部static变量运行到才会初始化.不符合常量定义，无法在编译器确定

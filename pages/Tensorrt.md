@@ -139,7 +139,6 @@
 - # cuda basic #cuda
   collapsed:: true
 	- ## grid block thrad逻辑结构（内存模型）
-	  collapsed:: true
 		- ![image.png](../assets/image_1731078953859_0.png){:height 655, :width 1188}
 		- 逻辑结构如左图所示(并不对应具体的硬件设计)，存储结构如右图所示
 		- 左图解释：
@@ -158,7 +157,6 @@
 				- Grid全局内存(~500周期)
 				- Grid常量内存(~5周期)
 	- ## thread遍历，thread index计算
-	  collapsed:: true
 		- 整体思路都是按照z->y->x三个轴依次遍历。
 		- 三个轴的朝向如下所示
 		- ### block 中 thread 的遍历
@@ -194,26 +192,22 @@
 				- 图中红点的x坐标就是`blockIdx.x * blockDim.x + threadIdx.x`，y坐标就是`blockDim.y * blockIdx.y + threadIdx.y`
 				-
 	- ## 线程束(wrap)
-	  collapsed:: true
 		- SM采用的SIMT(Single-Instruction, Multiple-Thread，单指令多线程)架构，warp(线程束)是最基本的执行单元，一个warp包含32个并行thread，这些thread以不同数据资源执行相同的指令。warp本质上是线程在GPU上运行的最小单元。
 			- 单指令多线程，大白话就是一个线程束的线程执行的是同一条指令，只不过使用的数据不一样
 		- 当一个kernel被执行时，grid中的线程块被分配到SM上，一个线程块的thread只能在一个SM上调度，SM一般可以调度多个线程块，大量的thread可能被分到不同的SM上。每个thread拥有它自己的程序计数器和状态寄存器，并且用该线程自己的数据执行指令，这就是所谓的Single Instruction Multiple Thread(SIMT)。
 		- 由于warp的大小为32，所以block所含的thread的大小一般要设置为32的倍数。
 	- ## 硬件概念
-	  collapsed:: true
 		- ### SP
 			- cuda core也就是stream processor(SP)，是GPU最基本的处理单元。具体指令和任务都是在SP上处理的，GPU并行计算也就是很多SP同时处理，一个SP可以执行一个thread，但是实际上并不是所有的thread能够在同一时刻执行。这里我理解应该是以wrap为单位的并行。
 		- ### SM
 			- stream multiprocessor。SM包含SP和一起其他资源，一个SM可以包含多个SP。SM可以看作GPU的核心，GPU中每个SM都设计成支持数以百计的线程并行执行，并且每个GPU都包含了很多的SM，所以GPU支持成百上千的线程并行执行。大白话来理解就是SM相当于一个CPU包含了成百计的核，支持成百计的线程并行。
 			- ==一个SM在一个时刻只能处理一个block==
 	- ## CUDA中的内存模型分为以下几个层次：
-	  collapsed:: true
 		- 线程处理器（SP）对应线程（thread）
 		- 多核处理器（SM）对应线程块（thread block）
 		- 设备端（device）对应线程块组合体（grid）
 	- ## CPU与GPU同步的几种函数
 	  id:: 672e2f6e-602d-4a35-aac4-7edf896c0af8
-	  collapsed:: true
 		- `cudaDeviceSynchronize();`
 			- CPU与GPU端完成同步，CPU不执行之后的语句，直到这个语句以前的所有cuda操作结束
 		- `cudaStreamSynchronize(streamid);`
@@ -235,7 +229,6 @@
 		- `__syncthreads();`
 			- 线程块内同步
 	- ## 共享内存
-	  collapsed:: true
 		- 我们一般在`cudaMalloc`时都是在global memory上进行访问的
 		- ![image.png](../assets/image_1731458259648_0.png)
 		- ![image.png](../assets/image_1731458276849_0.png)
@@ -287,7 +280,6 @@
 		- ==使用思路==
 			- 思路上就是block中的先让所有线程一对一从global memory读取一个数据到共享内存后，在`_syncthreads`等待同步，其余线程后续读取该数据就会直接从`shared memory`读取了，不会再访问global memory，这就是速度提升的原因。
 	- ## bank confilict
-	  collapsed:: true
 		- 概念：一个wrap中的线程访问同一个bank中不同地址的数据
 		- bank是什么
 			- block按32分为多个wrap，由SM调度wrap同时执行一条指令。GPU为了实现对共享内存的高效读取，将shared memory访问地址也按32进行划分。这个32可以是32个4B或8B，称为bank。其后的字节重新映射到0~31的bank。
@@ -341,10 +333,8 @@
 			  
 			  ```
 	- ## stream and event
-	  collapsed:: true
 		- [[1]NVIDIA: Stream and concurrency webinar](../assets/StreamsAndConcurrencyWebinar.pdf)
 		- ### 什么是stream
-		  collapsed:: true
 			- >"A sequence of operation that execute in issue-order in GPU"
 			- CUDA stream是GPU上task 的执行队列，所有CUDA操作（kernel，内存拷贝等）都是在stream上执行的。
 			- 同一个流的执行顺序和各个kernel以及memcpy operation的启动顺序是一致的。但是，只要==资源没有被占用==，不同流之间的执行是可以overlap的
@@ -379,7 +369,6 @@
 				- 大白话来解释pinned memory就是锁定在内存的页面，不会置换出磁盘。
 					- 因为是CPU和GPU异步，现在开并行，那么CPU就可以去干其他事情，自然需要避免CPU上目前申请的数据被置换出去，导致后面GPU传回使用的时候需要再置换一遍进来。我目前的粗浅理解。
 		- ### 多stream为什么有效？
-		  collapsed:: true
 			- 多流为什么会有效，流越多越好么？
 				- 一、PCIe总线传输速度慢，是瓶颈，会导致传输数据的时候GPU处于空闲等待状态。
 			- 多流可以实现数据传输与kernel计算的并行。
@@ -394,7 +383,6 @@
 					- ![image.png](../assets/image_1731745455994_0.png)
 					- 启动橙色的`A*C`起点不在直线上，是因为多流启动`A*D`的流需要一点时间，然后再往下执行启动`A*C`，所以起点不在直线上
 		- ### cuda编程中的显式隐式同步
-		  collapsed:: true
 			- > "GPU kernels are asynchronous with host by default"
 			- 显式同步
 				- ((672e2f6e-602d-4a35-aac4-7edf896c0af8))
@@ -411,7 +399,6 @@
 					- Change to L1/shared memory configuration
 						- cudaDeviceSetCacheConfig
 		- ### 如何利用多流进行隐藏访存和核函数执行延迟的调度——代码示例
-		  collapsed:: true
 			- ```cpp
 			  // 1. 创建流
 			  cudaStream_t stream[count];
@@ -431,7 +418,6 @@
 			  }
 			  ```
 		- ### Stream Scheduling
-		  collapsed:: true
 			- Fermi hardware has 3 queues
 				- 1 Compute Engine queue
 				- 2 Copy Engine queues – one for H2D and one for D2H
@@ -446,7 +432,6 @@
 				- Threadblocks for a given kernel are scheduled if all threadblocks for preceding kernels have been scheduled and there still are SM resources available
 			- Note a blocked operation blocks all other operations in the queue, even in other streams
 		- ### stream API
-		  collapsed:: true
 			- 定义
 				- cudaStream_t stream;
 			- 创建

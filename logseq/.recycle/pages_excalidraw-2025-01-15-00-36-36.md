@@ -1,0 +1,9 @@
+excalidraw-plugin:: true
+
+- #+BEGIN_IMPORTANT
+  This file is used to store excalidraw information, Please do not manually edit this file.
+  #+END_IMPORTANT
+- {{renderer excalidraw-menu, excalidraw-2025-01-15-00-36-36}}
+- ```json
+  {"elements":[{"type":"text","version":14,"versionNonce":148762813,"isDeleted":true,"id":"dQzqaKOlAbotlQmAkfEAA","fillStyle":"solid","strokeWidth":2,"strokeStyle":"solid","roughness":1,"opacity":100,"angle":0,"x":1023,"y":432,"strokeColor":"#1e1e1e","backgroundColor":"transparent","width":10,"height":25,"seed":797556605,"groupIds":[],"frameId":null,"roundness":null,"boundElements":[],"updated":1736872651901,"link":null,"locked":false,"fontSize":20,"fontFamily":1,"text":"","textAlign":"left","verticalAlign":"top","containerId":null,"originalText":"","lineHeight":1.25,"baseline":18},{"id":"uMnuv5YMthXhmtHvvj1g9","type":"text","x":704,"y":549,"width":1278.3394775390625,"height":25,"angle":0,"strokeColor":"#1e1e1e","backgroundColor":"transparent","fillStyle":"solid","strokeWidth":2,"strokeStyle":"solid","roughness":1,"opacity":100,"groupIds":[],"frameId":null,"roundness":null,"seed":1289075539,"version":28,"versionNonce":2073699539,"isDeleted":true,"boundElements":null,"updated":1736872750057,"link":"logseq://graph/Ubuntu_Notes?page=Reading%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AF%A6%E8%A7%A3","locked":false,"text":"logseq://graph/Ubuntu_Notes?page=Reading%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AF%A6%E8%A7%A3","fontSize":20,"fontFamily":1,"textAlign":"left","verticalAlign":"top","baseline":18,"containerId":null,"originalText":"logseq://graph/Ubuntu_Notes?page=Reading%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E8%AF%A6%E8%A7%A3","lineHeight":1.25}],"files":{},"appState":{"gridSize":null,"viewBackgroundColor":"#fffce8","zoom":{"value":1},"offsetTop":20,"offsetLeft":0,"scrollX":0,"scrollY":0,"viewModeEnabled":false,"zenModeEnabled":false}}
+  ```
