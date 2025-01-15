@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "376f32e493cf6a71",
+        "id": "d873777dc38fdb2f",
         "type": "tabs",
         "children": [
           {
-            "id": "740611164733a931",
+            "id": "324af305bf9f0c2a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pages/Work___车道线模型解析.md",
-                "mode": "preview",
+                "file": "pages/nodejs配置.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Work___车道线模型解析"
+              "title": "nodejs配置"
             }
           }
         ]
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Work",
+                "query": "static",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,17 +93,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pages/Work___车道线模型解析.md",
+                "file": "pages/a1000.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Work___车道线模型解析 的反向链接列表"
+              "title": "a1000 的反向链接列表"
             }
           },
           {
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pages/Work___车道线模型解析.md",
+                "file": "pages/a1000.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Work___车道线模型解析 的出链列表"
+              "title": "a1000 的出链列表"
             }
           },
           {
@@ -139,17 +139,18 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/Work___车道线模型解析.md"
+                "file": "pages/a1000.md"
               },
               "icon": "lucide-list",
-              "title": "Work___车道线模型解析 的大纲"
+              "title": "a1000 的大纲"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 344.5
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,51 +160,49 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
-      "mermaid-tools:Open Mermaid Toolbar": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "740611164733a931",
+  "active": "324af305bf9f0c2a",
   "lastOpenFiles": [
-    "Excalidraw/模型布局.md",
-    "Excalidraw/车道线消失问题分析.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_20_42.123Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_20_27.104Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_20_13.232Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_20_11.118Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_19_54.107Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_19_37.085Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_19_22.512Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_19_06.096Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_18_57.301Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_18_38.578Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_18_27.878Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_18_24.287Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_18_21.113Z.Desktop.md",
+    "Excalidraw/Drawing 2024-01-06 13.45.07.excalidraw.md",
+    "pages/excalidraw-2025-01-14-10-43-50.md",
     "pages/Work___车道线模型解析.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_12_28.966Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_12_20.155Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_11_49.137Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_11_34.147Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_11_19.251Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_11_04.144Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_10_54.369Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_10_49.130Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_10_37.668Z.Desktop.md",
-    "logseq/bak/Excalidraw/模型布局/2025-01-15T15_10_34.149Z.Desktop.md",
+    "pages/Reading___深入理解计算机系统.md",
+    "logseq/bak/pages/高通/2025-01-14T15_46_06.969Z.Desktop.md",
+    "logseq/bak/pages/内存池/2025-01-15T15_02_10.292Z.Desktop.md",
+    "logseq/bak/pages/内存池/2025-01-14T15_45_43.110Z.Desktop.md",
+    "logseq/bak/pages/c1200/2025-01-14T15_46_12.260Z.Desktop.md",
+    "logseq/bak/pages/am62a/2025-01-14T15_46_07.703Z.Desktop.md",
+    "logseq/bak/pages/Work___车道线模型解析/2025-01-15T15_01_47.903Z.Desktop.md",
+    "logseq/bak/pages/Work___车道线模型解析/2025-01-15T14_43_25.600Z.Desktop.md",
+    "logseq/bak/pages/Work___车道线模型解析/2025-01-15T13_34_14.211Z.Desktop.md",
+    "logseq/bak/pages/Work___车道线模型解析/2025-01-15T13_33_31.917Z.Desktop.md",
+    "logseq/bak/pages/Work___车道线模型解析/2025-01-15T13_30_44.759Z.Desktop.md",
+    "logseq/bak/pages/Work___车道线模型解析/2025-01-15T13_30_42.656Z.Desktop.md",
+    "logseq/bak/pages/Work___车道线模型解析",
+    "logseq/bak/pages/Reading___深入理解计算机系统/2025-01-14T16_30_45.385Z.Desktop.md",
+    "logseq/bak/pages/Reading___深入理解计算机系统",
+    "logseq/bak/pages/MD/2025-01-14T15_46_02.741Z.Desktop.md",
+    "logseq/bak/pages/MD",
+    "logseq/bak/pages/Linux___系统/2025-01-14T15_45_16.613Z.Desktop.md",
+    "logseq/bak/pages/Linux___系统",
+    "logseq/bak/pages/CPP___STL___fstream/2025-01-14T15_13_37.282Z.Desktop.md",
+    "logseq/bak/pages/BTL/2025-01-14T15_46_08.297Z.Desktop.md",
+    "logseq/bak/journals/2025_01_03/2025-01-14T15_13_37.256Z.Desktop.md",
+    "logseq/bak/Excalidraw/车道线消失问题分析.excalidraw/2025-01-15T13_28_57.353Z.Desktop.md",
+    "logseq/bak/Excalidraw/车道线消失问题分析.excalidraw/2025-01-15T13_27_24.114Z.Desktop.md",
+    "logseq/bak/Excalidraw/车道线消失问题分析.excalidraw/2025-01-15T13_27_09.173Z.Desktop.md",
+    "logseq/bak/Excalidraw/车道线消失问题分析.excalidraw/2025-01-15T13_26_39.104Z.Desktop.md",
+    "logseq/bak/Excalidraw/车道线消失问题分析.excalidraw/2025-01-15T13_26_24.103Z.Desktop.md",
+    "logseq/bak/Excalidraw/车道线消失问题分析.excalidraw",
     "logseq/bak/Excalidraw/模型布局",
     "logseq/bak/Excalidraw/模型布局.excalidraw",
-    "draws/2025-01-15-22-39-05.excalidraw",
-    "draws",
-    "logseq/bak/pages/Work___车道线模型解析",
-    "logseq/bak/Excalidraw/车道线消失问题分析.excalidraw",
-    "logseq/bak/pages/Reading___深入理解计算机系统",
-    "assets/csapp封面.jpg",
-    "assets/加权平均值_1722667837060_0.png",
-    "assets/SGI内存池链表实现图解.png",
-    "logseq/bak/Excalidraw/csapp.excalidraw",
-    "logseq/bak/Excalidraw/CPP_STL可视化.excalidraw",
+    "logseq/bak/Excalidraw/内存池图解",
     "logseq/bak/Excalidraw/内存池图解.excalidraw",
+    "logseq/bak/Excalidraw/csapp.excalidraw",
+    "assets/csapp封面.jpg",
+    "assets/SGI内存池链表实现图解.png",
     "assets/007944_1723019908441_0.png",
     "assets/1730986745889_1730986753246_0.png",
     "assets/image_1704207566308_0.png",
