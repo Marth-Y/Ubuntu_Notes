@@ -2,9 +2,9 @@
 {:block/content "/media/ubuntu/c7739f82-0b29-44f6-b9b7-86df5af1c8ce/user/01.My_Dir/My_Note_CPP/My_Work/Excalidraw/code.excalidraw.md"
 :block/format :markdown
 :block/left 
-{:block/uuid #uuid "678686a7-1344-41d8-91e4-bdbd3e93b40f"}
+{:block/uuid #uuid "c7795348-d1db-4657-b90b-833eeaf54f78"}
 :block/parent 
-{:block/uuid #uuid "678686a7-1344-41d8-91e4-bdbd3e93b40f"}
+{:block/uuid #uuid "c7795348-d1db-4657-b90b-833eeaf54f78"}
 :block/uuid #uuid "66d6dac9-d7b8-4007-830c-7e7c19d3d793"} 
 {:block/created-at 1730528136211
 :block/properties 
@@ -23,7 +23,7 @@
 :id "9b21ffb0-71e9-11ef-b68b-7faceb677626"
 :noFill true
 :point [64 -120]
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243362112
 :isComplete true}
 :id "9b21ffb0-71e9-11ef-b68b-7faceb677626"}
@@ -50,7 +50,7 @@
 :isLocked false
 :point [96 56]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243318476
 :italic false}
 :id "194e1bd5-71ea-11ef-b68b-7faceb677626"}
@@ -78,7 +78,7 @@
 :isLocked false
 :point [96 -144]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243388089
 :italic false}
 :id "194e1bd9-71ea-11ef-b68b-7faceb677626"}
@@ -105,7 +105,7 @@
 :isLocked false
 :point [96 -264]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243318195
 :italic false}
 :id "194e1bd1-71ea-11ef-b68b-7faceb677626"}
@@ -132,7 +132,7 @@
 :isLocked false
 :point [96 -184]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243318425
 :italic false}
 :id "194e1bd3-71ea-11ef-b68b-7faceb677626"}
@@ -159,7 +159,7 @@
 :isLocked false
 :point [96 16]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243318782
 :italic false}
 :id "194e1bd4-71ea-11ef-b68b-7faceb677626"}
@@ -187,7 +187,7 @@
 :isLocked false
 :point [96 -104]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243388489
 :italic false}
 :id "194e1bda-71ea-11ef-b68b-7faceb677626"}
@@ -214,7 +214,7 @@
 :isLocked false
 :point [96 -224]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243318221
 :italic false}
 :id "194e1bd2-71ea-11ef-b68b-7faceb677626"}
@@ -241,7 +241,7 @@
 :isLocked false
 :point [96 -304]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243317839
 :italic false}
 :id "194e1bd0-71ea-11ef-b68b-7faceb677626"}
@@ -268,7 +268,7 @@
 :isLocked false
 :point [96 -64]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243320640
 :italic false}
 :id "346c1840-71ea-11ef-b68b-7faceb677626"}
@@ -295,7 +295,7 @@
 :isLocked false
 :point [96 -24]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243318609
 :italic false}
 :id "346c1841-71ea-11ef-b68b-7faceb677626"}
@@ -318,7 +318,7 @@
 :noFill true
 :isLocked false
 :point [1024 576]
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243362601
 :isComplete true}}
 :block/updated-at 1730528308894} 
@@ -344,7 +344,7 @@
 :isLocked false
 :point [96 136]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243318571
 :italic false}
 :id "fc81c001-98e1-11ef-9b69-97bfe5cc6ab2"}
@@ -371,7 +371,7 @@
 :isLocked false
 :point [96 96]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243318369
 :italic false}
 :id "fc81c000-98e1-11ef-9b69-97bfe5cc6ab2"}
@@ -398,7 +398,7 @@
 :isLocked false
 :point [96 256]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243320786
 :italic false}
 :id "fc81c006-98e1-11ef-9b69-97bfe5cc6ab2"}
@@ -426,7 +426,7 @@
 :isLocked false
 :point [96 176]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243388235
 :italic false}
 :id "fc81c004-98e1-11ef-9b69-97bfe5cc6ab2"}
@@ -454,7 +454,7 @@
 :isLocked false
 :point [96 216]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243388635
 :italic false}
 :id "fc81c005-98e1-11ef-9b69-97bfe5cc6ab2"}
@@ -481,7 +481,7 @@
 :isLocked false
 :point [96 296]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243318755
 :italic false}
 :id "fc81c007-98e1-11ef-9b69-97bfe5cc6ab2"}
@@ -509,7 +509,7 @@
 :isLocked false
 :point [252 -304]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528212831
 :italic false}
 :id "0d7f6ba0-98e2-11ef-9b69-97bfe5cc6ab2"}
@@ -545,7 +545,7 @@
 :bindingId "0d7f92b0-98e2-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528212828
 :italic false}
 :id "0d7f6ba1-98e2-11ef-9b69-97bfe5cc6ab2"}
@@ -581,7 +581,7 @@
 :bindingId "14ebe713-98e2-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528225283
 :italic false}
 :id "14ebe711-98e2-11ef-9b69-97bfe5cc6ab2"}
@@ -609,7 +609,7 @@
 :isLocked false
 :point [252 -264]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528225283
 :italic false}
 :id "14ebe710-98e2-11ef-9b69-97bfe5cc6ab2"}
@@ -637,7 +637,7 @@
 :isLocked false
 :point [252 -224]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528228374
 :italic false}
 :id "16c33f20-98e2-11ef-9b69-97bfe5cc6ab2"}
@@ -673,7 +673,7 @@
 :bindingId "16c33f23-98e2-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528228371
 :italic false}
 :id "16c33f21-98e2-11ef-9b69-97bfe5cc6ab2"}
@@ -709,7 +709,7 @@
 :bindingId "184969f3-98e2-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528230929
 :italic false}
 :id "184969f1-98e2-11ef-9b69-97bfe5cc6ab2"}
@@ -737,7 +737,7 @@
 :isLocked false
 :point [252 -184]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528230929
 :italic false}
 :id "184969f0-98e2-11ef-9b69-97bfe5cc6ab2"}
@@ -773,7 +773,7 @@
 :bindingId "1f17f7b2-98e2-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528242348
 :italic false}
 :id "1f17f7b0-98e2-11ef-9b69-97bfe5cc6ab2"}
@@ -801,7 +801,7 @@
 :isLocked false
 :point [252 -144]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528242354
 :italic false}
 :id "1f17d0a0-98e2-11ef-9b69-97bfe5cc6ab2"}
@@ -829,7 +829,7 @@
 :isLocked false
 :point [408 -304]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528845700
 :italic false}
 :id "86b80620-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -865,7 +865,7 @@
 :bindingId "86b82d32-98e3-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528845700
 :italic false}
 :id "86b82d30-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -893,7 +893,7 @@
 :isLocked false
 :point [408 -264]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528849037
 :italic false}
 :id "88b535b0-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -929,11 +929,10 @@
 :bindingId "88b535b3-98e3-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
-:nonce 1730528849036
-:italic false}
-:id "88b535b1-98e3-11ef-9b69-97bfe5cc6ab2"}
-:block/updated-at 1730985571032} 
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
+:nonce 1730528849035
+:italic false}}
+:block/updated-at 1730528849038} 
 {:block/created-at 1730529027575
 :block/properties 
 {:ls-type :whiteboard-shape
@@ -956,7 +955,7 @@
 :isLocked false
 :point [832 256]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243321467
 :italic false}
 :id "8ca0529f-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -983,7 +982,7 @@
 :isLocked false
 :point [832 -64]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243321321
 :italic false}
 :id "8ca05299-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1010,7 +1009,7 @@
 :isLocked false
 :point [832 16]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243319463
 :italic false}
 :id "8ca05295-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1038,7 +1037,7 @@
 :isLocked false
 :point [832 -104]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243389170
 :italic false}
 :id "8ca05298-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1065,7 +1064,7 @@
 :isLocked false
 :point [832 -24]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243319290
 :italic false}
 :id "8ca0529a-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1092,7 +1091,7 @@
 :isLocked false
 :point [832 -264]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243318876
 :italic false}
 :id "8ca05292-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1120,7 +1119,7 @@
 :isLocked false
 :point [984 -264]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528225964
 :italic false}
 :id "8ca052a3-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1147,7 +1146,7 @@
 :isLocked false
 :point [832 56]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243319157
 :italic false}
 :id "8ca05296-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1174,7 +1173,7 @@
 :isLocked false
 :point [832 96]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243319050
 :italic false}
 :id "8ca0529b-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1201,7 +1200,7 @@
 :isLocked false
 :point [832 -304]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243318520
 :italic false}
 :id "8ca05291-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1229,7 +1228,7 @@
 :isLocked false
 :point [1016 -392]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528214154
 :italic false}
 :id "8ca052a1-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1257,7 +1256,7 @@
 :isLocked false
 :point [984 -184]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528231610
 :italic false}
 :id "8ca052a7-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1280,7 +1279,7 @@
 :noFill true
 :isLocked false
 :point [1112 -112]
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243362637
 :isComplete true}
 :id "8ca05290-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1307,7 +1306,7 @@
 :isLocked false
 :point [832 -184]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243319106
 :italic false}
 :id "8ca05294-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1335,7 +1334,7 @@
 :isLocked false
 :point [984 -224]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528229055
 :italic false}
 :id "8ca052a5-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1363,7 +1362,7 @@
 :isLocked false
 :point [984 -144]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528243035
 :italic false}
 :id "8ca052a9-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1391,7 +1390,7 @@
 :isLocked false
 :point [1144 -264]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528849718
 :italic false}
 :id "8ca052ad-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1418,7 +1417,7 @@
 :isLocked false
 :point [832 -224]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243318902
 :italic false}
 :id "8ca05293-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1446,7 +1445,7 @@
 :isLocked false
 :point [832 176]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243388916
 :italic false}
 :id "8ca0529d-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1483,7 +1482,7 @@
 :bindingId "8ca052b8-98e3-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528243046
 :italic false}
 :id "8ca052aa-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1510,7 +1509,7 @@
 :isLocked false
 :point [832 136]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243319252
 :italic false}
 :id "8ca0529c-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1547,7 +1546,7 @@
 :bindingId "8ca052bc-98e3-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528849734
 :italic false}
 :id "8ca052ae-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1584,7 +1583,7 @@
 :bindingId "8ca052b2-98e3-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528225981
 :italic false}
 :id "8ca052a4-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1612,7 +1611,7 @@
 :isLocked false
 :point [832 -144]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243388770
 :italic false}
 :id "8ca05297-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1649,7 +1648,7 @@
 :bindingId "8ca052b6-98e3-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528231627
 :italic false}
 :id "8ca052a8-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1677,7 +1676,7 @@
 :isLocked false
 :point [832 216]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243389316
 :italic false}
 :id "8ca0529e-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1714,7 +1713,7 @@
 :bindingId "8ca052b4-98e3-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528229069
 :italic false}
 :id "8ca052a6-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1741,7 +1740,7 @@
 :isLocked false
 :point [832 296]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243319436
 :italic false}
 :id "8ca052a0-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1776,7 +1775,7 @@
 :point [248 0]}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528866421
 :italic false}
 :id "92960c82-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1804,7 +1803,7 @@
 :isLocked false
 :point [1144 -304]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528907778
 :italic false}
 :id "ab78e600-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1840,7 +1839,7 @@
 :bindingId "ab790d12-98e3-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528907541
 :italic false}
 :id "ab790d10-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1850,7 +1849,7 @@
 :block/left 
 {:block/uuid #uuid "66d6dac9-d7b8-4007-830c-7e7c19d3d793"}
 :block/parent 
-{:block/uuid #uuid "678686a7-1344-41d8-91e4-bdbd3e93b40f"}
+{:block/uuid #uuid "c7795348-d1db-4657-b90b-833eeaf54f78"}
 :block/properties 
 {}
 :block/uuid #uuid "6725c6a0-e5b7-4f1e-ace2-ac1d5d264688"} 
@@ -1878,7 +1877,7 @@
 :point [1072 -392]
 :lineHeight 1.2
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528941685
 :italic false
 :text "交给客户使用"}
@@ -1907,7 +1906,7 @@
 :isLocked false
 :point [1544 -104]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243389235
 :italic false}
 :id "ce220978-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1934,7 +1933,7 @@
 :isLocked false
 :point [1544 -64]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243321386
 :italic false}
 :id "ce220979-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1961,7 +1960,7 @@
 :isLocked false
 :point [1544 16]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243319528
 :italic false}
 :id "ce220975-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -1988,7 +1987,7 @@
 :isLocked false
 :point [1544 -24]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243319355
 :italic false}
 :id "ce22097a-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2016,7 +2015,7 @@
 :isLocked false
 :point [1696 -144]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528243100
 :italic false}
 :id "ce220988-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2053,7 +2052,7 @@
 :bindingId "ce220992-98e3-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528229134
 :italic false}
 :id "ce220985-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2080,7 +2079,7 @@
 :isLocked false
 :point [1544 136]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243319317
 :italic false}
 :id "ce22097c-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2108,7 +2107,7 @@
 :isLocked false
 :point [1856 -304]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528907843
 :italic false}
 :id "ce22098c-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2135,7 +2134,7 @@
 :isLocked false
 :point [1544 256]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243321532
 :italic false}
 :id "ce22097f-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2163,7 +2162,7 @@
 :isLocked false
 :point [1696 -224]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528229120
 :italic false}
 :id "ce220984-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2200,7 +2199,7 @@
 :bindingId "ce220996-98e3-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528243111
 :italic false}
 :id "ce220989-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2227,7 +2226,7 @@
 :isLocked false
 :point [1544 56]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243319222
 :italic false}
 :id "ce220976-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2254,7 +2253,7 @@
 :isLocked false
 :point [1544 -184]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243319171
 :italic false}
 :id "ce220974-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2282,7 +2281,7 @@
 :isLocked false
 :point [1544 176]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243388981
 :italic false}
 :id "ce22097d-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2310,7 +2309,7 @@
 :isLocked false
 :point [1696 -184]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528231675
 :italic false}
 :id "ce220986-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2347,7 +2346,7 @@
 :bindingId "ce220990-98e3-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528226046
 :italic false}
 :id "ce220983-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2375,7 +2374,7 @@
 :isLocked false
 :point [1856 -264]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528849783
 :italic false}
 :id "ce22098a-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2403,7 +2402,7 @@
 :isLocked false
 :point [1696 -264]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528226029
 :italic false}
 :id "ce220982-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2430,7 +2429,7 @@
 :isLocked false
 :point [1544 -224]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243318967
 :italic false}
 :id "ce220973-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2457,7 +2456,7 @@
 :isLocked false
 :point [1544 96]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243319115
 :italic false}
 :id "ce22097b-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2484,7 +2483,7 @@
 :isLocked false
 :point [1544 -264]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243318941
 :italic false}
 :id "ce220972-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2521,7 +2520,7 @@
 :bindingId "ce220994-98e3-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528231692
 :italic false}
 :id "ce220987-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2548,7 +2547,7 @@
 :isLocked false
 :point [1544 -304]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243318585
 :italic false}
 :id "ce220971-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2585,7 +2584,7 @@
 :bindingId "5b7cf2b1-98e6-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528907672
 :italic false}
 :id "ce22098d-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2613,7 +2612,7 @@
 :isLocked false
 :point [1544 -144]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243388835
 :italic false}
 :id "ce220977-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2650,7 +2649,7 @@
 :bindingId "ce220998-98e3-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528849799
 :italic false}
 :id "ce22098b-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2673,7 +2672,7 @@
 :noFill true
 :isLocked false
 :point [1512 -120]
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243362858
 :isComplete true}
 :id "ce220970-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2701,7 +2700,7 @@
 :isLocked false
 :point [1544 216]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243389381
 :italic false}
 :id "ce22097e-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2729,7 +2728,7 @@
 :isLocked false
 :point [1736 -384]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528214521
 :italic false}
 :id "ce220981-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2756,7 +2755,7 @@
 :isLocked false
 :point [1544 296]
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1726243319501
 :italic false}
 :id "ce220980-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2791,7 +2790,7 @@
 :point [264 0]}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730528972293
 :italic false}
 :id "d1e9e6e0-98e3-11ef-9b69-97bfe5cc6ab2"}
@@ -2827,7 +2826,7 @@
 :bindingId "6053a811-98e6-11ef-9b69-97bfe5cc6ab2"}}
 :decorations 
 {:end "arrow"}
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730530069914
 :italic false}
 :id "6053a812-98e6-11ef-9b69-97bfe5cc6ab2"}
@@ -2857,18 +2856,18 @@
 :point [848 -512]
 :lineHeight 1.2
 :fontSize 20
-:parentId "66d6da0d-dd64-4f43-8e86-98e486726c76"
+:parentId "c7795348-d1db-4657-b90b-833eeaf54f78"
 :nonce 1730530087506
 :italic false
 :text "从头取用，从头归还"}
 :id "6a922f40-98e6-11ef-9b69-97bfe5cc6ab2"}
 :block/updated-at 1730530108948})
 :pages (
-{:block/uuid #uuid "678686a7-1344-41d8-91e4-bdbd3e93b40f"
+{:block/uuid #uuid "c7795348-d1db-4657-b90b-833eeaf54f78"
 :block/properties 
 {:ls-type :whiteboard-page
 :logseq.tldraw.page 
-{:id "678686a7-1344-41d8-91e4-bdbd3e93b40f"
+{:id "c7795348-d1db-4657-b90b-833eeaf54f78"
 :name "内存池链表"
 :bindings 
 {:ce220999-98e3-11ef-9b69-97bfe5cc6ab2 
