@@ -93,6 +93,11 @@
 - increase #card
 	- *v.*增长，增强，增大
 	- 指数量、强度和大小等方面的扩大或增加。
+- implementation #card
+	- n.实现，实施，执行
+- retrieval #card
+	- n.找回，取回；（计算机系统信息的）检索；恢复，挽回
+-
 -
 -
 -
