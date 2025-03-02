@@ -542,7 +542,25 @@ public:: true
 				  logseq.order-list-type:: number
 		- > 小结：只要设计出至少像C++内置类型一样好的用户自定义类，一切汗水便都值得
 		  class的设计就是type的设计，在定义一个新type之前，请确定你已经考虑过本条款覆盖的所有讨论主题
-	- 条款20：宁以pass-by-reference-to-const替换pass-by-value #CPP
-		-
--
+	- 条款20：宁以pass-by-reference-to-const替换pass-by-value #CPP #CPP/引用
+	  collapsed:: true
+		- pass-by-value的==缺点==：
+			- 会调用大量的拷贝构造函数和析构函数（在派生类对象，会调用基类的拷贝构造、析构，成员变量的拷贝、析构），造成效率问题。
+			- 可能造成**切割(slicing)问题**。
+				- 当派生类以基类型pass-by-value进函数可能造成派生类的成员部分缺失
+					- ```cpp
+					  class Window {};
+					  class Drived : public Window {};
+					  
+					  void Func(Window window); // slicing.如果是派生类调用，派生类部分会被切割掉
+					  void Func(const Window& window); // 采用pass-by-reference-to-const可以解决
+					  pass-by-reference就可以解决了，但是上面是pass-by-value，已知不会更改window的数据，所以加上const更好
+					  ```
+		- pass-by-reference-to-const的==优点==：
+			- 不会调用拷贝构造和析构，不会有性能损失。众所周知reference引用就是指针。
+			- 能解决分割问题
+		- 如何选择？
+			- 对内置类型、STL的迭代器和函数对象，以pass-by-value更高效。
+			- 其他类型一般都以pass-by-reference-to-const更好
+		- > 总结：尽量以pass-by-reference-to-const代替pss-by-value
 -

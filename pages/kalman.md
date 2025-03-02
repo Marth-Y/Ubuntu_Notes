@@ -1,12 +1,18 @@
 - > Where do the names `z`, `P`, `Q`, and `R` come from? You will see them used in the rest of this book. In the literature $R$ is nearly universally used for the measurement noise, $Q$ for the process noise and $P$ for the variance of the state. Using $z$ for the measurement is common, albeit not universal. Almost every book and paper you read will use these variable names. Get used to them.
-- `z`, `P`, `Q`, and `R`分别代表什么意思？$R$是测量值的噪声(方差)。$Q$是过程噪声，$P$是状态方差，$z$是测量值。
--
--
-- 一维卡尔曼滤波 #kalman
+- `z`, `P`, `Q`, and `R`分别代表什么意思？
+	- > 这几个值都只是看着吓人，学术文章中的垃圾命名。其实都是很容易理解的东西
+	- $R$是测量值的噪声(方差)。
+	- $Q$是过程噪声，
+	- $P$是状态方差，
+	- $z$是测量值。
+	- $K$是卡尔曼增益
+		- 本质就是一个测量值和预测值之间的一个偏向的概率而已
+			- ((6786923d-3f6c-44fd-b249-2a00f4906428))
+- ## 一维卡尔曼滤波 #kalman
   collapsed:: true
 	- 问题描述：
 		- 一只狗在马拉松中移动。脖子上的项圈有一个传感器，传感器的值有误差，但是误差一般很小，如：狗移动了23m，传感器可能会给出22.9m或者23.1m，我们可以使用高斯对其建模。我们预测狗的移动，可能过了头，也可能没过头，也可以使用高斯来建模。
-	- 我们可以用高斯来描述对狗的位置的信念。初始我们相信狗在10m的位置，方差为1.
+	- 我们可以用高斯来描述对狗的位置的置信度。初始我们相信狗在10m的位置，方差为1.
 		- ```python
 		  # 1. 假设狗的位置的信念符合正态分布
 		  from scipy.stats import norm
@@ -39,6 +45,12 @@
 			  print(f'Mean of readings is {np.mean(ys):.3f}')
 			  # Mean of readings is 10.004
 			  ```
+				- **`randn(500)`**
+					- 生成一个包含 **500个样本** 的数组，这些样本服从 **标准正态分布**（均值为 `0`，标准差为 `1`）。
+				- **`* 1.`**
+					- 将每个样本乘以 `1.0`（即保持数值不变）。这一步通常用于调整标准差，例如乘以 `2.0` 会将标准差变为 `2`。此处无实际作用，可能是为了代码可扩展性。
+				- **`+ 10.`**
+					- 将每个样本加上 `10.0`，这会将整个分布的均值从 `0` 偏移到 `10`。
 			- ![range-500.png](../assets/range-500_1722959431451_0.png)
 			- 假设狗一直静止，我们就说狗在10的位置，方差为1.
 	- 使用高斯概率进行追踪
@@ -179,6 +191,7 @@
 	  \end{aligned}$$
 	- We can understand this by looking at this chart:
 	- ![image.png](../assets/image_1723449183020_0.png)
+	  id:: 6786923d-3f6c-44fd-b249-2a00f4906428
 	- The Kalman gain $K$ is a scale factor that chooses a value along the residual. This leads to an alternative but equivalent implementation for `update()` and `predict()`:
 		- ```python
 		  def update(prior, measurement):
