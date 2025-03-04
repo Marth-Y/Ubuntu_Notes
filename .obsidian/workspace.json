@@ -62,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "file:7v",
+                "query": "odom",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -174,7 +174,7 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "26744a3c84aec320",
+  "active": "b38b94fd54dbab49",
   "lastOpenFiles": [
     "logseq/bak/Excalidraw/力扣/2025-02-07T14_17_10.411Z.Desktop.md",
     "logseq/bak/Excalidraw/力扣/2025-02-07T14_16_55.410Z.Desktop.md",

@@ -12,6 +12,7 @@
 	  origin  git@git.nullmax.net:nullmax-dev/vision-perception/lane_fusion.git (push)
 	  ```
 	- 之后可以使用 `git remote set-url origin git@git.nullmax.net:nullmax-dev/vision-perception/lane_fusion.git`更改
+	- **如果没有输出，则可以使用`git remote add origin git@git.nullmax.net:nullmax-dev/common/protocol.git`设置**
 - 删除远程仓库
 	- `git push origin --delete <分支名>`
 -
