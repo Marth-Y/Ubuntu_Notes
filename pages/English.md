@@ -97,7 +97,9 @@
 	- n.实现，实施，执行
 - retrieval #card
 	- n.找回，取回；（计算机系统信息的）检索；恢复，挽回
--
+- enhance #card
+	- [ VN] to increase or further improve the good quality, value or status of sb/sth提高；增强；增进
+	- This is an opportunity to enhance the reputation of the company.这是提高公司声誉的机会。
 -
 -
 -

@@ -1,4 +1,4 @@
-- googletest使用 #Learn #CPP #CPP/cmake #googletest
+- googletest使用  #CPP #CPP/cmake #googletest
 	- 可以参考[googletest primer](https://google.github.io/googletest/primer.html)
 	- 使用时包含gtest的头文件和库文件：
 	  collapsed:: true
