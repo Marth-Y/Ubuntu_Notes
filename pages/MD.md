@@ -1,5 +1,2 @@
 - 状态 #各项目状态
-	- 1230：主分支添加map_lane_list发送7v map经过删点后的模型结果，CNN发送2V模型结果，7V发送7V模型结果，两者复用lane_model_output topic
-	- 1227：项目决定后续主要使用7v map车道线，cnn不再关注
-	- ![image.png](../assets/image_1735540826317_0.png)
 -
