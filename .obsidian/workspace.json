@@ -18,8 +18,33 @@
               "icon": "excalidraw-icon",
               "title": "高度估计流程"
             }
+          },
+          {
+            "id": "5305ae9fea8f5d72",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/transformer.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "transformer"
+            }
+          },
+          {
+            "id": "a677655c93815b91",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -163,8 +188,19 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "e762bc8cbef606a1",
+  "active": "5305ae9fea8f5d72",
   "lastOpenFiles": [
+    "assets/Pasted Image 20250504153349_705.png",
+    "assets/Pasted Image 20250504152628_666.png",
+    "assets/Pasted Image 20250504152300_625.png",
+    "assets/Pasted Image 20250504152215_624.png",
+    "assets/Pasted Image 20250504151513_605.png",
+    "assets/Pasted Image 20250504151401_473.png",
+    "assets/Pasted Image 20250504150453_492.png",
+    "assets/Pasted Image 20250504150407_489.png",
+    "assets/Pasted Image 20250504145743_479.png",
+    "Excalidraw/transformer.md",
+    "Excalidraw/高度估计流程.md",
     "logseq/bak/journals/2025_03_06/2025-04-28T11_31_44.122Z.Desktop.md",
     "logseq/bak/journals/2025_03_06",
     "logseq/bak/journals/2025_01_21/2025-04-28T11_31_37.676Z.Desktop.md",
@@ -191,9 +227,6 @@
     "logseq/bak/journals/2024_12_16/2025-03-30T06_44_29.390Z.Desktop.md",
     "logseq/bak/journals/2024_12_12/2025-03-30T06_44_29.389Z.Desktop.md",
     "logseq/bak/journals/2024_12_03/2025-03-30T06_44_29.387Z.Desktop.md",
-    "journals/2025_04_14.md",
-    "journals/2025_03_30.md",
-    "journals/2025_04_27.md",
     "logseq/bak/Excalidraw/高度估计流程",
     "logseq/bak/Excalidraw/非平行算法流程",
     "logseq/bak/Excalidraw/强制平行控制流程",
@@ -204,12 +237,6 @@
     "logseq/bak/pages/Work___车道线模型解析",
     "assets/csapp封面.jpg",
     "assets/SGI内存池链表实现图解.png",
-    "assets/007944_1723019908441_0.png",
-    "assets/1730986745889_1730986753246_0.png",
-    "assets/image_1704207566308_0.png",
-    "assets/image_1708526286925_0.png",
-    "assets/image_1708526303571_0.png",
-    "assets/image_1708526330353_0.png",
     "文件上传下载计划.canvas"
   ]
 }
