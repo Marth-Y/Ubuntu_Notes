@@ -407,12 +407,13 @@ public:: true
 		- > 1. 复制RAII对象必须一并复制它所管理的资源，所以资源的拷贝行为决定RAII对象的复制控制语义
 		  2. 常见的RAII拷贝行为是：禁止复制、引用计数。
 	- 条款15：在资源管理类中提供对原始资源的访问
+	  id:: 6786923d-c431-4115-81d6-94b9f802f53d
 	  collapsed:: true
 		- 资源管理类很好的解决了资源泄露的问题，但是有很多API参数是资源本身，因此需要资源管理类提供对原始资源的访问。
 		- 获取资源管理类中原始资源的方法有两种：显式转换和隐式转换
 			- 显式转换
 				- 定义一个成员函数`get`，用以返回原始指针
-				- 可以重载`operator->`、`operator*`。他们允许隐式转换至底部原始指针
+				- 可以重载`operator->`、`operator*`。他们允许隐式转换至底部原始指针 #CPP/重载
 				- 缺点就是：每次都需要调用`get`函数，用起来可能不自然。
 			- 隐式转换 #类型转换操作符
 				- 提供一个隐式转换函数：
@@ -439,7 +440,8 @@ public:: true
 		- 因此，采用显式还是隐式，取决于RAII类被设计执行的特定工作以及他被使用的情况。
 		- > 1. API往往要求访问原始资源，所以每一个RAII类应该提供一个“取得其所管理的资源”的方法
 		  2. 对原始资源的访问可能经由显式转换或者隐式转换，一般而言显式转换比较安全，但隐式转换对客户比较方便。
-	- 条款16：成对使用new和delete时要采取相同形式 #CPP/newdelete
+	- 条款16：成对使用new和delete时要采取相同形式 #CPP/newdelete #CPP/重载
+	  id:: 6786923d-897e-4740-9877-868ca1dc03f8
 	  collapsed:: true
 		- 对new的数组要用对应的`delete[]`
 		- new的底层操作：
@@ -492,8 +494,9 @@ public:: true
 		- 设计一个class时，请思考以下问题：
 			- 新type的对象应该如何被创建和释放？
 			  logseq.order-list-type:: number
-				- 构造函数、析构函数、内存分配和释放函数的设计(operator new、operator new[]、operator delete、operator deltep[])
+				- 构造函数、析构函数、内存分配和释放函数的设计(operator new、operator new[]、operator delete、operator deltep[]) #CPP/重载
 				  logseq.order-list-type:: number
+				  id:: 6786923d-6ce9-4bcc-9c76-af435a355194
 			- 对象的初始化和对象的赋值该有什么样的差别？
 			  logseq.order-list-type:: number
 				- 这个答案决定构造函数和赋值运算符函数的行为和差异，不要混淆了初始化和赋值
@@ -590,6 +593,7 @@ public:: true
 			  background-color:: green
 	- 条款23：宁以non-member、non-friend替换member函数 #CPP
 	  id:: 67e8f4bd-4ce3-4f03-bcad-25c41fc888d3
+	  collapsed:: true
 		- 在我最近的工作中有以下场景：
 			- 对地面元素的跟踪需要每一帧都clear一下成员变量。我选择了在类内增加一个member函数，做clear
 				- ```cpp
@@ -599,14 +603,71 @@ public:: true
 				    }
 				  };
 				  ```
-		- 这样做看起来是符合面对对象守则的：数据以及对数据的操作应该被捆绑在一起。但实际上这违背了这一原则。
+		- 像上面这样做看起来是符合面对对象守则的：数据以及对数据的操作应该被捆绑在一起。但实际上这违背了这一原则。
 		- ((67e8e84c-9852-4376-8442-1179540af251))
 		- member函数、friend函数可以访问类的私有成员，而non-member函数无法访问，因此如果用non-member函数来实现，就会有更好的封装性。越少有代码能够看见私有成员
 		- ==在C++中，比较好的做法是：写一个与T类同一命名空间内的non-member函数，调用T类的每一个成员变量的clear函数。==
 		-
 		- > 总结：这样做可以增加封装性、包裹弹性和机能扩充性
-		-
+		- 我对这条理解不深，目前想法就是在清空的函数上用就行，或者清空的函数也可以作为成员函数。
+		  background-color:: green
+	- 条款24：若所有参数皆需类型转换，请为此采用non-member函数 #CPP
+	  id:: 6818b4fd-9951-4e45-b2d8-c8c58d802031
+	  collapsed:: true
+		- 即：如果你需要对一个函数的参数进行类型转换，将这个函数实现为non-member函数
+		- ==例==，实现有理数乘法：
+			- ```cpp
+			  class Rational {
+			    public:
+			      Rational(int numerator = 0, int denominator = 1); // 没有explict禁止隐式转换。因此存在int类型向Rational的隐式转换
+			    	int numerator() const;
+			    	int denominator() const;
+			    private:
+			    	...
+			  };
+			  ```
+			- 为了实现Rational的乘法，则：需要重载`operator*`函数 #CPP/重载
+			- 以下分别使用member函数和non-member函数对比：
+				- member函数
+					- ```cpp
+					  // member函数实现
+					  class Rational {
+					    public:
+					    	const Rational operator*(const Rational& rhs) const;
+					  };
+					  ```
+					- 那么对于：
+					- ```cpp
+					  Rational oneEighth(1, 8);
+					  Rational oneHalf(1, 2);
+					  Rational result = oneHalf * oneEight; // √
+					  result = result * oneEight;			  // √
+					  // 混合运算
+					  result = oneHalf * 2				  // √
+					  result = 2 * oneHalf				  // ×
+					  
+					  // 这里我理解就是：2和oneHalf都需要转换为Rational对象，才能计算。在2后置中，能正确转换，但是在2前置中2无法正确转换。因此要实现一个non-member函数
+					  // 允许对所有参数进行类型转换
+					  ```
+					- 将以上混合运算写为实际的函数形式
+					- ```cpp
+					  result = oneHalf.operator*(Rational(2, 1)); // 可以使用c++ insight查看。2处于Rational类operator*的参数列表重，可以隐式转换为Rational对象
+					  2.operator*(oneHalf);                       // oneHalf无法隐式转换，甚至2没有类，operator*成员函数
+					  ```
+					- `Rational`类型有实现`operator*`函数，但是整数2没有相应的class。因此编译器尝试寻找可用的non-member `operator*`函数：
+					- ```cpp
+					  operator*(2, oneHalf);
+					  ```
+					- 但是目前没有接收`int`和`Rational`类型的non-member `opeartor*`函数
+					- 因此需要实现non-member函数
+				- non-member函数
+					- ```cpp
+					  const Rational operator*(const Rational& lhs, const Rational& rhs) const;
+					  ```
+					- 就可以实现混合运算了。
+			- 需要实现为`friend函数`吗？
+				- 完全不需要，因为non-member函数内调用 Rational 的 public 接口已经可以实现目前的功能了，完全没有必要实现为 friend 函数破坏 Rational 类的封装性。
+		- > 总结：本条在面向对象编程时可行，但是在模板编程中，又需要辩证看待。
+		  如果你需要为某个函数的所有参数进行类型转换，那么这个函数必须是个non-member函数
 	-
--
--
 -
