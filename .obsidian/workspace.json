@@ -13,13 +13,50 @@
             "state": {
               "type": "excalidraw",
               "state": {
+                "file": "Excalidraw/模型布局.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "模型布局"
+            }
+          },
+          {
+            "id": "783ee29a6bd733e9",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/模型布局.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "模型布局"
+            }
+          },
+          {
+            "id": "5cfa7c58dfc04144",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/transformer.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "transformer"
+            }
+          },
+          {
+            "id": "04784d22f1306ece",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
                 "file": "Excalidraw/Mul_ToPo.md"
               },
               "icon": "excalidraw-icon",
               "title": "Mul_ToPo"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -163,9 +200,21 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "2908342692f51adf",
+  "active": "5cfa7c58dfc04144",
   "lastOpenFiles": [
     "Excalidraw/Mul_ToPo.md",
+    "Excalidraw/lane_ff相机融合.md",
+    "Excalidraw/DecodeInference.md",
+    "Excalidraw/csapp.md",
+    "Excalidraw/车道线消失问题分析.md",
+    "Excalidraw/模型布局.md",
+    "Excalidraw/内存池图解.md",
+    "Excalidraw/CPP_STL可视化.md",
+    "Excalidraw/强制平行控制流程.md",
+    "Excalidraw/力扣.md",
+    "Excalidraw/高度估计流程.md",
+    "Excalidraw/transformer.md",
+    "pages/Work___车道线模型解析.md",
     "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T15_22_34.273Z.Desktop.md",
     "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T15_22_24.242Z.Desktop.md",
     "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T15_22_09.215Z.Desktop.md",
@@ -179,18 +228,6 @@
     "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T15_12_50.765Z.Desktop.md",
     "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T15_05_55.641Z.Desktop.md",
     "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T15_05_19.617Z.Desktop.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T15_05_04.617Z.Desktop.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T15_04_33.607Z.Desktop.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T15_03_45.523Z.Desktop.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T15_03_30.512Z.Desktop.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T14_40_04.391Z.Desktop.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T14_39_03.378Z.Desktop.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T14_38_48.377Z.Desktop.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T14_38_26.367Z.Desktop.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T14_37_56.380Z.Desktop.md",
-    "journals/2025_06_03.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T14_36_00.417Z.Desktop.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-03T14_35_40.337Z.Desktop.md",
     "logseq/bak/Excalidraw/Mul_ToPo",
     "logseq/bak/Excalidraw/transformer",
     "logseq/bak/pages/深度学习",

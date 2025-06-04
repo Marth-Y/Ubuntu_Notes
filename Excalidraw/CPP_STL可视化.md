@@ -123,8 +123,8 @@ bf14f994a63f899fd073dd83f3f2a0a448581f5d: [[内存池图解]]
 		},
 		{
 			"type": "image",
-			"version": 258,
-			"versionNonce": 553744178,
+			"version": 259,
+			"versionNonce": 553744179,
 			"isDeleted": false,
 			"id": "yqD2RTPz",
 			"fillStyle": "hachure",
@@ -150,7 +150,7 @@ bf14f994a63f899fd073dd83f3f2a0a448581f5d: [[内存池图解]]
 				}
 			],
 			"updated": 1736870744847,
-			"link": "[[内存池图解.excalidraw]]",
+			"link": "[[内存池图解]]",
 			"locked": false,
 			"status": "pending",
 			"fileId": "bf14f994a63f899fd073dd83f3f2a0a448581f5d",
@@ -213,8 +213,8 @@ bf14f994a63f899fd073dd83f3f2a0a448581f5d: [[内存池图解]]
 		},
 		{
 			"type": "text",
-			"version": 187,
-			"versionNonce": 245664931,
+			"version": 189,
+			"versionNonce": 82530276,
 			"isDeleted": false,
 			"id": "hwWGTqfv",
 			"fillStyle": "hachure",
@@ -227,8 +227,8 @@ bf14f994a63f899fd073dd83f3f2a0a448581f5d: [[内存池图解]]
 			"y": -430.3423226451719,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 156.64085388183594,
-			"height": 25,
+			"width": 156.3671875,
+			"height": 24,
 			"seed": 26302,
 			"groupIds": [],
 			"frameId": null,
@@ -239,19 +239,19 @@ bf14f994a63f899fd073dd83f3f2a0a448581f5d: [[内存池图解]]
 					"type": "arrow"
 				}
 			],
-			"updated": 1736870974739,
+			"updated": 1749048323737,
 			"link": "[[CPP/STL]]",
 			"locked": false,
 			"fontSize": 20,
-			"fontFamily": 1,
+			"fontFamily": 3,
 			"text": "📍[[CPP/STL]]",
 			"rawText": "[[CPP/STL]]",
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"containerId": null,
 			"originalText": "📍[[CPP/STL]]",
-			"lineHeight": 1.25,
-			"baseline": 18
+			"lineHeight": 1.2,
+			"baseline": 19
 		}
 	],
 	"appState": {
@@ -264,15 +264,15 @@ bf14f994a63f899fd073dd83f3f2a0a448581f5d: [[内存池图解]]
 		"currentItemStrokeStyle": "solid",
 		"currentItemRoughness": 2,
 		"currentItemOpacity": 100,
-		"currentItemFontFamily": 1,
+		"currentItemFontFamily": 3,
 		"currentItemFontSize": 20,
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1485.1491463830248,
-		"scrollY": 688.9069057619711,
+		"scrollX": 1914.5241463830234,
+		"scrollY": 569.7326061930058,
 		"zoom": {
-			"value": 1.4500000000000002
+			"value": 1.6
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
