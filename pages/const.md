@@ -8,4 +8,14 @@
 	  logseq.order-list-type:: number
 	- 操作const对象。
 	  logseq.order-list-type:: number
-	-
+- 遇到一个错误：
+	- 我定义了`float a[2][40]`二维数组。
+	- 直接用`float* x = a;`想要获取数组指针，报错：
+		- `error: cannot convert 'float (*)[40]' to 'float*' in initialization`
+	- 原因：a是一个二维数组，他的类型是`flota(*)[40]`(指向`float[40]`的指针)，编译器不允许隐式转换为`float*`
+	- 解决：
+		- 直接取首地址：`float* x = &a[0][0]`
+		  logseq.order-list-type:: number
+		- 取第一行首地址：`float* x = a[0]`
+		  logseq.order-list-type:: number
+-

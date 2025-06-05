@@ -98,6 +98,7 @@
 	  target_compile_definitions(main PRIVATE ORT_NO_EXCEPTIONS)
 	  ```
 - set(CMAKE_VERBOSE_MAKEFILE ON)
+  id:: 66e2659c-32af-4771-9274-16a6159e3cde
 	- 可以查看每个文件的编译命令，由此可以排查许多问题
 		- 1. 可以查看是否定义宏、链接的库等等一切编译选项
 		- 2. 可以查看链接的库地址是否正确等等

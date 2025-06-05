@@ -23,12 +23,14 @@
             "id": "d2566b2dc4fe4d6e",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Mul_ToPo.md"
+                "file": "logseq/bak/pages/EffectiveC++/2024-03-05T12_27_16.087Z.Desktop.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Mul_ToPo"
+              "icon": "lucide-file",
+              "title": "2024-03-05T12_27_16.087Z.Desktop"
             }
           }
         ]
@@ -63,7 +65,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#LeetCode",
+                "query": "tag:#const",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -175,37 +177,12 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "5cfa7c58dfc04144",
+  "active": "b38b94fd54dbab49",
   "lastOpenFiles": [
-    "Excalidraw/DecodeInference.md",
-    "Excalidraw/Mul_ToPo.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-05T15_54_39.169Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_54_21.828Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_53_52.085Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_53_37.085Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_53_22.185Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_53_06.075Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_52_51.075Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_52_36.069Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_52_21.068Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_52_12.916Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_52_06.091Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_51_51.077Z.Desktop.md",
     "Excalidraw/transformer.md",
-    "Excalidraw/模型布局.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_51_18.255Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_51_06.146Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_50_51.060Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_50_37.043Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_50_30.141Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_50_21.193Z.Desktop.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-05T15_49_05.535Z.Desktop.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-05T15_48_50.542Z.Desktop.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-05T15_48_35.530Z.Desktop.md",
-    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-05T15_48_20.535Z.Desktop.md",
-    "logseq/bak/Excalidraw/Mul_ToPo",
+    "journals/2025_06_03.md",
+    "logseq/bak/Excalidraw/transformer/2025-06-03T07_43_32.749Z.Desktop.md",
     "logseq/bak/Excalidraw/transformer",
-    "logseq/bak/pages/深度学习",
     "assets/Pasted Image 20250504153349_705.png",
     "assets/Pasted Image 20250504152628_666.png",
     "assets/Pasted Image 20250504152300_625.png",
