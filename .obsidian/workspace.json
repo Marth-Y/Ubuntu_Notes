@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5cfa7c58dfc04144",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/DecodeInference.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "DecodeInference"
-            }
-          },
-          {
             "id": "d2566b2dc4fe4d6e",
             "type": "leaf",
             "state": {
@@ -152,13 +140,27 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pages/a1000.md"
+                "file": "Excalidraw/Mul_ToPo.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "a1000 的大纲"
+              "title": "Mul_ToPo 的大纲"
+            }
+          },
+          {
+            "id": "9c7fa47afce5f28d",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {},
+              "icon": "trident-custom",
+              "title": "Mermaid Toolbar"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -177,15 +179,25 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "5cfa7c58dfc04144",
+  "active": "d2566b2dc4fe4d6e",
   "lastOpenFiles": [
-    "journals/2025_06_09.md",
+    "logseq/bak/pages/contents/2025-02-06T15_54_02.558Z.Desktop.md",
+    "Excalidraw/DecodeInference.md",
     "Excalidraw/Mul_ToPo.md",
     "Excalidraw/DecodeInference.md",
     "logseq/bak/Excalidraw/DecodeInference/2025-06-06T10_01_14.950Z.Desktop.md",
     "Excalidraw/transformer.md",
-    "journals/2025_06_03.md",
-    "logseq/bak/Excalidraw/transformer/2025-06-03T07_43_32.749Z.Desktop.md",
+    "Excalidraw/模型布局.md",
+    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_51_18.255Z.Desktop.md",
+    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_51_06.146Z.Desktop.md",
+    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_50_51.060Z.Desktop.md",
+    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_50_37.043Z.Desktop.md",
+    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_50_30.141Z.Desktop.md",
+    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_50_21.193Z.Desktop.md",
+    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-05T15_49_05.535Z.Desktop.md",
+    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-05T15_48_50.542Z.Desktop.md",
+    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-05T15_48_35.530Z.Desktop.md",
+    "logseq/bak/Excalidraw/Mul_ToPo",
     "logseq/bak/Excalidraw/transformer",
     "assets/Pasted Image 20250504153349_705.png",
     "assets/Pasted Image 20250504152628_666.png",
