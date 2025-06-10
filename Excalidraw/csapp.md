@@ -7,128 +7,30 @@ tags: [excalidraw]
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
 
-# Text Elements
-[[Reading___深入理解计算机系统]] ^HlzAxsW9
+# Excalidraw Data
 
+## Text Elements
+## Element Links
+HlzAxsW9: [[Reading___深入理解计算机系统]]
 
-# Embedded files
+## Embedded Files
 f7ae80f7b63c57314ce1340d3515bcd66225ccbb: [[csapp封面.jpg]]
 
 %%
-# Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.0.14",
-	"elements": [
-		{
-			"type": "image",
-			"version": 750,
-			"versionNonce": 204627533,
-			"isDeleted": false,
-			"id": "HlzAxsW9",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": -341,
-			"y": -250.9375,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"width": 197,
-			"height": 283,
-			"seed": 990500173,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1736872086498,
-			"link": "[[Reading___深入理解计算机系统]]",
-			"locked": false,
-			"status": "pending",
-			"fileId": "f7ae80f7b63c57314ce1340d3515bcd66225ccbb",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"id": "rnzUeLnw",
-			"type": "text",
-			"x": -332,
-			"y": -120.15625,
-			"width": 10,
-			"height": 25,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "solid",
-			"strokeWidth": 2,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 980134093,
-			"version": 2,
-			"versionNonce": 1312951843,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1736871764640,
-			"link": null,
-			"locked": false,
-			"text": "",
-			"rawText": "",
-			"fontSize": 20,
-			"fontFamily": 1,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"baseline": 18,
-			"containerId": null,
-			"originalText": "",
-			"lineHeight": 1.25
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#1e1e1e",
-		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "solid",
-		"currentItemStrokeWidth": 2,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 1,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": 1,
-		"currentItemFontSize": 20,
-		"currentItemTextAlign": "left",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 794,
-		"scrollY": 455.21875,
-		"zoom": {
-			"value": 2
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#C9C9C9FF",
-			"Regular": "#EDEDEDFF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		}
-	},
-	"files": {}
-}
+## Drawing
+```compressed-json
+N4KAkARALgngDgUwgLgAQQQDwMYEMA2AlgCYBOuA7hADTgQBuCpAzoQPYB2KqATLZMzYBXUtiRoIACyhQ4zZAHoFAc0JRJQgEYA6bGwC2CgF7N6hbEcK4OCtptbErHALRY8RMpWdx8Q1TdIEfARcZgRmBShcZQUebQBGOJ4aOiCEfQQOKGZuAG1wMFAwYuh4cXRCfWikfhLGFnYuNAB2AFZ42sh61k4AOU4xbniATh5RgGZxgDZm8c6IQmYAETSo
+
+BGJuADMCMPmSbggACXwjAEFMZgB1YZTiyE3CfHwAZVhgg8EPW5LmKFI2ADWCEuJHU3D4BQEf0BCFeMHeEk++3m/z8kg44RyaA6kIgbDguGwahgQwADKT5tZlAjUBTcZhuM5xgAWHF3CAktDOHitUnaYbjNrzX7/IEAYTY+DYpAOf2szAJgSy30gmkJAOUqI4xAlUplEjlHAVuCVUBVEAooMkQ2GzXmkgQhGU0nBAA45riwutuMNhqTeaT4rN5prh
+
+HAAJLELGoXIAXXmm3IGUj3A4QieKOE2oxzGjaYzuM0WeIAFFghkstG4/MhHBiLg1htsc1mcNWq1XcMpr7efMiBwAQdcrkAEohRwcZQAfRngEfbQCmioAwF0Ax5GAQujAOnegC5zQDfPoB9v1jsfNUuwQKbqG2+F2nqiUCE0YgiG1hEn5oewRTEk2zVwCFdpK/mhTOM2CtLM8TMmI8QsqSxDjO0rSaNgxBTFMPA8tg2CaJo5rMO45T5HcYBsnc8SQ
+
+vGuLPsQWAHLgpLmtg/xwKm6b4AUAC+4DkZAuBwHArwNuURSQOo6TlBARDOmatQMIQCAUAAQuqoZCNqurSgcADEmzaTp3wQNgIimuGaz6K8ooIGp+roBp8QILZtl6QZpBGSZiknspqmSupBrkEaiqZFJBT6YZAXGekABijwvG8YlIhs0lOS56RmTCILEGCaAQiUiWhSZKVAnCNIQHFjkhVkYX6COwjOjm0bEcFzm5ekADyBJErAZJ0tlZVQBV4WcF
+
+A4W4Pojycqg9U5eVJn9VkzyEEY5Q8F1kCTb1JkACpYFApwSU06DBJsgXdY1U3JVEpDbc5bAUA6uBnvm+AJT1FUltqpxXTd440R9pUnWt6Tvf8FDrWUBxavFQW4f8TwABrcEBUzSVDkr4AAmtwLLNNorrxFMzKkqhrTSUYbAGNwQldAQQiLexT1/RVVUqcQtVg8WemaiQc0LcxBYlBzxCvAgTFoETQX8wAsmwVGvbgmjBGeF5XnzpAkJZ5O4vJkpn
+
+hApDKGqAAUPBBtQvDG6bdq0torQAJTmmOyjpiaYN67ghvjBSvDuybPBe5bNsQLTQWrflCCtVAjR5ix0mJsNCBjtqTDPso6vspksvy9wfzU/M2BEMLqBZwg8wcLHmekNnuLCFA/blIXgclHYABWCDYNkzwl3AkvSyXcvemgitF0FhLh4w62k/gKclLAiAfGkreNPRd5QAYIMz2gD19mwJ59+eOyD+yiYGM8c/h5wWx732oTbfPo/jzzrHFBxYBsfw
+
+EBvuE5McWxQA
 ```
 %%
