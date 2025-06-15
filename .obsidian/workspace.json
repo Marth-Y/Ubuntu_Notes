@@ -8,30 +8,33 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0e660f28d3450269",
+            "id": "29e8e73522641d19",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Mul_ToPo.md"
+                "file": "pages/kalman.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Mul_ToPo"
+              "icon": "lucide-file",
+              "title": "kalman"
             }
           },
           {
-            "id": "d2566b2dc4fe4d6e",
+            "id": "65424c79859f2b5f",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/CPP_STL可视化.md"
+                "file": "Excalidraw/Kalman/06-Multivariate-Kalman-Filters.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "CPP_STL可视化"
+              "title": "06-Multivariate-Kalman-Filters.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -63,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#const",
+                "query": "kalman",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -186,11 +189,26 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "0e660f28d3450269",
+  "active": "65424c79859f2b5f",
   "lastOpenFiles": [
+    "assets/Pasted Image 20250615223849_853.png",
+    "pages/kalman.md",
+    "Excalidraw/Kalman/06-Multivariate-Kalman-Filters.excalidraw.md",
+    "logseq/bak/pages/contents/2025-01-13T09_13_53.276Z.Desktop.md",
+    "Excalidraw/Mul_ToPo.md",
+    "Excalidraw/Kalman",
+    "logseq/bak/Excalidraw/高度估计流程/2025-06-15T05_55_16.484Z.Desktop.md",
+    "logseq/bak/Excalidraw/车道线消失问题分析/2025-06-15T05_55_15.481Z.Desktop.md",
+    "logseq/bak/Excalidraw/模型布局/2025-06-15T05_55_14.476Z.Desktop.md",
+    "logseq/bak/Excalidraw/强制平行控制流程/2025-06-15T05_55_13.472Z.Desktop.md",
+    "logseq/bak/Excalidraw/力扣/2025-06-15T05_55_12.465Z.Desktop.md",
+    "logseq/bak/Excalidraw/内存池图解/2025-06-15T05_55_11.463Z.Desktop.md",
+    "logseq/bak/Excalidraw/Mul_ToPo/2025-06-15T05_55_11.346Z.Desktop.md",
+    "logseq/bak/Excalidraw/DecodeInference/2025-06-15T05_55_10.342Z.Desktop.md",
+    "logseq/bak/Excalidraw/csapp/2025-06-15T05_55_09.340Z.Desktop.md",
+    "logseq/bak/Excalidraw/CPP_STL可视化/2025-06-15T05_55_09.195Z.Desktop.md",
     "logseq/bak/Excalidraw/Mul_ToPo/2025-06-11T06_25_45.813Z.Desktop.md",
     "Excalidraw/Bev_Crosswalk_Track.md",
-    "Excalidraw/Mul_ToPo.md",
     "Excalidraw/transformer.md",
     "pages/内存池.md",
     "Excalidraw/CPP_STL可视化.md",
@@ -200,21 +218,7 @@
     "Excalidraw/力扣.md",
     "Excalidraw/高度估计流程.md",
     "Excalidraw/车道线消失问题分析.md",
-    "Excalidraw/DecodeInference.md",
-    "Excalidraw/csapp.md",
-    "Excalidraw/Drawing 2025-06-10 00.21.52.excalidraw.md",
-    "Excalidraw/lane_ff相机融合.md",
     "Excalidraw/无标题-2025-01-14-0943.excalidraw",
-    "Excalidraw/Drawing 2025-06-10 00.11.30.excalidraw.md",
-    "logseq/bak/pages/EffectiveC++/2024-03-05T12_27_16.087Z.Desktop.md",
-    "logseq/bak/pages/contents/2025-02-06T15_54_02.558Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-06T10_01_14.950Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_51_18.255Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_51_06.146Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_50_51.060Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_50_37.043Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_50_30.141Z.Desktop.md",
-    "logseq/bak/Excalidraw/DecodeInference/2025-06-05T15_50_21.193Z.Desktop.md",
     "logseq/bak/Excalidraw/Mul_ToPo",
     "logseq/bak/Excalidraw/transformer",
     "assets/Pasted Image 20250504153349_705.png",
@@ -232,7 +236,6 @@
     "logseq/bak/Excalidraw/高度估计流程",
     "logseq/bak/Excalidraw/非平行算法流程",
     "logseq/bak/Excalidraw/强制平行控制流程",
-    "logseq/bak/Excalidraw/Drawing 2025-03-26 11.41.42.excalidraw",
     "leetcode.canvas",
     "assets/csapp封面.jpg",
     "文件上传下载计划.canvas"
