@@ -3,6 +3,7 @@ excalidraw-plugin: parsed
 tags:
   - excalidraw
   - Work
+  - Reading
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 

@@ -25,10 +25,10 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/lane_perception/lane_ff相机融合.md"
+                "file": "Excalidraw/transformer.md"
               },
               "icon": "excalidraw-icon",
-              "title": "lane_ff相机融合"
+              "title": "transformer"
             }
           },
           {
@@ -101,7 +101,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 414.5
+    "width": 414.5,
+    "collapsed": true
   },
   "right": {
     "id": "a4bbc034613eae1c",
@@ -201,9 +202,11 @@
   },
   "active": "5e3b46b4b1144d9a",
   "lastOpenFiles": [
+    "assets/Pasted Image 20250618000225_012.png",
+    "Excalidraw/transformer.md",
     "Excalidraw/lane_perception/DecodeInference.md",
-    "Excalidraw/lane_perception/lane_ff相机融合.md",
     "Excalidraw/lane_perception/Mul_ToPo.md",
+    "Excalidraw/lane_perception/lane_ff相机融合.md",
     "Excalidraw/lane_perception/BEV聚类.md",
     "Excalidraw/lane_perception/模型布局.md",
     "Excalidraw/lane_perception/高度估计流程.md",
@@ -220,7 +223,6 @@
     "Excalidraw/lane_perception/车道线消失问题分析.md",
     "Excalidraw/力扣.md",
     "Excalidraw/内存池图解.md",
-    "Excalidraw/transformer.md",
     "Excalidraw/Mul_ToPo.md",
     "Excalidraw/csapp.md",
     "Excalidraw/CPP_STL可视化.md",
@@ -229,7 +231,6 @@
     "pages/kalman.md",
     "logseq/bak/pages/contents/2025-01-13T09_13_53.276Z.Desktop.md",
     "Excalidraw/Kalman",
-    "logseq/bak/Excalidraw/高度估计流程/2025-06-15T05_55_16.484Z.Desktop.md",
     "Excalidraw/无标题-2025-01-14-0943.excalidraw",
     "logseq/bak/Excalidraw/Mul_ToPo",
     "logseq/bak/Excalidraw/transformer",
