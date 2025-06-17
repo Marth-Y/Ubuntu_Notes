@@ -7,4 +7,12 @@
 	  logseq.order-list-type:: number
 	- 多线程问题，其中一个线程崩溃，导致异步log停留在一个位置
 	  logseq.order-list-type:: number
--
+- 实车core_dump文件查看方式
+	- 拿到实车core_dump文件
+	  logseq.order-list-type:: number
+	- 下载实车运行的对应的感知整包
+	  logseq.order-list-type:: number
+	- 上板子
+	  logseq.order-list-type:: number
+	- 在感知整包里面gdb查看
+	  logseq.order-list-type:: number
