@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "37bfd55e309caa2d",
+        "id": "d4ac5bce76e4acc7",
         "type": "tabs",
         "children": [
           {
-            "id": "c7e59777a42db433",
+            "id": "29ca31ed7610bbb1",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/lane_perception/DecodeInference.md"
+                "file": "Excalidraw/MerMind.md"
               },
               "icon": "excalidraw-icon",
-              "title": "DecodeInference"
-            }
-          },
-          {
-            "id": "5e3b46b4b1144d9a",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/transformer.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "transformer"
-            }
-          },
-          {
-            "id": "ec702fbc91a32f60",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/lane_perception/Mul_ToPo.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Mul_ToPo"
+              "title": "MerMind"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -101,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 414.5,
-    "collapsed": true
+    "width": 414.5
   },
   "right": {
     "id": "a4bbc034613eae1c",
@@ -200,12 +174,20 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "5e3b46b4b1144d9a",
+  "active": "29ca31ed7610bbb1",
   "lastOpenFiles": [
-    "assets/Pasted Image 20250618000225_012.png",
-    "Excalidraw/transformer.md",
-    "Excalidraw/lane_perception/DecodeInference.md",
+    "Excalidraw/MerMind.md",
     "Excalidraw/lane_perception/Mul_ToPo.md",
+    "Excalidraw/transformer.md",
+    "journals/2024_03_03.md",
+    "journals/2024_04_21.md",
+    "pages/cppreference___std%3A%3Aforward.md",
+    "journals/2024_02_06.md",
+    "pages/项目___协程.md",
+    "logseq/bak/Excalidraw/模型布局/2025-02-06T10_33_05.049Z.Desktop.md",
+    "logseq/bak/pages/contents/2025-03-04T12_02_24.052Z.Desktop.md",
+    "Excalidraw/lane_perception/DecodeInference.md",
+    "assets/Pasted Image 20250618000225_012.png",
     "Excalidraw/lane_perception/lane_ff相机融合.md",
     "Excalidraw/lane_perception/BEV聚类.md",
     "Excalidraw/lane_perception/模型布局.md",
@@ -222,14 +204,7 @@
     "Excalidraw/lane_perception/未命名.md",
     "Excalidraw/lane_perception/车道线消失问题分析.md",
     "Excalidraw/力扣.md",
-    "Excalidraw/内存池图解.md",
-    "Excalidraw/Mul_ToPo.md",
-    "Excalidraw/csapp.md",
-    "Excalidraw/CPP_STL可视化.md",
-    "Excalidraw/Kalman/06-Multivariate-Kalman-Filters.excalidraw.md",
     "assets/Pasted Image 20250615223849_853.png",
-    "pages/kalman.md",
-    "logseq/bak/pages/contents/2025-01-13T09_13_53.276Z.Desktop.md",
     "Excalidraw/Kalman",
     "Excalidraw/无标题-2025-01-14-0943.excalidraw",
     "logseq/bak/Excalidraw/Mul_ToPo",
@@ -242,7 +217,6 @@
     "assets/Pasted Image 20250504151401_473.png",
     "assets/Pasted Image 20250504150453_492.png",
     "assets/Pasted Image 20250504150407_489.png",
-    "assets/Pasted Image 20250504145743_479.png",
     "logseq/bak/journals/2025_03_06",
     "logseq/bak/journals/2025_01_21",
     "logseq/bak/pages/googletest",
