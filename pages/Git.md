@@ -15,4 +15,6 @@
 	- **如果没有输出，则可以使用`git remote add origin git@git.nullmax.net:nullmax-dev/common/protocol.git`设置**
 - 删除远程仓库
 	- `git push origin --delete <分支名>`
--
+- 更改默认编辑器
+	- `git config --global core.editor "nano"`
+	-
