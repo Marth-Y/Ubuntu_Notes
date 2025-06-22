@@ -13,13 +13,26 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/lane_perception/Mul_ToPo.md"
+                "file": "Excalidraw/Kalman/06-Multivariate-Kalman-Filters.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "Mul_ToPo"
+              "title": "06-Multivariate-Kalman-Filters.excalidraw"
+            }
+          },
+          {
+            "id": "4f238ea18236cc20",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Kalman/Kalman_Filter_Equation.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Kalman_Filter_Equation"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -174,8 +187,17 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "29ca31ed7610bbb1",
+  "active": "4f238ea18236cc20",
   "lastOpenFiles": [
+    "assets/Pasted Image 20250622204740_787.png",
+    "Excalidraw/Kalman/06-Multivariate-Kalman-Filters.excalidraw.md",
+    "Excalidraw/Kalman/Kalman_Filter_Equation.md",
+    "assets/Pasted Image 20250621153848_659.png",
+    "assets/Pasted Image 20250621153436_692.png",
+    "assets/Pasted Image 20250621152547_791.png",
+    "assets/Pasted Image 20250621152426_243.png",
+    "assets/Pasted Image 20250621150337_546.png",
+    "Excalidraw/lane_perception/Mul_ToPo.md",
     "logseq/bak/Excalidraw/lane_perception/Mul_ToPo/2025-06-20T06_55_25.590Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/Mul_ToPo/2025-06-20T06_55_18.926Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/Mul_ToPo/2025-06-20T06_54_59.235Z.Desktop.md",
@@ -184,7 +206,6 @@
     "logseq/bak/Excalidraw/lane_perception/Mul_ToPo/2025-06-20T06_54_32.155Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/Mul_ToPo",
     "Excalidraw/MerMind.md",
-    "Excalidraw/lane_perception/Mul_ToPo.md",
     "Excalidraw/transformer.md",
     "journals/2024_03_03.md",
     "journals/2024_04_21.md",
@@ -202,9 +223,6 @@
     "logseq/bak/Excalidraw/lane_perception/模型布局/2025-06-17T07_20_07.001Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/模型布局",
     "Excalidraw/lane_perception/Bev_Crosswalk_Track.md",
-    "Excalidraw/lane_perception/强制平行控制流程.md",
-    "Excalidraw/lane_perception/高度估计流程 1.md",
-    "Excalidraw/lane_perception/车道线消失问题分析 1.md",
     "assets/Pasted Image 20250615223849_853.png",
     "Excalidraw/Kalman",
     "Excalidraw/无标题-2025-01-14-0943.excalidraw",
@@ -213,11 +231,6 @@
     "assets/Pasted Image 20250504153349_705.png",
     "assets/Pasted Image 20250504152628_666.png",
     "assets/Pasted Image 20250504152300_625.png",
-    "assets/Pasted Image 20250504152215_624.png",
-    "assets/Pasted Image 20250504151513_605.png",
-    "assets/Pasted Image 20250504151401_473.png",
-    "assets/Pasted Image 20250504150453_492.png",
-    "assets/Pasted Image 20250504150407_489.png",
     "logseq/bak/journals/2025_03_06",
     "logseq/bak/journals/2025_01_21",
     "logseq/bak/pages/googletest",
