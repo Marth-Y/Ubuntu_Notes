@@ -1,5 +1,5 @@
 - ==只对命令的简单形式进行介绍==
-- 参照《CMake构建实战——项目开发卷》
+- 参照 [[Reading/CMake构建实战]]
 - find_file #CPP/cmake
   collapsed:: true
 	- ```cmake
