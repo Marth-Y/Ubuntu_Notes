@@ -23,7 +23,7 @@ public:: true
 		- ==小结==：
 			- 对于单纯常量，最好以`const`或者`enum`替换宏。
 			- 对于宏函数，最好用`inline`替换。 #inline
-	- 条款03：尽可能使用const #EffectiveC++ #const #static
+	- 条款03：尽可能使用const #EffectiveC++ #const #static #constexpr
 	  collapsed:: true
 		- 1、const修饰指针
 			- {{embed ((65d604e7-6580-4230-a087-1ca03f46abe3))}}
