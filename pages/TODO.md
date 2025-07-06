@@ -9,7 +9,7 @@
 - TODO [[Reading/深度学习详解]]看完transformer，并且了解实现原理，最好是找点python实现代码跟着实现以下试试
 	- DONE 1201 已看完理论部分
 	- TODO 代码复现——前面走了弯路，第一次直接找的代码，发现看不懂，又找了B站视频，看到最后也不太懂，最后发现[[Reading/动手学深度学习]]中对transformer有实现，遂决定跟着实现一次，然后继续学习如何到处ONNX模型，也方便后续学习cuda。所以完成时间可能需要延长了。
-- TODO [[kalman]]实现 day7
+- TODO [[kalman]]实现 [[Kalman_Filter_Equation]]和 [[06-Multivariate-Kalman-Filters]]
 - TODO [[车道线项目代码回顾任务]]day30 后续在做详细进度分解以及记录
 - TODO [[Tensorrt]] 学习计划，day12。这个应该比较紧急，因为续费时间要过了——这个紧急程度可能需要调整一下了，可能后续需要先去看代码。
 	- TODO 配套的项目：[[百度文心大模型部署优化]] 可以稍缓

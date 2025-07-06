@@ -1,12 +1,13 @@
 ---
-
 excalidraw-plugin: parsed
-tags: [excalidraw]
-
+tags:
+  - excalidraw
+  - CPP
+  - 内存池
 ---
 ==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
 
-
+#excalidraw #CPP #内存池 
 # Excalidraw Data
 
 ## Text Elements
