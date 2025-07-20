@@ -35,7 +35,6 @@
 	- [[cppreference]]
 	- [[车道线项目代码回顾任务]]
 - 领域知识：
-  collapsed:: true
 	- Linux
 	  collapsed:: true
 		- [[Linux/搜索]]
