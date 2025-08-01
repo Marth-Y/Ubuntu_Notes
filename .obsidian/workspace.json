@@ -4,61 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "89ad35af1708f549",
+        "id": "788ebf995c0dc2b4",
         "type": "tabs",
         "children": [
           {
-            "id": "3e04f7c6b9eebc60",
+            "id": "fabfc64ecb1722af",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/lane_perception/00.lane_ff.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "00.lane_ff"
-            }
-          },
-          {
-            "id": "d61263703122a822",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Excalidraw/lane_perception/车道线消失问题分析.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "车道线消失问题分析"
-            }
-          },
-          {
-            "id": "731f3388f95928db",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/lane_perception/00.相机融合.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "00.相机融合"
-            }
-          },
-          {
-            "id": "fe5ec96d008de46f",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/lane_perception/00.lane_ff.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "00.lane_ff"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -213,8 +172,11 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "d61263703122a822",
+  "active": "fabfc64ecb1722af",
   "lastOpenFiles": [
+    "Excalidraw/lane_perception/00.lane_ff.md",
+    "Excalidraw/lane_perception/01.历史线匹配.md",
+    "Excalidraw/lane_perception/车道线消失问题分析.md",
     "Excalidraw/lane_perception/Mul_ToPo.md",
     "Excalidraw/lane_perception/DecodeInference.md",
     "Excalidraw/lane_perception/BEV聚类.md",
@@ -222,10 +184,7 @@
     "Excalidraw/lane_perception/强制平行控制流程.md",
     "Excalidraw/lane_perception/模型布局.md",
     "Excalidraw/lane_perception/高度估计流程.md",
-    "Excalidraw/lane_perception/车道线消失问题分析.md",
     "Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点.md",
-    "Excalidraw/lane_perception/01.历史线匹配.md",
-    "Excalidraw/lane_perception/00.lane_ff.md",
     "Excalidraw/lane_perception/00.相机融合.md",
     "logseq/bak/Excalidraw/lane_perception/历史线匹配/2025-07-30T09_27_37.974Z.Desktop.md",
     "pages/Work.md",
