@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "788ebf995c0dc2b4",
+        "id": "21766187ef6e5c8c",
         "type": "tabs",
         "children": [
           {
-            "id": "fabfc64ecb1722af",
+            "id": "b1d91aa011ec48a3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -148,8 +148,8 @@
             "state": {
               "type": "mermaid-toolbar-view",
               "state": {},
-              "icon": "trident-custom",
-              "title": "Mermaid Toolbar"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ],
@@ -162,18 +162,27 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "mermaid-tools:Open Mermaid Toolbar": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "fabfc64ecb1722af",
+  "active": "b1d91aa011ec48a3",
   "lastOpenFiles": [
+    "logseq/bak/Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点/2025-08-01T07_08_58.853Z.Desktop.md",
+    "Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点.md",
+    "logseq/bak/Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点/2025-08-01T07_08_34.264Z.Desktop.md",
+    "logseq/bak/Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点/2025-08-01T07_06_55.089Z.Desktop.md",
+    "logseq/bak/Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点/2025-08-01T07_06_25.223Z.Desktop.md",
+    "logseq/bak/Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点/2025-08-01T07_06_05.403Z.Desktop.md",
+    "journals/2025_08_01.md",
+    "logseq/bak/Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点/2025-08-01T06_29_40.593Z.Desktop.md",
+    "logseq/bak/Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点",
     "Excalidraw/lane_perception/00.lane_ff.md",
     "Excalidraw/lane_perception/01.历史线匹配.md",
     "Excalidraw/lane_perception/车道线消失问题分析.md",
@@ -184,7 +193,6 @@
     "Excalidraw/lane_perception/强制平行控制流程.md",
     "Excalidraw/lane_perception/模型布局.md",
     "Excalidraw/lane_perception/高度估计流程.md",
-    "Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点.md",
     "Excalidraw/lane_perception/00.相机融合.md",
     "logseq/bak/Excalidraw/lane_perception/历史线匹配/2025-07-30T09_27_37.974Z.Desktop.md",
     "pages/Work.md",
@@ -194,13 +202,6 @@
     "logseq/bak/Excalidraw/lane_perception/历史线匹配",
     "pages/内存池.md",
     "journals/2025_07_30.md",
-    "logseq/bak/Excalidraw/lane_perception/相机融合/2025-07-06T11_13_06.795Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/lane_ff/2025-07-06T11_11_56.767Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/lane_ff/2025-07-06T11_11_40.938Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/lane_ff/2025-07-06T11_11_22.081Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/lane_ff/2025-07-06T11_11_01.864Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/lane_ff/2025-07-06T11_10_47.658Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/lane_ff/2025-07-06T11_10_25.801Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/相机融合",
     "logseq/bak/Excalidraw/lane_perception/lane_ff",
     "logseq/bak/Excalidraw/lane_perception/BEV聚类",
@@ -209,7 +210,6 @@
     "logseq/bak/Excalidraw/lane_perception/模型布局",
     "logseq/bak/Excalidraw/lane_perception/高度估计流程",
     "logseq/bak/Excalidraw/lane_perception/车道线消失问题分析",
-    "logseq/bak/Excalidraw/MerMind",
     "assets/Pasted Image 20250622204740_787.png",
     "assets/Pasted Image 20250621153848_659.png",
     "assets/Pasted Image 20250621153436_692.png",
