@@ -1,4 +1,4 @@
-- 使用`ifstream`直接读取二进制数据，并将其赋给`char`指针 #CPP/STL/fstream #CPP/STL/vector #文件操作
+- 使用`ifstream`直接读取二进制数据，并将其赋给`char`指针 #CPP/STL/fstream #CPP/STL/vector #[[文件操作]]
   id:: 66abb115-bad2-424e-a304-da03b5141f04
   collapsed:: true
 	- ```cpp
@@ -34,6 +34,7 @@
 	      std::vector<char> ori_buffer(std::istreambuf_iterator<char>(ori_ifs), {});
 	  ```
 - `std::istreambuf_iterator` #CPP/STL/fstream
+  collapsed:: true
 	- `std::istreambuf_iterator` 是 C++ 标准库中的一个输入迭代器，用于从输入流缓冲区（`std::streambuf`）中读取字符。它通常用于处理文件或字符串流中的字符数据。
 	- ((66abb115-bad2-424e-a304-da03b5141f04)) 末尾有示例
 - 二进制文件读取：

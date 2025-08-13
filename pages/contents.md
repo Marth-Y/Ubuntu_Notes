@@ -45,7 +45,7 @@
 		  collapsed:: true
 			- [[Linux/文件系统/目录操作]]
 		- [[Linux/用户系统]]
-	- CPP
+	- [[CPP]]
 	  collapsed:: true
 		- [[CPP/智能指针]]
 		- [[CPP/newdelete]]
