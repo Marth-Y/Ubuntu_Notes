@@ -102,4 +102,17 @@
 	- 可以查看每个文件的编译命令，由此可以排查许多问题
 		- 1. 可以查看是否定义宏、链接的库等等一切编译选项
 		- 2. 可以查看链接的库地址是否正确等等
--
+- include_directories
+  collapsed:: true
+	- ```cmake
+	  include_directories(BEFORE SYSTEM
+	      $ENV{TOOLCHAIN}/include/
+	  )
+	  ```
+	- ### `BEFORE`
+		- `BEFORE` 表示**将这些目录插入到搜索路径的最前面**，优先级最高。
+		- 这样可以确保你的交叉编译工具链的头文件和库文件优先被查找和使用，避免被系统默认路径覆盖。
+	- ### `SYSTEM`
+		- `SYSTEM` 只用于 `include_directories`，表示**这些头文件目录是“系统目录”**。
+		- CMake 会告诉编译器：这些目录里的头文件属于系统库，编译时对这些头文件关闭警告（如 `-isystem` 参数）。
+		- 这样可以避免第三方库头文件产生的编译警告影响你的[[项目]]。
