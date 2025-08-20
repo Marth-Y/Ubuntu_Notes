@@ -11,10 +11,12 @@
             "id": "2d6ea3dc021346f2",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/lane_perception/03.对历史线再次聚类.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "03.对历史线再次聚类"
             }
           }
         ]
@@ -74,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 414.5
+    "width": 322.5
   },
   "right": {
     "id": "a4bbc034613eae1c",
@@ -162,6 +164,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -170,16 +173,20 @@
       "command-palette:打开命令面板": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "mermaid-tools:Open Mermaid Toolbar": false,
-      "random-note:开始漫游笔记": false,
-      "markdown-importer:打开 Markdown 格式转换器": false
+      "random-note:开始漫游笔记": false
     }
   },
-  "active": "b38b94fd54dbab49",
+  "active": "2d6ea3dc021346f2",
   "lastOpenFiles": [
-    "pages/账单.md",
     "Excalidraw/lane_perception/03.对历史线再次聚类.md",
+    "Excalidraw/lane_perception/00.相机融合.md",
     "Excalidraw/lane_perception/00.lane_ff.md",
+    "Excalidraw/lane_perception/01.历史线匹配.md",
     "Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点.md",
+    "Excalidraw/lane_perception/车道线消失问题分析.md",
+    "Excalidraw/lane_perception/高度估计流程.md",
+    "Excalidraw/lane_perception/模型布局.md",
+    "pages/账单.md",
     "Excalidraw/lane_perception/强制平行控制流程.md",
     "Excalidraw/lane_perception/bev模型点发送流程.md",
     "Excalidraw/lane_perception/未命名.md",
@@ -191,15 +198,10 @@
     "journals/2025_08_01.md",
     "logseq/bak/Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点/2025-08-01T06_29_40.593Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点",
-    "Excalidraw/lane_perception/01.历史线匹配.md",
-    "Excalidraw/lane_perception/车道线消失问题分析.md",
     "Excalidraw/lane_perception/Mul_ToPo.md",
     "Excalidraw/lane_perception/DecodeInference.md",
     "Excalidraw/lane_perception/BEV聚类.md",
     "Excalidraw/lane_perception/Bev_Crosswalk_Track.md",
-    "Excalidraw/lane_perception/模型布局.md",
-    "Excalidraw/lane_perception/高度估计流程.md",
-    "Excalidraw/lane_perception/00.相机融合.md",
     "logseq/bak/Excalidraw/lane_perception/历史线匹配/2025-07-30T09_27_37.974Z.Desktop.md",
     "pages/Work.md",
     "logseq/bak/Excalidraw/lane_perception/历史线匹配/2025-07-30T09_26_12.959Z.Desktop.md",
