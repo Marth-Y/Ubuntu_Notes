@@ -1,5 +1,4 @@
 - 项目：
-  collapsed:: true
 	- Python
 	  collapsed:: true
 		- [[python/循环]]
@@ -35,6 +34,7 @@
 	- [[cppreference]]
 	- [[车道线项目代码回顾任务]]
 - 领域知识：
+  collapsed:: true
 	- Linux
 	  collapsed:: true
 		- [[Linux/搜索]]
@@ -107,12 +107,9 @@
 	- [[googletest]]
 - 智慧：
 - 备忘：
-  collapsed:: true
-	- TODO wukong上面发送后视车道线时参数没有取反
-		- 这个重要吗？确认一下
 - [[TODO]]
-  collapsed:: true
 - [[Work]]
+  collapsed:: true
 	- [目前各项目分支情况](https://yhikd4my59.feishu.cn/base/X8wgbjEDfauGC9sDaADc601vnmc?table=tblTCF9yaZhiN2fO&view=vewXZ397yV)
 	- [当前各项目S级问题](https://yhikd4my59.feishu.cn/wiki/VKcKwbEosiCDYDk0l64cVMhHnrd)
 	- [[BH03北斗]]
