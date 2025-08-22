@@ -11,6 +11,7 @@
 		  x \\ y \end{bmatrix}$$
 - 特殊字符：
 	- $$\theta$$
+- [LaTex应用](https://zhuanlan.zhihu.com/p/464237097) #Learn #Latex
 -
 -
 -
