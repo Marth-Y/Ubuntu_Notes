@@ -20,7 +20,7 @@
             }
           },
           {
-            "id": "39cbebffb40c66ab",
+            "id": "fabbac79f06609ca",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
@@ -29,6 +29,18 @@
               },
               "icon": "excalidraw-icon",
               "title": "02.lane_ff观测点稀疏聚类为pw点"
+            }
+          },
+          {
+            "id": "120afe12ea22d4a7",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/lane_perception/04.关键帧判断.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "04.关键帧判断"
             }
           },
           {
@@ -44,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -76,7 +88,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "查看",
+                "query": "RunCluster",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -189,7 +201,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -203,6 +214,10 @@
   },
   "active": "1eb20b4e6a7a8ae6",
   "lastOpenFiles": [
+    "Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点.md",
+    "Excalidraw/lane_perception/00.lane_ff.md",
+    "Excalidraw/lane_perception/03.历史线聚类.md",
+    "Excalidraw/lane_perception/04.关键帧判断.md",
     "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_27_45.178Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_27_41.072Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_27_25.216Z.Desktop.md",
@@ -213,13 +228,10 @@
     "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_26_29.486Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_26_09.378Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_26_07.099Z.Desktop.md",
-    "Excalidraw/lane_perception/00.lane_ff.md",
-    "Excalidraw/lane_perception/03.历史线聚类.md",
     "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_25_01.600Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/03.历史线聚类",
     "logseq/bak/Excalidraw/lane_perception/00.lane_ff/2025-08-22T05_24_29.859Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/00.lane_ff/2025-08-22T05_24_11.805Z.Desktop.md",
-    "Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点.md",
     "logseq/bak/Excalidraw/lane_perception/00.lane_ff/2025-08-22T05_23_57.875Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/00.lane_ff/2025-08-22T05_23_32.121Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/00.lane_ff/2025-08-22T05_23_20.894Z.Desktop.md",
@@ -230,7 +242,6 @@
     "logseq/bak/Excalidraw/lane_perception/03.对历史线再次聚类/2025-08-22T05_22_06.237Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/03.对历史线再次聚类/2025-08-22T05_21_55.482Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/03.对历史线再次聚类",
-    "logseq/bak/Excalidraw/lane_perception/00.lane_ff/2025-08-22T05_18_22.013Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/00.相机融合",
     "logseq/bak/Excalidraw/lane_perception/04.关键帧判断",
     "logseq/bak/Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点",
