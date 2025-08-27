@@ -1,0 +1,27 @@
+views:
+  - type: table
+    name: 表格
+    filters:
+      and:
+        - file.folder == "pages"
+    order:
+      - file.name
+      - file.tags
+      - file.ctime
+      - file.mtime
+    sort:
+      - property: file.basename
+        direction: ASC
+    columnSize:
+      file.tags: 553
+      file.ctime: 258
+  - type: table
+    name: 视图
+    filters:
+      and:
+        - file.folder == "journals"
+    order:
+      - file.name
+      - file.tags
+    columnSize:
+      file.name: 328

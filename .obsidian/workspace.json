@@ -8,27 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c2bfc06b9a017187",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/lane_perception/00.lane_ff.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "00.lane_ff"
-            }
-          },
-          {
             "id": "fabbac79f06609ca",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "bases",
               "state": {
-                "file": "Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点.md"
+                "file": "pages/所有笔记视图.base",
+                "viewName": "视图"
               },
-              "icon": "excalidraw-icon",
-              "title": "02.lane_ff观测点稀疏聚类为pw点"
+              "icon": "lucide-table",
+              "title": "所有笔记视图"
             }
           },
           {
@@ -55,8 +44,7 @@
               "title": "03.历史线聚类"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -213,35 +201,38 @@
       "random-note:开始漫游笔记": false
     }
   },
-  "active": "3e814141fd226b9f",
+  "active": "fabbac79f06609ca",
   "lastOpenFiles": [
+    "journals/2024_01_18.md",
+    "pages/所有笔记视图.base",
+    "pages/7vfreespace和斑马线解析.md",
+    "pages/车道线项目代码回顾任务.md",
+    "pages/各项目状态.md",
+    "pages/设想的文件上传下载系统.md",
+    "pages/杂项记录.md",
+    "pages/账单.md",
+    "pages/a1000-游龙.md",
+    "pages/Eigen.md",
+    "pages/excalidraw-2025-01-14-00-04-12.md",
+    "pages/excalidraw-2025-01-14-00-04-39.md",
+    "pages/Hirain.md",
+    "pages/restrict.md",
+    "pages/valeo戴高乐.md",
+    "pages/Untitled.md",
+    "pages/vim.md",
+    "pages/VSCode.md",
+    "pages/tracking.md",
+    "pages/nodejs配置.md",
+    "pages/Linux.md",
+    "pages/深度学习.md",
+    "pages/盛最多水的容器.md",
+    "pages/EffectiveC++.md",
+    "logseq/bak/Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点/2025-08-01T07_06_55.089Z.Desktop.md",
+    "assets/image_1705728243777_0.png",
     "Excalidraw/lane_perception/02.lane_ff观测点稀疏聚类为pw点.md",
+    "pages/未命名.base",
     "Excalidraw/lane_perception/00.lane_ff.md",
-    "Excalidraw/lane_perception/03.历史线聚类.md",
-    "Excalidraw/lane_perception/04.关键帧判断.md",
-    "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_27_45.178Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_27_41.072Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_27_25.216Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_27_10.586Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_27_08.214Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_26_51.590Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_26_48.442Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_26_29.486Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_26_09.378Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_26_07.099Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/03.历史线聚类/2025-08-22T05_25_01.600Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/03.历史线聚类",
-    "logseq/bak/Excalidraw/lane_perception/00.lane_ff/2025-08-22T05_24_29.859Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/00.lane_ff/2025-08-22T05_24_11.805Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/00.lane_ff/2025-08-22T05_23_57.875Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/00.lane_ff/2025-08-22T05_23_32.121Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/00.lane_ff/2025-08-22T05_23_20.894Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/00.lane_ff/2025-08-22T05_23_03.878Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/00.lane_ff/2025-08-22T05_22_49.361Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/03.对历史线再次聚类/2025-08-22T05_22_37.997Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/03.对历史线再次聚类/2025-08-22T05_22_22.338Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/03.对历史线再次聚类/2025-08-22T05_22_06.237Z.Desktop.md",
-    "logseq/bak/Excalidraw/lane_perception/03.对历史线再次聚类/2025-08-22T05_21_55.482Z.Desktop.md",
     "logseq/bak/Excalidraw/lane_perception/03.对历史线再次聚类",
     "logseq/bak/Excalidraw/lane_perception/00.相机融合",
     "logseq/bak/Excalidraw/lane_perception/04.关键帧判断",
@@ -249,8 +240,6 @@
     "logseq/bak/Excalidraw/lane_perception/历史线匹配",
     "logseq/bak/Excalidraw/lane_perception/相机融合",
     "logseq/bak/Excalidraw/lane_perception/lane_ff",
-    "logseq/bak/Excalidraw/lane_perception/BEV聚类",
-    "logseq/bak/Excalidraw/lane_perception/Bev_Crosswalk_Track",
     "assets/Pasted Image 20250622204740_787.png",
     "assets/Pasted Image 20250621153848_659.png",
     "assets/Pasted Image 20250621153436_692.png",
@@ -260,7 +249,6 @@
     "assets/Pasted Image 20250618000225_012.png",
     "assets/Pasted Image 20250615223849_853.png",
     "assets/Pasted Image 20250504153349_705.png",
-    "assets/Pasted Image 20250504152628_666.png",
     "leetcode.canvas",
     "文件上传下载计划.canvas"
   ]
